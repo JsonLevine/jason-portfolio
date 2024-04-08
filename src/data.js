@@ -11,25 +11,9 @@ export const projects = [
     title: "Stoughton Stronghold",
     subtitle: "Wordpress",
     description:
-      "Sometimes we don't want all the overhead of creating and maintaining a library of code. This website for my own home gym was built using Wordpress.",
+      "Sometimes we don't want all the overhead of creating and maintaining a library of code. This website for my own home gym was built using exclusively Wordpress.",
     image: "./assets/stronghold.gif",
     link: "https://stoughtonstronghold.com/",
-  },
-  {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./assets/project-3.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./assets/project-4.gif",
-    link: "https://reactbootcamp.com",
   },
 ];
 
