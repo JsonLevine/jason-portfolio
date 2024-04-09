@@ -14,16 +14,25 @@ function About() {
                 laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
                 Laborum, voluptas natus?
               </p>
+              <div className="flex justify-center mb-8">
+                <a
+                  target="_blank"
+                  href="./assets/Jason_Levine_Resume.pdf"
+                  className="inline-flex text-white bg-custom-red border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-lg">
+                  Resume
+                </a>
+                <a
+                  target="_blank"
+                  href="./assets/Jason_Levine_CV.pdf"
+                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded text-lg">
+                  CV
+                </a>
+              </div>
               <div className="flex justify-center">
                 <a
                   href="#contact"
                   className="inline-flex text-white bg-custom-red border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-lg">
                   Connect With Me
-                </a>
-                <a
-                  href="#projects"
-                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded text-lg">
-                  See My Past Work
                 </a>
               </div>
             </div>
