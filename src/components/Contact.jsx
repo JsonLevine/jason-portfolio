@@ -1,127 +1,59 @@
 import React from 'react'
-import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/solid";
+import { ChatBubbleLeftRightIcon, ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
 function Contact() {
-const [name, setName] = React.useState("");
-const [email, setEmail] = React.useState("");
-const [message, setMessage] = React.useState("");
-
-function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
-    return (
-        <section id="contact" className="relative">
-          <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-            <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-              <iframe
-                width="100%"
-                height="100%"
-                title="map"
-                className="absolute inset-0"
-                frameBorder={0}
-                marginHeight={0}
-                marginWidth={0}
-                style={{ filter: "opacity(0.7)" }}
-                src="https://www.google.com/maps/embed/v1/place?q=Stoughton,+MA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              />
-              <div className="bg-gray-900 relative flex flex-wrap py-6 lg:px-10 rounded shadow-md">
-                <div className="lg:w-1/2 px-6">
+  return (
+    <section id="contact" className="relative">
+      <div className="container px-5 pb-10 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div className="md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:w-100 p-4 flex items-start justify-start relative">
+          <img
+            width="100%"
+            height="100%"
+            className="inset-0 rounded ring-4 ring-custom-red/50 ring-offset-4 ring-offset-gray-900 hover:ring-custom-red"
+            src="/assets/contact.png"
+          />
+        </div>
+        <div className="md:w-1/2 flex flex-col md:ml-auto w-full md:py-4 mt-4 lg:mt-8 md:mt-0 rounded">
+          <div className="container px-5 mx-auto text-center sm:text-left">
+            <ChatBubbleLeftRightIcon className="w-10 inline-block mb-4" />
+            <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font mb-8">
+              Lets connect!
+            </h2>
+            <div className="bg-gray-800 bg-opacity-40 p-8 rounded">
+              <div className="inline-flex items-start">
+                <div className= "mt-4 lg:mt-0">
                   <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                    LINKEDIN
+                  </h2>
+                  <a className="text-indigo-400 mt-1" href="https://www.linkedin.com/in/jasonllevine/">
+                    linkedin.com/in/jasonllevine 
+                    <ArrowTopRightOnSquareIcon className="w-5 inline-block mb-1" />
+                  </a>
+                  <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
+                    EMAIL
+                  </h2>
+                  <a className="text-indigo-400 leading-relaxed" href="mailto:jason.levine131@gmail.com">
+                    jason.levine131@gmail.com
+                    <ArrowTopRightOnSquareIcon className="w-5 inline-block mb-1" />
+                  </a>
+                  <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                     LOCATION
                   </h2>
                   <p className="mt-1">
                     Stoughton, MA
                   </p>
-                </div>
-                <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                  <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                    EMAIL
-                  </h2>
-                  <a className="text-indigo-400 leading-relaxed">
-                    jason.levine131@gmail.com
-                  </a>
                   <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                     PHONE
                   </h2>
-                  <p className="leading-relaxed">774-249-5018</p>
+                  <p className="leading-relaxed">(774) 249-5018</p>
                 </div>
               </div>
             </div>
-            <form
-              netlify
-              name="contact"
-              onSubmit={handleSubmit}
-              className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-              <ChatBubbleLeftRightIcon className="w-8 text-gray-500 mb-4" />
-              <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-                Lets connect!
-              </h2>
-              <p className="leading-relaxed mb-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                suscipit officia aspernatur veritatis. Asperiores, aliquid?
-              </p>
-              <div className="relative mb-4">
-                <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  onChange={(e) => setName(e.target.value)}                
-                />
-              </div>
-              <div className="relative mb-4">
-                <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  onChange={(e) => setEmail(e.target.value)}
-               />
-              </div>
-              <div className="relative mb-4">
-                <label
-                  htmlFor="message"
-                  className="leading-7 text-sm text-gray-400">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-              </div>
-              <button
-                type="submit"
-                disabled="true"
-                className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Submit
-              </button>
-            </form>
           </div>
-        </section>
-      );
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Contact

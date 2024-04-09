@@ -10,7 +10,7 @@ function Navbar() {
                 Jason Levine
               </a>
             </a>
-            <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-white justify-center">
+            <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l-2 md:border-gray-700	flex flex-wrap items-center text-white justify-center">
               <a href="#projects" className="mr-5 hover:text-gray-800">
                 Projects
               </a>
@@ -23,7 +23,7 @@ function Navbar() {
             </nav>
             <a
               href="#contact"
-              className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-custom-red mt-4 md:mt-0">
+              className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-custom-red mt-4 md:mt-0">
               Hire Me
               <ArrowRightIcon className="w-4 h-4 ml-1" />
             </a>
