@@ -12,9 +12,15 @@ function Projects() {
                 Some of my Projects
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                fuga dolore.
+                I've worked as a frontend developer for 7+ years now. At Chewy, I worked 
+                on a number of high-visibilty pages, including the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">PDP</a>, 
+                and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages.
+                I also worked as a frontend analytics developer, collaborating across numerous teams
+                to collect user data, and run ironclad A/B tests leveraging Optimizely.
+                  <br/><br/>
+                In my free time, I have dabbled in a lot of different areas.  I have built apps in React,
+                designed websites using Wordpress, explored the world of graphic design/logo design with Adobe 
+                Photoshop & Illustrator. Below are some samples of my work.
               </p>
             </div>
             <div className="flex flex-wrap -m-4">
