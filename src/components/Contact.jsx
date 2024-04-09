@@ -49,7 +49,7 @@ function Contact() {
                   </p>
                 </span>
               </div>
-              <div className="border-l border-custom-red w-px h-8 "></div>
+              <div className="border-l border-custom-red w-px sm:h-0 md:h-8 h-8"></div>
               <div className="flex items-center">
                 <DevicePhoneMobileIcon className="text-custom-red w-6 h-6 flex-shrink-0 mr-4" />
                 <span className="title-font text-white">
