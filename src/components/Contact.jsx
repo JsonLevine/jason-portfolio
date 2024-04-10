@@ -14,9 +14,6 @@ function Contact() {
   function copyEmail() {
     navigator.clipboard.writeText("jason.levine131@gmail.com");
   }
-  function copyLinkedin() {
-    navigator.clipboard.writeText("");
-  }
 
   return (
     <section id="contact" className="relative">
@@ -49,7 +46,7 @@ function Contact() {
                   </p>
                 </span>
               </div>
-              <div className="border-l border-custom-red w-px sm:h-0 md:h-8 h-8"></div>
+              <div className="border-l border-custom-red w-px md:h-8"></div>
               <div className="flex items-center">
                 <DevicePhoneMobileIcon className="text-custom-red w-6 h-6 flex-shrink-0 mr-4" />
                 <span className="title-font text-white">
@@ -66,9 +63,9 @@ function Contact() {
                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                   LINKEDIN
                 </h2>
-                <a className="text-indigo-400 mt-1">
+                <span className="text-indigo-400 mt-1">
                   linkedin.com/in/jasonllevine 
-                </a>
+                </span>
               </span>
               <ArrowTopRightOnSquareIcon className="ml-auto text-indigo-400 w-6 h-6 inline-block" />
             </a>
@@ -78,7 +75,7 @@ function Contact() {
                <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                   EMAIL
                 </h2>
-                <a className="leading-relaxed">
+                <a className="text-indigo-400 leading-relaxed">
                   jason.levine131@gmail.com
                 </a>
                 <Tooltip id="copiedTooltip" content="copied to clipboard!" openOnClick/>

@@ -16,28 +16,31 @@ function About() {
                 laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
                 Laborum, voluptas natus?
               </p>
-              <div className="flex justify-center mb-4">
-                <a
-                  target="_blank"
-                  href="./assets/Jason_Levine_Resume.pdf"
-                  className="inline-flex text-white bg-custom-red border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-lg">
-                  Résumé
-                </a>
-                <a
-                  target="_blank"
-                  href="./assets/Jason_Levine_CV.pdf"
-                  className="ml-[1.7rem] inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded text-lg">
-                  CV
-                </a>
+              <div className="flex flex-col xl:flex-row justify-center mb-4">
+                <div>
+                  <a
+                    target="_blank"
+                    href="./assets/Jason_Levine_Resume.pdf"
+                    className="inline-flex text-white bg-custom-red border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-lg">
+                    Résumé
+                  </a>
+                  <a
+                    target="_blank"
+                    href="./assets/Jason_Levine_CV.pdf"
+                    className="ml-[1.7rem] inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded text-lg">
+                    CV
+                  </a>
+                </div>
+                <div className="xl:ml-[1.7rem] mt-[1.7rem] xl:mt-0 flex justify-center">
+                  <a
+                    href="#contact"
+                    className="inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded text-lg">
+                    <UserPlusIcon className="w-4 mr-2 text-gray-500" />
+                    Connect With Me
+                  </a>
+                </div>
               </div>
-              <div className="flex justify-center">
-                <a
-                  href="#contact"
-                  className="inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded text-lg">
-                  <UserPlusIcon className="w-4 mr-2 text-gray-500" />
-                  Connect With Me
-                </a>
-              </div>
+
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img
