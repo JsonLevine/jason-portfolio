@@ -24,6 +24,7 @@ function Contact() {
             height="100%"
             className="inset-0 rounded shadow-project-shadow"
             src="/assets/contact.png"
+            alt="Me and my dog, Riley"
           />
         </div>
         <div className="xl:w-1/3 md:w-2/3 lg:w-1/2 flex flex-col md:mr-auto w-full md:py-4 mt-4 md:mt-0 rounded">
@@ -57,7 +58,7 @@ function Contact() {
                 </span>
               </div>
             </div>
-            <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" className="bg-gray-800 rounded flex p-4 mb-4 items-center hover:ring-4 hover:ring-blue-500">
+            <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="bg-gray-800 rounded flex p-4 mb-4 items-center hover:ring-4 hover:ring-blue-500">
               <UserCircleIcon className="text-blue-500 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font text-white">
                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">
@@ -69,19 +70,19 @@ function Contact() {
               </span>
               <ArrowTopRightOnSquareIcon className="ml-auto text-indigo-400 w-6 h-6 inline-block" />
             </a>
-            <a data-tooltip-id="copiedTooltip" onClick={copyEmail} className="cursor-pointer bg-gray-800 rounded flex p-4 mb-4 items-center hover:ring-4  hover:ring-gray-200">
+            <span data-tooltip-id="copiedTooltip" onClick={copyEmail} className="cursor-pointer bg-gray-800 rounded flex p-4 mb-4 items-center hover:ring-4 hover:ring-gray-200">
               <InboxArrowDownIcon className="text-gray-200 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font text-white">
                <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                   EMAIL
                 </h2>
-                <a className="text-indigo-400 leading-relaxed">
+                <span className="text-indigo-400 leading-relaxed">
                   jason.levine131@gmail.com
-                </a>
+                </span>
                 <Tooltip id="copiedTooltip" content="copied to clipboard!" openOnClick/>
               </span>
               <ClipboardDocumentCheckIcon className="ml-auto text-indigo-400 w-6 inline-block" />
-            </a>
+            </span>
           </div>
         </div>
       </div>

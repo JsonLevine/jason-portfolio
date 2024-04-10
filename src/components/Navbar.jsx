@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import { slide as Menu } from 'react-burger-menu'
+// import { slide as Menu } from 'react-burger-menu'
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+ // const [isOpen, setIsOpen] = useState(false)
 
 /* Styles if I ever re-implement burger menu
   function closeMenu() {
@@ -80,11 +80,18 @@ return (
           </a>
         </nav>
         <a
+          target="_blank"
+          href="./assets/Jason_Levine_Resume.pdf"
+          className="hidden sm:block inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-custom-red sm:mt-0">
+          Résumé
+        </a>
+        <a
           href="#contact"
-          className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-custom-red sm:mt-0">
+          className="inline-flex items-center bg-white border-0 py-1 px-3 ml-4 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-custom-red sm:mt-0">
           Hire Me
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </a>
+
         {/*  https://www.npmjs.com/package/react-burger-menu
         <div className="sm:hidden" >
           <Menu 
