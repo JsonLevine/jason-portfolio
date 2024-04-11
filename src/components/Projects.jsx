@@ -4,15 +4,15 @@ import { projects } from "../data";
 
 function Projects() {
     return (
-        <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+        <section id="projects" className="text-gray-400 body-font">
           <div className="container px-5 py-10 mx-auto text-center lg:px-40">
             <div className="flex flex-col w-full mb-10">
-              <CubeTransparentIcon className="mx-auto inline-block w-10 mb-4" />
+              <CubeTransparentIcon className="hover:animate-spin-slow mx-auto inline-block w-10 mb-4" />
               <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
                 Some of my Projects
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                I've worked as a frontend developer for 7+ years now. At Chewy, I worked 
+                I've worked as a frontend developer for 5+ years now. At Chewy, I worked 
                 on a number of high-visibilty pages, including the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">PDP</a>, 
                 and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages.
                 I also worked as a frontend analytics developer, collaborating across numerous teams

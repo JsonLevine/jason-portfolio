@@ -1,5 +1,5 @@
 import React from 'react'
-import { CpuChipIcon, CloudIcon, ClipboardDocumentCheckIcon } from "@heroicons/react/24/solid";
+import { CpuChipIcon, WrenchScrewdriverIcon, ClipboardDocumentCheckIcon } from "@heroicons/react/24/solid";
 import { skills, softskills } from "../data";
 
 function Skills() {
@@ -7,7 +7,7 @@ function Skills() {
         <section id="skills">
           <div className="container px-5 py-10 mx-auto">
             <div className="text-center mb-10">
-              <CloudIcon className="w-10 inline-block mb-4" />
+              <WrenchScrewdriverIcon className="w-10 inline-block mb-4" />
               <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
                 Skills &amp; Technologies
               </h1>
