@@ -72,10 +72,10 @@ return (
           Jason  <br className=" sm:hidden"/>Levine
         </a>
         <nav className="text-lg block mr-auto ml-4 py-1 pl-4 border-l-2 border-gray-700	flex flex-wrap items-center text-white justify-center">
-          <a href="#projects" className="mr-5 hover:text-gray-800">
+          <a href="#projects" className="mr-5 ease-in duration-200 hover:scale-110 hover:text-gray-800">
             Projects
           </a>
-          <a href="#skills" className="mr-5 hover:text-gray-800">
+          <a href="#skills" className="mr-5 ease-in duration-200 hover:scale-110 hover:text-gray-800">
             Skills
           </a>
         </nav>
