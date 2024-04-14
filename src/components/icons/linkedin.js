@@ -10,7 +10,7 @@ const IconLinkedin = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="feather feather-linkedin">
+    className="w-8 m-2 transition ease-in-out duration-300 hover:stroke-custom-red hover:-translate-y-1 hover:scale-110">
     <title>LinkedIn</title>
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
     <rect x="2" y="9" width="4" height="12"></rect>
