@@ -67,9 +67,9 @@ function Navbar() {
 */
 return (
     <header className="bg-custom-red md:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-5 flex-row justify-between items-center">
+      <div className="container mx-auto flex sm:flex-wrap p-5 flex-row justify-between items-center">
         <a href="#about"className="title-font font-medium text-white text-xl">
-          Jason  <br className=" sm:hidden"/>Levine
+          Jason  <br className="sm:hidden"/>Levine
         </a>
         <nav className="text-lg block mr-auto ml-4 py-1 pl-4 border-l-2 border-gray-700	flex flex-wrap items-center text-white justify-center">
           <a href="#projects" className="mr-5 ease-in duration-200 hover:scale-110 hover:text-gray-800">
@@ -87,7 +87,7 @@ return (
         </a>
         <a
           href="#contact"
-          className="inline-flex items-center bg-white border-0 py-1 px-3 ml-4 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-custom-red sm:mt-0">
+          className="md:hidden inline-flex items-center bg-white border-0 py-1 px-3 ml-4 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-custom-red sm:mt-0">
           Hire Me
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </a>

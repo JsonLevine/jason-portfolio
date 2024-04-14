@@ -11,7 +11,7 @@ function Projects() {
               <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
                 Some of my Projects
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              <p className="xl:w-2/3 mx-auto leading-relaxed text-base">
                 I've worked as a frontend developer for 5+ years now. At Chewy, I worked 
                 on a number of high-visibilty pages, including the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">PDP</a>, 
                 and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages.
