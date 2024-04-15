@@ -87,7 +87,7 @@ return (
         </a>
         <a
           href="#contact"
-          className="md:hidden inline-flex items-center bg-white border-0 py-1 px-3 ml-4 jersey text-xl/4 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-custom-red sm:mt-0">
+          className="transition ease-in-out duration-300 hover:scale-110 md:hidden inline-flex items-center bg-white border-0 py-1 px-3 ml-4 jersey text-xl focus:outline-none focus:bg-gray-700 hover:bg-gray-700 rounded text-custom-red sm:mt-0">
           Hire Me
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </a>

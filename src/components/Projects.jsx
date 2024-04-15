@@ -1,5 +1,6 @@
 import React from 'react'
 import { CubeTransparentIcon } from "@heroicons/react/24/solid";
+import IconGitHub from './icons/github'
 import { projects } from "../data";
 
 function Projects() {
@@ -8,19 +9,27 @@ function Projects() {
           <div className="container px-5 py-10 mx-auto text-center lg:px-40">
             <div className="flex flex-col w-full mb-10">
               <CubeTransparentIcon className="hover:animate-spin-slow mx-auto inline-block w-10 mb-4" />
-              <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+              <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-white">
                 Some of my Projects
               </h1>
-              <p className="xl:w-2/3 mx-auto leading-relaxed text-base">
+              {/*
+              <p className="xl:w-2/3 pb-4 mx-auto leading-relaxed text-base">
                 I've worked as a frontend developer for 5+ years now. At Chewy, I worked 
                 on a number of high-visibilty pages, including the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">PDP</a>, 
                 and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages.
                 I also worked as a frontend analytics developer, collaborating across numerous teams
                 to collect user data, and run ironclad A/B tests leveraging Optimizely.
-                  <br/><br/>
-                In my free time, I have dabbled in a lot of different areas.  I have built apps in React,
-                designed websites using Wordpress, explored the world of graphic design/logo design with Adobe 
-                Photoshop & Illustrator. Below are some samples of my work.
+              </p>  */}
+              <p className="xl:w-2/3 pb-4 mx-auto leading-relaxed text-base">
+              With over five years of experience as a frontend developer, I have honed my skills across a variety of high-visibility projects.
+              At Chewy, my responsibilities included developing and enhancing critical pages such as the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
+              and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages. Additionally, I specialized as a frontend analytics developer, collaborating extensively with multiple teams to gather
+              user insights and conduct robust A/B testing using Optimizely.
+              </p>
+              <p className="xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-custom-red">
+              Outside of professional commitments, I actively expand my technical repertoire. My interests have led me to develop applications using React,
+              create dynamic websites with WordPress, and delve into graphic and logo design utilizing Adobe Photoshop and Illustrator.
+              Below, you will find a selection of my work that showcases my versatility and commitment to excellence in digital design.
               </p>
             </div>
             <div className="flex flex-wrap -m-4">
@@ -36,6 +45,9 @@ function Projects() {
                       src={project.image}
                     />
                     <div className="px-8 py-10 relative z- w-full border-4 border-gray-800 bg-gray-900 ease-in-out duration-300 opacity-0 hover:opacity-100">
+                    {project.code ? 
+                    <a className=" absolute top-0 left-0 w-12" href={project.code} target="_blank" rel="noreferrer"><IconGitHub /></a>
+                    : <></>}
                       <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                         {project.subtitle}
                       </h2>

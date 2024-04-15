@@ -6,6 +6,7 @@ export const projects = [
       "A recreation of the 'Wordle' game, originally made famous by the game show 'Lingo', and recently brought back by the New York Times - played by millions.",
     image: "./assets/jlingo.png",
     link: "https://jlingo2.onrender.com",
+    code: "https://github.com/JsonLevine/JLingo2" 
   },
   {
     title: "Stoughton Stronghold",
@@ -38,12 +39,14 @@ export const skills = [
   "JavaScript / Typescript",
   "React",
   "HTML/CSS",
+  "TailwindCSS",
   "Node",
   "Figma",
   "Sketch",
   "Jest",
   "Cypress",
   "Adobe Photoshop",
+  "Adobe Illustrator",
   "Google Tag Manager",
   "Google Analytics",
   "Segment.io",
