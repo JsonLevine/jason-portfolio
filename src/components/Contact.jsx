@@ -18,7 +18,7 @@ function Contact() {
   return (
     <section id="contact" className="relative">
       <div className="container px-5 pb-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="m-auto sm:mr-0 xl:w-1/3 md:w-1/3 lg:w-1/2 w-3/4 bg-gray-900 rounded-lg overflow-hidden p-4 flex items-start justify-start relative">
+        <div className="m-auto sm:mr-0 xl:w-1/3 md:w-1/3  w-3/4 bg-gray-900 rounded-lg overflow-hidden p-4 flex items-start justify-start relative">
           <img
             width="100%"
             height="100%"
