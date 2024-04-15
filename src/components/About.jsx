@@ -14,8 +14,8 @@ function About() {
               <p className="mb-8 leading-relaxed">
               I specialize in creating <strong className="text-gray-200">engaging</strong>, <strong className="text-gray-200">accessible</strong> websites. My keen eye for detail ensures every project 
               I touch is crafted with <strong className="text-gray-200">precision</strong>. I'm known for my candid communication
-              style, always ready to share insights that <strong className="text-gray-200">drive projects forward</strong>. Beyond coding, I take great pleasure in mentoring junior developers,
-              helping them grow into <strong className="text-gray-200">skilled professionals</strong>.
+              style, always ready to share insights that <strong className="text-gray-200">drive projects forward</strong>. Beyond coding, I take great pleasure in <strong className="text-gray-200">mentoring junior developers</strong>,
+              helping them grow into skilled professionals.
               </p>
               <div className="flex flex-col xl:flex-row justify-center mb-4">
                 <div>
