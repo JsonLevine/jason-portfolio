@@ -11,7 +11,7 @@ import "./App.css"
 
 export default function App() {
   return (
-    <main className='text-gray-400 background body-font'>
+    <main className='text-gray-400 background body-font '>
       <Navbar />
         <About />
         <Projects />
