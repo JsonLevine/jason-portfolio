@@ -7,10 +7,10 @@ function About() {
           <div className="container mx-auto flex px-10 pt-20 pb-10 md:flex-row flex-col items-center">
             <div className="lg:ml-8 lg:flex-grow md:w-1/2 xl:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font jersey-25 sm:text-6xl text-5xl mb-4 font-medium text-white">
-                <span className=" text-custom-red">Jason Levine</span>
+                <span className="text-custom-red">Jason Levine</span>
                 <br className="inline-block"/>
               </h1>
-              <span className="md:border-l md:pl-4 md:border-double md:border-gray-500 mb-4 text-gray-300 sm:text-2xl text-xl">Frontend Software Engineer</span>
+              <span className="jersey md:border-l md:pl-4 md:border-double md:border-gray-500 mb-4 text-gray-300 sm:text-2xl text-xl">Frontend Software Engineer</span>
               <p className="mb-8 leading-relaxed">
               I specialize in creating <strong className="text-gray-200">engaging</strong>, <strong className="text-gray-200">accessible</strong> websites. My keen eye for detail ensures every project 
               I touch is crafted with <strong className="text-gray-200">precision</strong>. I'm known for my candid communication
