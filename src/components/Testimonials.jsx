@@ -12,11 +12,11 @@ function Testimonials() {
             </h1>
             <div className="flex flex-wrap m-4">
               {testimonials.map((testimonial) => (
-                <div key={testimonial.name}className="p-4 md:w-1/2 w-full">
+                <div key={testimonial.name}className="p-4 w-full group">
                   <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                    <HandThumbUpIcon className="block w-8 text-gray-500 mb-4" />
                     <p className="leading-relaxed mb-6">{testimonial.quote}</p>
                     <div className="inline-flex items-center">
+                    <HandThumbUpIcon className="mr-4 block w-8 text-gray-500 transition ease-in-out duration-300 group-hover:text-green-600 group-hover:-translate-y-1 group-hover:-rotate-12 group-hover:scale-125" />
                       <img
                         alt="testimonial"
                         src={testimonial.image}
@@ -28,6 +28,9 @@ function Testimonials() {
                         </span>
                         <span className="text-gray-500 text-sm uppercase">
                           {testimonial.company}
+                        </span>
+                        <span className="text-gray-600 text-xs">
+                          {testimonial.title}
                         </span>
                       </span>
                     </div>

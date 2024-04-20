@@ -21,18 +21,20 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
-    company: "Zoozle",
+      "Working with Jason was always a pleasure. They consistently demonstrated professionalism, reliability, and a positive attitude. His problem-solving skills and creativity were truly impressive, making him a valuable asset to the team. I feel fortunate to have worked alongside such a talented individual.",
+    image: "https://media.licdn.com/dms/image/C4E03AQHpw-lgzMKTbw/profile-displayphoto-shrink_800_800/0/1519673938976?e=1718841600&v=beta&t=Dqlcjev_vdqpvBazp07yfHy-0fLO3eufVvB0No_er8s",
+    name: "Christopher Cook",
+    company: "Chewy",
+    title: "Senior Software Engineer"
   },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
-    company: "Dooble.io",
-  },
+  // {
+  //   quote:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+  //   image: "https://media.licdn.com/dms/image/D5603AQGmBxX79rwLxw/profile-displayphoto-shrink_800_800/0/1704249763162?e=1718841600&v=beta&t=Pi0qiE8Q9Gh2blAvY1IdUY6UjP2NsnvxbgkyCrUkDls",
+  //   name: "Aditya Jain",
+  //   company: "Chewy",
+  //   title: "Associate Director"
+  // },
 ];
 
 export const skills = [
