@@ -58,7 +58,7 @@ function Contact() {
                 </span>
               </div>
             </div>
-            <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="bg-gray-800 rounded flex p-4 mb-4 items-center hover:ring-4 hover:ring-blue-500">
+            <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="bg-gray-800 rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-blue-500">
               <UserCircleIcon className="text-blue-500 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font text-white">
                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">
@@ -70,7 +70,7 @@ function Contact() {
               </span>
               <ArrowTopRightOnSquareIcon className="ml-auto text-indigo-400 w-6 h-6 inline-block" />
             </a>
-            <span data-tooltip-id="copiedTooltip" onClick={copyEmail} className="cursor-pointer bg-gray-800 rounded flex p-4 mb-4 items-center hover:ring-4 hover:ring-gray-200">
+            <span data-tooltip-id="copiedTooltip" onClick={copyEmail} className="cursor-pointer bg-gray-800 rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-gray-200">
               <InboxArrowDownIcon className="text-gray-200 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font text-white">
                <h2 className="title-font font-semibold text-white tracking-widest text-xs">

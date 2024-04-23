@@ -21,24 +21,25 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Working with Jason was always a pleasure. They consistently demonstrated professionalism, reliability, and a positive attitude. His problem-solving skills and creativity were truly impressive, making him a valuable asset to the team. I feel fortunate to have worked alongside such a talented individual.",
+      "\"Working with Jason was always a pleasure. They consistently demonstrated professionalism, reliability, and a positive attitude. His problem-solving skills and creativity were truly impressive, making him a valuable asset to the team. I feel fortunate to have worked alongside such a talented individual.\"",
     image: "https://media.licdn.com/dms/image/C4E03AQHpw-lgzMKTbw/profile-displayphoto-shrink_800_800/0/1519673938976?e=1718841600&v=beta&t=Dqlcjev_vdqpvBazp07yfHy-0fLO3eufVvB0No_er8s",
     name: "Christopher Cook",
     company: "Chewy",
     title: "Senior Software Engineer"
   },
-  // {
-  //   quote:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-  //   image: "https://media.licdn.com/dms/image/D5603AQGmBxX79rwLxw/profile-displayphoto-shrink_800_800/0/1704249763162?e=1718841600&v=beta&t=Pi0qiE8Q9Gh2blAvY1IdUY6UjP2NsnvxbgkyCrUkDls",
-  //   name: "Aditya Jain",
-  //   company: "Chewy",
-  //   title: "Associate Director"
-  // },
+  {
+    quote:
+      "\"It was a genuine pleasure to work with Jason, whom I had the privilege of directly managing. As a seasoned UI developer, Jason took on the role of experimentation lead for our analytics team, showcasing his adeptness in steering medium to large-sized projects with remarkable independence. His expertise shone brightly as he efficiently addressed and resolved any experimentation-related queries, earning him the reputation of a subject matter expert. Jason’s proficiency in React is outstanding, and his ability to dive deep into complex problems sets him apart. Above all, his quick learning ability and collaborative spirit make him an invaluable asset to any team.\"",
+    image: "https://media.licdn.com/dms/image/D5603AQGmBxX79rwLxw/profile-displayphoto-shrink_800_800/0/1704249763162?e=1718841600&v=beta&t=Pi0qiE8Q9Gh2blAvY1IdUY6UjP2NsnvxbgkyCrUkDls",
+    name: "Aditya Jain",
+    company: "Chewy",
+    title: "Associate Director"
+  },
 ];
 
 export const skills = [
-  "JavaScript / Typescript",
+  "JavaScript",
+  "Typescript",
   "React",
   "HTML/CSS",
   "TailwindCSS",
@@ -46,7 +47,6 @@ export const skills = [
   "Figma",
   "Sketch",
   "Jest",
-  "Cypress",
   "Adobe Photoshop",
   "Adobe Illustrator",
   "Google Tag Manager",
