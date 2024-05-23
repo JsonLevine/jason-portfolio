@@ -1,11 +1,18 @@
-import React from 'react'
+import { React, useRef } from 'react'
+import { useInView } from "framer-motion"
 import { UserPlusIcon } from "@heroicons/react/24/solid";
 
 function About() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  const ref2 = useRef(null)
+  const isInView2 = useInView(ref2, { once: true })
+
     return (
         <section id="about">
           <div className="container mx-auto flex px-10 pt-20 pb-10 md:flex-row flex-col items-center">
-            <div className="lg:ml-8 lg:flex-grow md:w-1/2 xl:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div ref={ref} className={isInView ? "animate-fade-right animate-once animate-duration-[1500ms] lg:ml-8 lg:flex-grow md:w-1/2 xl:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" : "lg:ml-8 lg:flex-grow md:w-1/2 xl:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"}>
               <h1 className="title-font jersey-25 sm:text-6xl text-5xl mb-4 font-medium text-white">
                 <span className="text-custom-red">Jason Levine</span>
                 <br className="inline-block"/>
@@ -43,7 +50,7 @@ function About() {
               </div>
 
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div ref={ref2} className={isInView2 ? "animate-fade-left animate-once animate-duration-[1500ms] lg:max-w-lg lg:w-full md:w-1/2 w-5/6" : "lg:max-w-lg lg:w-full md:w-1/2 w-5/6"}>
               <img
                 className="object-cover object-center rounded"
                 alt="hero"

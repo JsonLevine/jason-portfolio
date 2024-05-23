@@ -1,4 +1,4 @@
-import { React, useEffect, useRef } from 'react'
+import { React, useRef } from 'react'
 import { useInView } from "framer-motion"
 import { CpuChipIcon, WrenchScrewdriverIcon, ClipboardDocumentCheckIcon } from "@heroicons/react/24/solid";
 import { skills, softskills } from "../data";
