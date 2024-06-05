@@ -32,7 +32,7 @@ function Contact() {
             <div className="flex justify-center">
               <ChatBubbleLeftRightIcon className="w-10 inline mb-4" />
               <p className="text-white jersey-25 md:text-5xl text-4xl mb-1 font-medium title-font ml-4">
-                Lets connect!
+                Let's connect!
               </p>
             </div>
             <div className="justify-evenly rounded flex p-4 mb-4 items-center">
