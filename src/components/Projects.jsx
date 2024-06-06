@@ -24,13 +24,13 @@ function Projects() {
                   Some of my Projects
                 </h1>
               </div>
-              <p ref={contentRef} className={ isContentInView ? "animate-fade animate-once animate-duration-[1500ms] animate-ease-in-out animate-delay-1000 xl:w-2/3 pb-4 mx-auto leading-relaxed text-base" : "opacity-0 xl:w-2/3 pb-4 mx-auto leading-relaxed text-base"}>
+              <p ref={contentRef} className={ isContentInView ? "animate-fade animate-once animate-duration-[1500ms] animate-ease-in-out xl:w-2/3 pb-4 mx-auto leading-relaxed text-base" : "opacity-0 xl:w-2/3 pb-4 mx-auto leading-relaxed text-base"}>
               With over five years of experience as a frontend developer, I have honed my skills across a variety of high-visibility projects.
               At Chewy, my responsibilities included developing and enhancing critical pages such as the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
               and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages. Additionally, I specialized as a frontend analytics developer, collaborating extensively with multiple teams to gather
               user insights and conduct robust A/B testing using Optimizely.
               </p>
-              <p className={ isContentInView ? "animate-fade animate-once animate-duration-[1500ms] animate-ease-in-out animate-delay-1000 xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-custom-red" : "opacity-0 xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-custom-red"}>
+              <p className={ isContentInView ? "animate-fade animate-once animate-duration-[1500ms] animate-ease-in-out xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-custom-red" : "opacity-0 xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-custom-red"}>
               Outside of professional commitments, I actively expand my technical repertoire. My interests have led me to develop applications using React,
               create dynamic websites with WordPress, and delve into graphic and logo design utilizing Adobe Photoshop and Illustrator.
               Below, you will find a selection of my work that showcases my versatility and commitment to excellence in digital design.
