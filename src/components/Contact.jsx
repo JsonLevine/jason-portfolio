@@ -68,7 +68,7 @@ function Contact() {
                   linkedin.com/in/jasonllevine 
                 </span>
               </span>
-              <ArrowTopRightOnSquareIcon className="ml-auto text-indigo-400 w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
+              <ArrowTopRightOnSquareIcon className="text-white ml-auto group-hover:text-indigo-400 w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
             </a>
             <span data-tooltip-id="copiedTooltip" onClick={copyEmail} className="group cursor-pointer bg-gray-800 rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-gray-200">
               <InboxArrowDownIcon className="text-gray-200 w-6 h-6 flex-shrink-0 mr-4" />
@@ -81,7 +81,7 @@ function Contact() {
                 </span>
                 <Tooltip id="copiedTooltip" content="copied to clipboard!" openOnClick/>
               </span>
-              <ClipboardDocumentCheckIcon className="ml-auto text-indigo-400 w-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
+              <ClipboardDocumentCheckIcon className="text-white ml-auto group-hover:text-indigo-400 w-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
             </span>
           </div>
         </div>
