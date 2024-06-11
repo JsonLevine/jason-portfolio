@@ -6,7 +6,7 @@ import { projects } from "../data";
 function Projects() {
     return (
         <section id="projects" className="text-gray-400 body-font">
-          <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+          <div className="container px-10 py-10 mx-auto text-center lg:px-40">
             <div className="flex flex-col w-full mb-10">
               <CubeTransparentIcon className="hover:animate-spin-slow mx-auto inline-block w-10 mb-4" />
               <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-white">
