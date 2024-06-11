@@ -1,8 +1,17 @@
-import React from 'react'
+import { React, useRef } from 'react'
+import { useInView } from "framer-motion"
 import { CpuChipIcon, WrenchScrewdriverIcon, ClipboardDocumentCheckIcon } from "@heroicons/react/24/solid";
 import { skills, softskills } from "../data";
 
 function Skills() {
+  const titleRef = useRef(null)
+  const isTitleInView = useInView(titleRef, { once: true })
+
+  const greenSkillsRef = useRef(null)
+  const areGreenSkillsInView = useInView(greenSkillsRef, { once: true })
+
+  const redSkillsRef = useRef(null)
+  const areRedSkillsInView = useInView(redSkillsRef, { once: true })
     return (
         <section id="skills">
           <div className="container px-10 py-10 mx-auto">
@@ -15,7 +24,7 @@ function Skills() {
                 {/* Description for skills? */}
               </p>
             </div>
-            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+            <div ref={greenSkillsRef} className={ areGreenSkillsInView ? "animate-fade-left animate-once animate-duration-[1500ms] animate-ease-in-out flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2" : "opacity-0 flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"}>
               {skills.map((skill) => (
                 <div key={skill} className="p-2 sm:w-1/2 xl:w-1/4 w-full">
                   <div className="bg-gray-800 rounded flex p-4 h-full items-center">
@@ -27,7 +36,7 @@ function Skills() {
                 </div>
               ))}
             </div>
-            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+            <div ref={redSkillsRef} className={ areRedSkillsInView ? "animate-fade-left animate-once animate-duration-[1500ms] animate-ease-in-out flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2" : "opacity-0 flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"}>
               {softskills.map((skill) => (
                 <div key={skill} className="p-2 sm:w-1/2 w-full">
                   <div className="bg-gray-800 rounded flex p-4 h-full items-center">
