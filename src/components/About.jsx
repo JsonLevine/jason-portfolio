@@ -1,4 +1,4 @@
-import React from 'react'
+import { React } from 'react'
 import { UserPlusIcon } from "@heroicons/react/24/solid";
 
 function About() {
