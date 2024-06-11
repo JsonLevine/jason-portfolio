@@ -21,7 +21,7 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "\"Working with Jason was always a pleasure. They consistently demonstrated professionalism, reliability, and a positive attitude. His problem-solving skills and creativity were truly impressive, making him a valuable asset to the team. I feel fortunate to have worked alongside such a talented individual.\"",
+      "\"Working with Jason was always a pleasure. He consistently demonstrated professionalism, reliability, and a positive attitude. His problem-solving skills and creativity were truly impressive, making him a valuable asset to the team. I feel fortunate to have worked alongside such a talented individual.\"",
     image: "https://media.licdn.com/dms/image/C4E03AQHpw-lgzMKTbw/profile-displayphoto-shrink_800_800/0/1519673938976?e=1718841600&v=beta&t=Dqlcjev_vdqpvBazp07yfHy-0fLO3eufVvB0No_er8s",
     name: "Christopher Cook",
     company: "Chewy",
