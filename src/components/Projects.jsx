@@ -39,6 +39,8 @@ function Projects() {
             <div ref={projectRef} className={ isProjectInView ? "animate-fade-down animate-once animate-duration-[1500ms] animate-ease-in-out flex flex-wrap -m-4" : "flex flex-wrap -m-4"}>
               {projects.map((project) => (
                 <a
+                  target="_blank" 
+                  rel="noreferrer"
                   href={project.link}
                   key={project.image}
                   className="sm:w-1/2 w-100 p-4">

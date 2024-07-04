@@ -13,13 +13,13 @@ export default function App() {
   return (
     <main className='text-gray-400 background body-font '>
       <Navbar />
-        <About />
-        <Projects />
-        <Skills />
-        <Testimonials />
-        <Contact />
-        <Footer />
-        <Sidebar />
+      <About />
+      <Projects />
+      <Skills />
+      <Testimonials />
+      <Contact />
+      <Footer />
+      <Sidebar />
     </main>
   );
 }
