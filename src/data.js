@@ -49,7 +49,7 @@ export const skills = [
   "Jest",
   "Adobe Photoshop",
   "Adobe Illustrator",
-  "Google Tag Manager",
+  "GTM",
   "Google Analytics",
   "Segment.io",
   "Optimizely",
