@@ -3,7 +3,7 @@ import { UserPlusIcon } from "@heroicons/react/24/solid";
 
 function About() {
     return (
-        <section id="about">
+        <section id="about" data-testid="about-section">
           <div className="container mx-auto flex px-10 pt-20 pb-10 md:flex-row flex-col items-center">
             <div className="lg:ml-8 lg:flex-grow md:w-1/2 xl:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font jersey-25 sm:text-6xl text-5xl mb-4 font-medium text-white">
