@@ -2,7 +2,7 @@ import { React, useRef } from 'react'
 import { useInView } from "framer-motion"
 import { CubeTransparentIcon } from "@heroicons/react/24/solid";
 import IconGitHub from './icons/github'
-import { actualProjects } from "../data";
+import { projects as actualProjects } from "../data";
 
 function Projects({overrideProjects = null}) {
   const titleRef = useRef(null)
@@ -56,9 +56,9 @@ function Projects({overrideProjects = null}) {
                       data-testid="project-image"
                     />
                     <div className="px-8 py-10 relative z- w-full border-4 border-gray-800 bg-gray-900 ease-in-out duration-300 opacity-0 hover:opacity-100">
-                    {project.code ? 
-                    <a className=" absolute top-0 left-0 w-12" href={project.code} target="_blank" rel="noreferrer" data-testid="github-link"><IconGitHub /></a>
-                    : <></>}
+                      {project.code ? 
+                      <a className=" absolute top-0 left-0 w-12" href={project.code} target="_blank" rel="noreferrer" data-testid="github-link"><IconGitHub /></a>
+                      : <></>}
                       <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1" data-testid="project-subtitle">
                         {project.subtitle}
                       </h2>

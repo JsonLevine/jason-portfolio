@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <header className="bg-custom-red md:sticky top-0 z-10">
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-row justify-between items-center">
+      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href="#" className="jersey font-medium text-white text-4xl/8" data-testid="logo">
           Jason  <br className="sm:hidden" />Levine
         </a>
