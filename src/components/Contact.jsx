@@ -43,7 +43,7 @@ function Contact() {
                     LOCATION
                   </h2>
                   <p className="font-thin mt-1">
-                    Stoughton, MA
+                    Boston, MA
                   </p>
                 </span>
               </div>
