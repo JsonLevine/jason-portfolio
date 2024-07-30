@@ -36,7 +36,7 @@ function About() {
                   <a
                     href="#contact"
                     className="transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded">
-                    <UserPlusIcon className="w-4 mr-2 text-gray-500" />
+                    <UserPlusIcon className="h-8 w-4 mr-2 text-gray-500" />
                     Connect With Me
                   </a>
                 </div>
