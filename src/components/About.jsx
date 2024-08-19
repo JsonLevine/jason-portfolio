@@ -25,12 +25,13 @@ function About() {
                     className="transition ease-in-out duration-300 hover:stroke-custom-red hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex text-white bg-custom-red border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 rounded">
                     Resume
                   </a>
-                  <a
+                  {/* Commented out since it doesn't match Resume format currently */}
+                  {/* <a
                     target="_blank"
                     href="./assets/Jason_Levine_CV.pdf"
                     className="transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl ml-8 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded">
                     CV
-                  </a>
+                  </a> */}
                 </div>
                 <div className="xl:ml-[1.7rem] mt-[1.7rem] xl:mt-0 flex justify-center">
                   <a
