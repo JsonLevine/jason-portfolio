@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "React & Typescript",
     description:
       "A recreation of the 'Wordle' game, originally made famous by the game show 'Lingo', and recently brought back by the New York Times - played by millions.",
-    image: "./assets/jlingo.png",
+    image: "./assets/projects/jlingo.png",
     link: "https://jlingo2.onrender.com",
     code: "https://github.com/JsonLevine/JLingo2" 
   },
@@ -13,7 +13,7 @@ export const projects = [
     subtitle: "Wordpress",
     description:
       "Sometimes we don't want all of the overhead of creating and maintaining a library of code. This website for my own home gym was built using exclusively Wordpress.",
-    image: "./assets/stronghold.gif",
+    image: "./assets/projects/stronghold.gif",
     link: "https://stoughtonstronghold.com/",
   },
 ];

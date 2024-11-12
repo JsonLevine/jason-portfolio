@@ -36,19 +36,19 @@ function Projects({overrideProjects = null}) {
                   rel="noreferrer"
                   href={project.link}
                   key={project.image}
-                  className="sm:w-1/2 w-100 p-4"
+                  className="sm:w-1/2  w-100 p-4"
                   data-testid="project-item"
                 >
-                  <div className="flex relative shadow-project-shadow">
+                  <div className="flex rounded border-2 border-custom-red/50 relative transition ease-in-out duration-300 hover:shadow-project-shadow">
                     <img
                       alt="gallery"
-                      className="absolute inset-0 w-full h-full object-cover object-center"
+                      className="absolute rounded inset-0 w-full h-full object-cover object-center"
                       src={project.image}
                       data-testid="project-image"
                     />
-                    <div className="px-8 py-10 relative z- w-full border-4 border-gray-800 bg-gray-900 ease-in-out duration-300 opacity-0 hover:opacity-100">
+                    <div className="px-8 py-10 relative z- w-full bg-gray-900 ease-in-out duration-300 opacity-0 hover:opacity-100">
                       {project.code ? 
-                      <a className=" absolute top-0 left-0 w-12" href={project.code} target="_blank" rel="noreferrer" data-testid="github-link"><IconGitHub /></a>
+                      <a className="absolute top-0 left-0 w-12" href={project.code} target="_blank" rel="noreferrer" data-testid="github-link"><IconGitHub /></a>
                       : <></>}
                       <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1" data-testid="project-subtitle">
                         {project.subtitle}

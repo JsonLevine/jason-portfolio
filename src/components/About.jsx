@@ -12,9 +12,9 @@ function About() {
               </h1>
               <span className="jersey md:border-l md:pl-4 md:border-double md:border-gray-500 mb-4 text-gray-300 sm:text-2xl text-xl">Frontend Software Engineer</span>
               <p className="mb-8 leading-relaxed">
-              I specialize in creating <strong className="text-gray-200">engaging</strong>, <strong className="text-gray-200">accessible</strong> websites. My keen eye for detail ensures every project 
-              I touch is crafted with <strong className="text-gray-200">precision</strong>. I'm known for my candid communication
-              style, always ready to share insights that <strong className="text-gray-200">drive projects forward</strong>. Beyond coding, I take great pleasure in <strong className="text-gray-200">mentoring junior developers</strong>,
+              I specialize in creating <span className="jersey text-xl text-gray-200">engaging</span>, <span className="jersey text-xl text-gray-200">accessible</span> websites. My keen eye for detail ensures every project 
+              I touch is crafted with <span className="jersey text-xl text-gray-200">precision</span>. I'm known for my candid communication
+              style, always ready to share insights that <span className="jersey text-xl text-gray-200">drive projects forward</span>. Beyond coding, I take great pleasure in <span className="jersey text-xl text-gray-200">mentoring junior developers</span>,
               helping them grow into skilled professionals.
               </p>
               <div className="flex flex-col xl:flex-row justify-center mb-4">
