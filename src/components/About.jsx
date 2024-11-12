@@ -2,6 +2,10 @@ import { React } from 'react'
 import { UserPlusIcon } from "@heroicons/react/24/solid";
 
 function About() {
+  function scrollToSection(section) {
+    document.getElementById(section).scrollIntoView({ behavior: "smooth" , block: "start"});
+  }
+
     return (
         <section id="about" data-testid="about-section">
           <div className="container mx-auto flex px-10 pt-20 pb-10 md:flex-row flex-col items-center">
@@ -35,8 +39,8 @@ function About() {
                 </div>
                 <div className="xl:ml-[1.7rem] mt-[1.7rem] xl:mt-0 flex justify-center">
                   <a
-                    href="#contact"
-                    className="transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded">
+                    onClick={() => scrollToSection("contact")}
+                    className="cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none focus:bg-gray-700 hover:bg-gray-700 hover:text-white rounded">
                     <UserPlusIcon className="h-8 w-4 mr-2 text-gray-500" />
                     Connect With Me
                   </a>
