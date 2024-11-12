@@ -24,9 +24,9 @@ function Projects({overrideProjects = null}) {
               user insights and conduct robust A/B testing using Optimizely.
               </p>
               <p className="xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-custom-red" data-testid="section-description-2">
-              Outside of professional commitments, I actively expand my technical repertoire. My interests have led me to develop applications using React,
-              create dynamic websites with WordPress, and delve into graphic and logo design utilizing Adobe Photoshop and Illustrator.
-              Below, you will find a selection of my work that showcases my versatility and commitment to excellence in digital design.
+              When I’m not working, I love exploring new skills and experimenting with different projects. 
+              I’ve built apps with React, crafted dynamic websites on WordPress, and also dabbled in graphic and logo design with Photoshop and Illustrator.
+               Below is a mix of my work that shows my range and passion for digital design.
               </p>
             </div>
             <div className= "flex flex-wrap -m-4" data-testid="projects-list">
@@ -39,7 +39,7 @@ function Projects({overrideProjects = null}) {
                   className="sm:w-1/2  w-100 p-4"
                   data-testid="project-item"
                 >
-                  <div className="flex rounded border-2 border-custom-red/50 relative transition ease-in-out duration-300 hover:shadow-project-shadow">
+                  <div className="flex rounded border-2 border-gray-600 relative transition ease-in-out duration-300 hover:shadow-project-shadow">
                     <img
                       alt="gallery"
                       className="absolute rounded inset-0 w-full h-full object-cover object-center"

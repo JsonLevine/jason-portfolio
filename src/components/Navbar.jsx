@@ -16,12 +16,12 @@ function Navbar() {
         <nav className="text-lg block mr-auto ml-4 py-1 pl-4 border-l-2 border-gray-700 flex flex-wrap items-center text-white justify-center">
           <a 
             onClick={() => scrollToSection("projects")}
-            className="cursor-pointer mr-5 ease-in duration-200 hover:scale-110 hover:text-gray-800" data-testid="projects-link">
+            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 hover:scale-110 hover:text-gray-800" data-testid="projects-link">
             Projects
           </a>
           <a 
             onClick={() => scrollToSection("skills")}
-            className="cursor-pointer mr-5 ease-in duration-200 hover:scale-110 hover:text-gray-800" data-testid="skills-link">
+            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 hover:scale-110 hover:text-gray-800" data-testid="skills-link">
             Skills
           </a>
         </nav>
