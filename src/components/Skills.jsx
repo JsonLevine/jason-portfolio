@@ -19,11 +19,12 @@ function Skills() {
             </div>
             <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
               {skills.map((skill) => (
-                <div key={skill} className="p-2 sm:w-1/2 xl:w-1/4 w-full">
-                  <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                    <CpuChipIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-                    <span className="title-font font-medium text-white">
-                      {skill}
+                <div key={skill} className="cursor-default p-2 sm:w-1/2 xl:w-1/4 w-full">
+                  <div className="bg-gray-800 rounded flex p-4 h-full items-center transition ease-in-out duration-300 hover:bg-custom-red hover:-translate-y-1 hover:scale-105">
+                    {/* <CpuChipIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" /> */}
+                    <img src={skill.icon} alt="React Logo" className="w-6 h-6 flex-shrink-0 mr-4" />
+                    <span className="jersey-25 text-xl title-font font-medium text-white">
+                      {skill.name}
                     </span>
                   </div>
                 </div>
@@ -31,10 +32,10 @@ function Skills() {
             </div>
             <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
               {softskills.map((skill) => (
-                <div key={skill} className="p-2 sm:w-1/2 w-full">
-                  <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                    <ClipboardDocumentCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" />
-                    <span className="title-font font-medium text-white">
+                <div key={skill} className="cursor-default group p-2 sm:w-1/2 w-full">
+                  <div className="bg-gray-800 rounded flex p-4 h-full items-center transition ease-in-out duration-300 hover:bg-custom-red hover:-translate-y-1 hover:scale-105">
+                    <ClipboardDocumentCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4 transition ease-in-out duration-300 group-hover:text-white" />
+                    <span className="jersey-25 text-xl title-font font-medium text-white">
                       {skill}
                     </span>
                   </div>
