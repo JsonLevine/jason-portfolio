@@ -38,8 +38,8 @@ export const testimonials = [
 ];
 
 export const skills = [
-  {name: "JavaScript", icon: "./assets/icons/JavaScript-logo.svg"},
-  {name: "Typescript",icon: "./assets/icons/TypeScript-logo.svg"},
+  {name: "JavaScript", icon: "./assets/icons/Javascript-logo.svg"},
+  {name: "Typescript",icon: "./assets/icons/Typescript-logo.svg"},
   {name: "React", icon: "./assets/icons/React-logo.svg"},
   {name: "HTML", icon: "./assets/icons/HTML-logo.svg"},
   {name: "CSS", icon: "./assets/icons/CSS-logo.svg"},
@@ -50,7 +50,7 @@ export const skills = [
   {name: "Adobe Photoshop", icon: "./assets/icons/Photoshop-logo.svg"},
   {name: "Adobe Illustrator", icon: "./assets/icons/Illustrator-logo.svg"},
   {name: "GTM", icon: "./assets/icons/GTM-logo.webp"},
-  {name: "Google Analytics", icon: "./assets/icons/Google-Analytics-logo.svg"},
+  {name: "Google Analytics", icon: "./assets/icons/Google-analytics-logo.svg"},
   {name: "Segment.io", icon: "./assets/icons/Segment-logo.svg"},
   {name: "Optimizely", icon: "./assets/icons/Optimizely-logo.svg"},
   {name: "Wordpress", icon: "./assets/icons/Wordpress-logo.svg"},
