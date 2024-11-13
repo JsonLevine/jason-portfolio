@@ -13,7 +13,7 @@ function Projects({overrideProjects = null}) {
             <div className="flex flex-col w-full mb-10">
               <div data-testid="section-title">
                 <CubeTransparentIcon className="hover:animate-spin-slow mx-auto inline-block w-10 mb-4" />
-                <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-white">
+                <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
                   Some of my Projects
                 </h1>
               </div>
@@ -23,7 +23,7 @@ function Projects({overrideProjects = null}) {
               and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages. Additionally, I specialized as a frontend analytics developer, collaborating extensively with multiple teams to gather
               user insights and conduct robust A/B testing using Optimizely.
               </p>
-              <p className="xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-custom-red" data-testid="section-description-2">
+              <p className="xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-stronghold-imperial-red" data-testid="section-description-2">
               When I’m not working, I love exploring new skills and experimenting with different projects. 
               I’ve built apps with React, crafted dynamic websites on WordPress, and also dabbled in graphic and logo design with Photoshop and Illustrator.
                Below is a mix of my work that shows my range and passion for digital design.
@@ -36,24 +36,24 @@ function Projects({overrideProjects = null}) {
                   rel="noreferrer"
                   href={project.link}
                   key={project.image}
-                  className="sm:w-1/2  w-100 p-4"
+                  className="sm:w-1/2  p-4"
                   data-testid="project-item"
                 >
                   <div className="flex rounded border-2 border-gray-600 relative transition ease-in-out duration-300 hover:shadow-project-shadow">
                     <img
                       alt="gallery"
-                      className="absolute rounded inset-0 w-full h-full object-cover object-center"
+                      className="absolute rounded inset-0 w-full h-full object-cover object-top"
                       src={project.image}
                       data-testid="project-image"
                     />
-                    <div className="px-8 py-10 relative z- w-full bg-gray-900 ease-in-out duration-300 opacity-0 hover:opacity-100">
+                    <div className="px-8 py-10 relative z- w-full bg-stronghold-eerie-black ease-in-out duration-300 opacity-0 hover:opacity-100">
                       {project.code ? 
                       <a className="absolute top-0 left-0 w-12" href={project.code} target="_blank" rel="noreferrer" data-testid="github-link"><IconGitHub /></a>
                       : <></>}
                       <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1" data-testid="project-subtitle">
                         {project.subtitle}
                       </h2>
-                      <h1 className="title-font text-lg font-medium text-white mb-3" data-testid="project-title">
+                      <h1 className="title-font text-lg font-medium text-stronghold-platinum mb-3" data-testid="project-title">
                         {project.title}
                       </h1>
                       <p className="leading-relaxed" data-testid="project-description">{project.description}</p>
