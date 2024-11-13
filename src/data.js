@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "React & Typescript",
     description:
       "A recreation of the 'Wordle' game, originally made famous by the game show 'Lingo', and recently brought back by the New York Times - played by millions.",
-    image: "./assets/jlingo.png",
+    image: "./assets/projects/jlingo.png",
     link: "https://jlingo2.onrender.com",
     code: "https://github.com/JsonLevine/JLingo2" 
   },
@@ -13,7 +13,7 @@ export const projects = [
     subtitle: "Wordpress",
     description:
       "Sometimes we don't want all of the overhead of creating and maintaining a library of code. This website for my own home gym was built using exclusively Wordpress.",
-    image: "./assets/stronghold.gif",
+    image: "./assets/projects/stronghold.gif",
     link: "https://stoughtonstronghold.com/",
   },
 ];
@@ -38,22 +38,22 @@ export const testimonials = [
 ];
 
 export const skills = [
-  "JavaScript",
-  "Typescript",
-  "React",
-  "HTML/CSS",
-  "TailwindCSS",
-  "Node",
-  "Figma",
-  "Sketch",
-  "Jest",
-  "Adobe Photoshop",
-  "Adobe Illustrator",
-  "GTM",
-  "Google Analytics",
-  "Segment.io",
-  "Optimizely",
-  "Wordpress",
+  {name: "JavaScript", icon: "./assets/icons/JavaScript-logo.svg"},
+  {name: "Typescript",icon: "./assets/icons/TypeScript-logo.svg"},
+  {name: "React", icon: "./assets/icons/React-logo.svg"},
+  {name: "HTML", icon: "./assets/icons/HTML-logo.svg"},
+  {name: "CSS", icon: "./assets/icons/CSS-logo.svg"},
+  {name: "TailwindCSS", icon: "./assets/icons/TailwindCSS-logo.svg"},
+  {name: "NodeJS", icon: "./assets/icons/NodeJS-logo.svg"},
+  {name: "Figma", icon: "./assets/icons/Figma-logo.svg"},
+  {name: "Jest", icon: "./assets/icons/Jest-logo.avif"},
+  {name: "Adobe Photoshop", icon: "./assets/icons/Photoshop-logo.svg"},
+  {name: "Adobe Illustrator", icon: "./assets/icons/Illustrator-logo.svg"},
+  {name: "GTM", icon: "./assets/icons/GTM-logo.webp"},
+  {name: "Google Analytics", icon: "./assets/icons/Google-Analytics-logo.svg"},
+  {name: "Segment.io", icon: "./assets/icons/Segment-logo.svg"},
+  {name: "Optimizely", icon: "./assets/icons/Optimizely-logo.svg"},
+  {name: "Wordpress", icon: "./assets/icons/Wordpress-logo.svg"},
 ];
 
 export const softskills = [

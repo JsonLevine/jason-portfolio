@@ -12,7 +12,7 @@ function Testimonials() {
             </h1>
             <div className="flex flex-wrap m-4">
               {testimonials.map((testimonial) => (
-                <div key={testimonial.name}className="p-4 lg:w-1/2 w-full group">
+                <div key={testimonial.name}className="cursor-default p-4 lg:w-1/2 w-full group">
                   <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded transition ease-in-out duration-300 group-hover:ring-4 group-hover:ring-green-400/50">
                     <p className="leading-relaxed mb-6">{testimonial.quote}</p>
                     <div className="inline-flex items-center">

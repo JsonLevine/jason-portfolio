@@ -14,7 +14,7 @@ function Sidebar() {
             <a className="w-12" href="https://www.instagram.com/adjacent_levine/" target="_blank" rel="noreferrer"><IconInstagram /></a>
             <span className="w-[.1rem] block h-40 bg-custom-red"></span>
         </div>
-        <div className="hidden md:flex lg:ml-4 fixed flex flex-col items-center justify-center w-12 right-0 top-12">
+        <div className="hidden md:flex z-20 lg:ml-4 fixed flex flex-col items-center justify-center w-12 right-0 top-12">
             <span className="w-[.1rem] block h-40 bg-custom-red"></span>
             <a href="mailto:jason.levine131@gmail.com" className="transition ease-in-out duration-300 hover:text-custom-red hover:translate-y-1 pl-[12rem] rotate-90">jason.levine131@gmail.com</a>
         </div>
