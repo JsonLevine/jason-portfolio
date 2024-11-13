@@ -6,8 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-red': '#e64747',
-        'custom-gray': '#454545'
+        'stronghold-red': '#E11A19',
+        'stronghold-imperial-red': '#E64747',
+        'stronghold-eerie-black': '#191919',
+        'stronghold-space-cadet': '#2F2F41',
+        'stronghold-platinum': '#E4E4E4',
+        'stronghold-gunmetal': '#1F2937',
       },
       boxShadow: {
         'project-shadow': '10px 10px 0 0 rgba(230, 71, 71, 0.5)',
