@@ -2,12 +2,17 @@ import React from 'react';
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 function Navbar() {
+
+  function scrollToSectionBottom(section) {
+    document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest"});
+  }
+
   function scrollToSection(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "start"});
   }
 
   return (
-    <header className="bg-custom-red md:sticky top-0 z-10 border-b-2 border-gray-700">
+    <header className="bg-stronghold-imperial-red md:sticky top-0 z-10 border-b-2 border-gray-700">
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-row justify-between items-center">
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href="#" className="jersey font-medium text-white text-4xl/8" data-testid="logo">
@@ -28,14 +33,14 @@ function Navbar() {
         <a
           target="_blank"
           href="./assets/Jason_Levine_Resume.pdf"
-          className="transition ease-in-out duration-300 hover:stroke-custom-red hover:scale-110 jersey text-xl hidden sm:block inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none rounded text-custom-red sm:mt-0"
+          className="transition ease-in-out duration-300 hover:stroke-stronghold-imperial-red hover:scale-110 jersey text-xl hidden sm:block inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
           data-testid="resume-button"
         >
           Resume
         </a>
         <a
-          href="#contact"
-          className="transition ease-in-out duration-300 hover:scale-110 md:hidden inline-flex items-center bg-white border-0 py-1 px-3 ml-4 jersey text-xl focus:outline-none rounded text-custom-red sm:mt-0"
+          onClick={() => scrollToSectionBottom("contact")}
+          className="cursor-pointer transition ease-in-out duration-300 hover:scale-110 md:hidden inline-flex items-center bg-white border-0 py-1 px-3 ml-4 jersey text-xl focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
           data-testid="hire-me-button"
         >
           Hire Me
