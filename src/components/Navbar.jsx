@@ -32,7 +32,7 @@ function Navbar() {
         </nav>
         <a
           target="_blank"
-          href="./assets/Jason_Levine_Resume.pdf"
+          href="./assets/Jason_Levine_Resume_PM.pdf"
           className="transition ease-in-out duration-300 hover:stroke-stronghold-imperial-red hover:scale-110 jersey text-xl hidden sm:block inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
           data-testid="resume-button"
         >

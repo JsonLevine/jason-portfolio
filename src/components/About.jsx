@@ -1,5 +1,5 @@
 import { React } from 'react'
-import { UserPlusIcon } from "@heroicons/react/24/solid";
+import { UserPlusIcon, PresentationChartLineIcon, CodeBracketSquareIcon } from "@heroicons/react/24/solid";
 
 function About() {
   function scrollToSectionBottom(section) {
@@ -9,18 +9,16 @@ function About() {
     return (
         <section id="about" data-testid="about-section">
           <div className="container mx-auto flex px-10 pt-20 pb-10 md:flex-row flex-col items-center">
-            <div className="lg:ml-8 lg:flex-grow md:w-1/2 xl:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font jersey-25 sm:text-6xl text-5xl mb-4 font-medium text-stronghold-platinum">
+            <div className="lg:ml-8 xl:px-40  md:w-1/2 xl:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
+              <h1 className="title-font jersey-25 lg:text-7xl text-6xl mb-4 font-medium text-stronghold-platinum">
                 <span className="text-stronghold-imperial-red">Jason Levine</span>
                 <br className="inline-block"/>
               </h1>
-              <span className="jersey md:border-l md:pl-4 md:border-double md:border-gray-500 mb-4 text-gray-300 sm:text-2xl text-xl">Frontend Software Engineer</span>
+              <span className="jersey md:border-l  md:pl-4  border-stronghold-imperial-red text-gray-300 sm:text-2xl text-xl">Technical Project Manager</span>
+              <span className="h-4 w-full bg-gradient-to-r from-stronghold-imperial-red to-transparent"></span>
+              <span className="jersey md:border-l md:pl-4  border-stronghold-imperial-red mb-4 sm:text-xl text-l"> Senior Software Engineer</span>              
               <p className="mb-8 leading-relaxed">
-              I’m passionate about crafting <span className="jersey text-xl text-stronghold-platinum">meaningful</span>, <span className="jersey text-xl text-stronghold-platinum">user-friendly</span> digital experiences. 
-              With a strong attention to detail, I take pride in making sure every project I work 
-              on is <span className="jersey text-xl text-stronghold-platinum">thoughtful and impactful.</span> I’m known for my straightforward communication, always 
-              eager to share ideas and <span className="jersey text-xl text-stronghold-platinum">collaborate</span> to move projects forward. I also love <span className="jersey text-xl text-stronghold-platinum">mentoring and 
-              supporting junior developers</span>, helping them grow both personally and professionally.
+                
               </p>
               <div className="flex flex-col xl:flex-row justify-center mb-4">
                 <div className="flex justify-center">
@@ -36,9 +34,9 @@ function About() {
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img
-                className="object-cover object-center rounded"
+                className="object-cover object-center rounded "
                 alt="hero"
-                src="./Coding-Riley.svg"
+                src="./assets/Website_portrait3.png"
               />
             </div>
           </div>
