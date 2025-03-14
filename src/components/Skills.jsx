@@ -29,7 +29,7 @@ function Skills() {
                 </div>
               ))}
             </div>
-            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+            <div className="border-t border-stronghold-imperial-red flex flex-wrap sm:pt-2 lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
               {softskills.map((skill) => (
                 <div key={skill} className="cursor-default group p-2 sm:w-1/2 w-full">
                   <div className="bg-stronghold-gunmetal rounded flex p-4 h-full items-center transition ease-in-out duration-300 hover:bg-stronghold-imperial-red hover:-translate-y-1 hover:scale-105">
