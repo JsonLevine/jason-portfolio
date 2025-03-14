@@ -11,7 +11,7 @@ function Footer() {
           target="_blank" 
           rel="noreferrer">
           <span>
-            <span className="text-stronghold-imperial-red">2024</span> Designed and built by  
+            <span className="text-stronghold-imperial-red">2024-2025</span> Designed and built by  
             <span className="jersey text-xl text-stronghold-imperial-red pl-1">
               <strong>Jason Levine</strong><br/>
             </span>

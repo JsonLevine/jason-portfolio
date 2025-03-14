@@ -1,10 +1,7 @@
 html {
-  overscroll-behavior: none;
+  background-color: #E64747;
 }
 
-body {
-  overscroll-behavior: none;
-}
 
 .background {
   background-color: #111827;

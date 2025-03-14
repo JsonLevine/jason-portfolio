@@ -9,21 +9,21 @@ function Projects({overrideProjects = null}) {
 
     return (
         <section id="projects" className="text-gray-400 body-font" data-testid="projects-section">
-          <div className="container px-10 py-10 mx-auto text-center lg:px-40">
+          <div className="container xl:px-40 px-10 py-10 mx-auto text-center">
             <div className="flex flex-col w-full mb-10">
               <div data-testid="section-title">
                 <CubeTransparentIcon className="hover:animate-spin-slow mx-auto inline-block w-10 mb-4" />
                 <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
-                  Some of my Projects
+                  Professional Experience
                 </h1>
               </div>
-              <p className="xl:w-2/3 pb-4 mx-auto leading-relaxed text-base" data-testid="section-description">
+              <p className=" pb-4 mx-auto leading-relaxed text-base" data-testid="section-description">
               With over five years of experience as a frontend developer, I have honed my skills across a variety of high-visibility projects.
               At Chewy, my responsibilities included developing and enhancing critical pages such as the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
               and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages. Additionally, I specialized as a frontend analytics developer, collaborating extensively with multiple teams to gather
               user insights and conduct robust A/B testing using Optimizely.
               </p>
-              <p className="xl:w-2/3 mx-auto leading-relaxed text-base pt-4 border-t border-stronghold-imperial-red" data-testid="section-description-2">
+              <p className=" mx-auto leading-relaxed text-base pt-4 " data-testid="section-description-2">
               When I’m not working, I love exploring new skills and experimenting with different projects. 
               I’ve built apps with React, crafted dynamic websites on WordPress, and also dabbled in graphic and logo design with Photoshop and Illustrator.
                Below is a mix of my work that shows my range and passion for digital design.
