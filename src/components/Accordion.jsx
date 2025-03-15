@@ -47,7 +47,7 @@ function Accordion({ title, children }) {
       </button>
       <div
         className={` bg-stronghold-space-cadet overflow-hidden transition-max-height duration-300 ${
-          isOpen ? 'max-h-screen' : 'max-h-0'
+          isOpen ? 'max-h-full' : 'max-h-0'
         }`}
       >
         <div className="text-left p-4">{children}</div>

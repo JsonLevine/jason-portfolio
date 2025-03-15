@@ -43,10 +43,11 @@ function Projects({overrideProjects = null}) {
                       <li><strong className="jersey text-2xl text-stronghold-imperial-red">Currently</strong>, I am working on developing an online React course in partnership with newline.co.  I am also continuously updating this site, and taking courses to keep my frontend skills up to date</li>
                       <li className="mt-2 border-t-2 border-stronghold-imperial-red jersey text-2xl text-blue-500">Chewy:</li>
                       <li>  •	At Chewy, my responsibilities included developing and enhancing critical pages such as the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
-                        and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages. Additionally, I specialized as a frontend analytics developer, collaborating extensively with multiple teams to gather
-                        user insights and conduct robust A/B testing using Optimizely.</li>
-                      <li className="mt-2 border-t-2 border-blue-500 jersey text-2xl text-orange-500">Optum:</li>
-                      <li>  •	At Optum, I led the continuous planning and implementation of new features for Optum's internal placement tool.  I frequently held live user-testing sessions with stakeholders to gather feedback.</li>
+                        and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages.</li>
+                      <li>  •	Additionally, I specialized as a frontend analytics developer, collaborating extensively with multiple teams to gather user insights and conduct robust A/B testing using Optimizely.</li>
+                      <li className="mt-2 border-t-2 border-blue-500 jersey text-2xl text-orange-500">Optum:</li> 
+                    <li>  •	At Optum, I led the continuous planning and implementation of new features for Optum's internal placement tool.</li>
+                    <li>  •	I frequently held live user-testing sessions with stakeholders to gather feedback.</li>
                     </ul>
                   </Accordion>
                 </div>
