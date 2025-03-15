@@ -33,19 +33,19 @@ function Navbar() {
         <a
           target="_blank"
           href="./assets/Jason_Levine_Resume_PM.pdf"
-          className="transition ease-in-out duration-300 hover:stroke-stronghold-imperial-red hover:scale-110 jersey text-xl hidden sm:block inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
+          className="transition ease-in-out duration-300 hover:stroke-stronghold-imperial-red hover:scale-110 jersey text-xl inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
           data-testid="resume-button"
         >
           Resume
         </a>
-        <a
+        {/* <a
           onClick={() => scrollToSectionBottom("contact")}
           className="cursor-pointer transition ease-in-out duration-300 hover:scale-110 md:hidden inline-flex items-center bg-white border-0 py-1 px-3 ml-4 jersey text-xl focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
           data-testid="hire-me-button"
         >
           Hire Me
           <ArrowRightIcon className="w-4 h-4 ml-1" />
-        </a>
+        </a> */}
       </div>
     </header>
   );

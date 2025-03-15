@@ -18,7 +18,7 @@ function Projects({overrideProjects = null}) {
                   Professional Experience
                 </h1>
               </div>
-              <p className="mb-10 pb-4 mx-auto leading-relaxed text-base" data-testid="section-description">
+              <p className="mb-4 pb-4 mx-auto leading-relaxed text-base" data-testid="section-description">
               Recently, I have been making the transition to Project Management/Technical Project Management.
               Prior to that, I worked for over 7 years as a frontend-leaning fullstack software engineer.
               Expand the sections below for some highlites of my career so far.
@@ -28,11 +28,11 @@ function Projects({overrideProjects = null}) {
                   <Accordion title="Project Management">
                     <ul>
                       <li><strong className="jersey text-2xl text-stronghold-imperial-red">Currently</strong>, I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-indigo-400" href="https://www.pmi.org">pmi.org</a>. Estimated completion 4/1/2025.</li>
-                      <li className="mt-2 border-t-2 border-stronghold-imperial-red jersey text-2xl text-blue-500">Chewy:</li>
-                      <li> •	At Chewy, I managed a cross-team backlog of tickets in JIRA and contributed heavily to analytics document creation & organization within Confluence</li>
+                      <li className="mt-2 border-t-2 border-blue-500">at <span className=" jersey text-2xl text-blue-500">Chewy:</span></li>
+                      <li> •	I managed a cross-team backlog of tickets in JIRA and contributed heavily to analytics document creation & organization within Confluence</li>
                       <li> •	In addition, I organized regular product demos, provided frequent updates to stakeholders, and coordinated/ran regular agile ceremonies for the analytics team in order to streamline feature development</li>
-                      <li className="mt-2 border-t-2 border-blue-500 jersey text-2xl text-orange-500">Optum:</li>
-                      <li> •	At Optum, I volunteered as a manager for new hires in our technology development program. </li>
+                      <li className="mt-2 border-t-2 border-orange-500">at <span className=" jersey text-2xl text-orange-500">Optum:</span></li>
+                      <li> •	I volunteered as a manager for new hires in our technology development program. </li>
                       <li> •	In addition, I was an active member of the Optum branch of Toastmasters International (an educational organization that teaches public speaking and leadership skills) </li>
                     </ul>
                   </Accordion>
@@ -41,13 +41,13 @@ function Projects({overrideProjects = null}) {
                   <Accordion title="Frontend Development">
                     <ul>
                       <li><strong className="jersey text-2xl text-stronghold-imperial-red">Currently</strong>, I am working on developing an online React course in partnership with newline.co.  I am also continuously updating this site, and taking courses to keep my frontend skills up to date</li>
-                      <li className="mt-2 border-t-2 border-stronghold-imperial-red jersey text-2xl text-blue-500">Chewy:</li>
-                      <li>  •	At Chewy, my responsibilities included developing and enhancing critical pages such as the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
+                      <li className="mt-2 border-t-2 border-blue-500">at <span className=" jersey text-2xl text-blue-500">Chewy:</span></li>
+                      <li>  •	My responsibilities included developing and enhancing critical pages such as the <a className="text-indigo-400" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-indigo-400" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
                         and <a className="text-indigo-400" href="https://www.chewy.com/">home</a> pages.</li>
                       <li>  •	Additionally, I specialized as a frontend analytics developer, collaborating extensively with multiple teams to gather user insights and conduct robust A/B testing using Optimizely.</li>
-                      <li className="mt-2 border-t-2 border-blue-500 jersey text-2xl text-orange-500">Optum:</li> 
-                    <li>  •	At Optum, I led the continuous planning and implementation of new features for Optum's internal placement tool.</li>
-                    <li>  •	I frequently held live user-testing sessions with stakeholders to gather feedback.</li>
+                      <li className="mt-2 border-t-2 border-orange-500">at <span className=" jersey text-2xl text-orange-500">Optum:</span></li> 
+                      <li>  •	I led the continuous planning and implementation of new features for Optum's internal placement tool.</li>
+                      <li>  •	I frequently held live user-testing sessions with stakeholders to gather feedback.</li>
                     </ul>
                   </Accordion>
                 </div>
