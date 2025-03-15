@@ -3,10 +3,10 @@ import React from 'react'
 function Footer() {
   return (
     <>
-      <div className="flex flex-row items-center justify-center md:p-10 p-2">
+      <div className="flex flex-row items-center justify-center text-center md:p-10 p-2">
         <a 
           data-testid="footer-link" 
-          className="flex flex-col items-center justify-center pr-4 transition duration-300 ease-in-out hover:text-green-400 hover:-translate-y-1" 
+          className="flex flex-col items-center justify-center transition duration-300 ease-in-out hover:text-green-400 hover:-translate-y-1" 
           href="https://github.com/JsonLevine/jason-portfolio" 
           target="_blank" 
           rel="noreferrer">
