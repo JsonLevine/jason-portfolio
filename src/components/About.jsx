@@ -19,12 +19,10 @@ function About() {
               <span className="jersey md:border-l md:pl-4  border-stronghold-imperial-red mb-4 sm:text-xl text-l"> Senior Software Engineer</span>              
 
               <span className="mb-4">I believe the most effective project managers are the ones who can seamlessly bridge the gap between product and development - and that's the intersection I specialize in.
-                    My extensive background in frontend development, web analytics, and A/B testing
-                    has given me a unique mindset when leading projects.  I can always see things from the customer's viewpoint, which lets me have a keen eye for 
-                    anticipating risk, and making data-driven decisions when moving through difficult challenges.
-
-                
-                 </span>
+                My extensive background in frontend development, web analytics, and A/B testing
+                has given me a unique mindset when leading projects.  I can always see things from the customer's viewpoint, which lets me have a keen eye for 
+                anticipating risk, and making data-driven decisions when moving through difficult challenges.
+              </span>
               <div className="flex flex-col xl:flex-row justify-center mb-4">
                 <div className="flex justify-center">
                   <a
@@ -37,7 +35,7 @@ function About() {
               </div>
 
             </div>
-            <div className="animate-fadeIn lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img
                 className="object-cover object-center rounded "
                 alt="hero"
