@@ -9,7 +9,7 @@ function Projects({overrideProjects = null}) {
   const projects = overrideProjects || actualProjects // overrides for testing
 
     return (
-        <section id="projects" className="text-gray-400 body-font" data-testid="projects-section">
+        <section className="text-gray-400 body-font" data-testid="projects-section">
           <div className="container xl:px-40 px-10 py-10 mx-auto text-center">
             <div className="flex flex-col w-full mb-10">
               <div data-testid="section-title">
@@ -52,7 +52,7 @@ function Projects({overrideProjects = null}) {
                   </Accordion>
                 </div>
               </div>
-              <div data-testid="section-title">
+              <div id="projects" data-testid="section-title">
                 <CubeTransparentIcon className="hover:animate-spin-slow mx-auto inline-block w-10 mb-4 mt-20" />
                 <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
                   Side Projects
