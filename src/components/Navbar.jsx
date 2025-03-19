@@ -18,15 +18,15 @@ function Navbar() {
       <div>
         <a href="#" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-white text-4xl/8" data-testid="logo">
           <img
-            className={`group-hover:scale-110 inset-0 rounded border-2 border-stronghold-eerie-black ${isRed ? 'visible' : 'hidden'}`}
-            src="/favicons/favicon.svg"
+            className="group-hover:scale-110 inset-0 rounded border-2 border-stronghold-eerie-black"
+            src={` ${isRed ? '/favicons/favicon.svg' : '/favicons/favicon-dark.svg'}`}
             alt="JL Site Logo"
           />
-          <img
+          {/* <img
             className={`group-hover:scale-110 inset-0 rounded ${isRed ? 'hidden' : 'visible'}`}
             src="/favicons/favicon-dark.svg"
             alt="JL Dark Site Logo"
-          />
+          /> */}
         </a>
         </div>
         <nav className="text-lg block mr-auto ml-4 py-1 pl-4 border-l-2 border-gray-700 flex flex-wrap items-center text-white justify-center">
