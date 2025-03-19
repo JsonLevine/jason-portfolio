@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Navbar() {
+  const [isRed, setIsRed] = useState(true);
 
   function scrollToSectionBottom(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest"});
@@ -15,14 +16,14 @@ function Navbar() {
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-row justify-between items-center">
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <div>
-        <a href="#" className="group w-12 ml-auto block jersey font-medium text-white text-4xl/8" data-testid="logo">
+        <a href="#" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-white text-4xl/8" data-testid="logo">
           <img
-            className="group-hover:hidden inset-0 rounded border-2 border-stronghold-eerie-black"
+            className={`group-hover:scale-110 inset-0 rounded border-2 border-stronghold-eerie-black ${isRed ? 'visible' : 'hidden'}`}
             src="/favicons/favicon.svg"
             alt="JL Site Logo"
           />
           <img
-            className="hidden group-hover:flex group-hover:scale-110 inset-0 rounded border-2 border-stronghold-imperial-red"
+            className={`group-hover:scale-110 inset-0 rounded ${isRed ? 'hidden' : 'visible'}`}
             src="/favicons/favicon-dark.svg"
             alt="JL Dark Site Logo"
           />
