@@ -75,7 +75,7 @@ function Projects({overrideProjects = null}) {
                   className="sm:w-1/2 p-4"
                   data-testid="project-item"
                 >
-                  <div className="flex rounded border-2 border-gray-600 relative transition ease-in-out duration-300 hover:shadow-project-shadow">
+                  <div className="flex rounded border-2 border-stronghold-onyx relative transition ease-in-out duration-300 hover:shadow-project-shadow">
                     <img
                       alt="gallery"
                       className="absolute rounded inset-0 w-full h-full object-cover object-top"
