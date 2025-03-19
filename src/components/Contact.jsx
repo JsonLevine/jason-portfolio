@@ -18,7 +18,7 @@ function Contact() {
   return (
     <section id="contact" className="relative" data-testid="contact-section">
       <div className="container px-5 pb-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="m-auto sm:mr-0 xl:w-1/3 md:w-1/3 w-3/4 bg-gray-900 rounded-lg overflow-hidden p-4 flex items-start justify-start relative">
+        <div className="m-auto sm:mr-0 xl:w-1/3 md:w-1/3 w-3/4 rounded-lg overflow-hidden p-4 flex items-start justify-start relative">
           <img
             width="100%"
             height="100%"
@@ -58,7 +58,7 @@ function Contact() {
                 </span>
               </div>
             </div>
-            <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="group bg-stronghold-gunmetal rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-blue-500">
+            <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="group bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-blue-500">
               <UserCircleIcon className="text-blue-500 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font text-stronghold-platinum">
                 <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
@@ -70,7 +70,7 @@ function Contact() {
               </span>
               <ArrowTopRightOnSquareIcon className="text-stronghold-platinum ml-auto group-hover:text-indigo-400 w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
             </a>
-            <span data-testid="email-container" data-tooltip-id="copiedTooltip" onClick={copyEmail} className="group cursor-pointer bg-stronghold-gunmetal rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-gray-200">
+            <span data-testid="email-container" data-tooltip-id="copiedTooltip" onClick={copyEmail} className="group cursor-pointer bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-gray-200">
               <InboxArrowDownIcon className="text-gray-200 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font text-stronghold-platinum">
                <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">

@@ -4,10 +4,10 @@ function Accordion({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=" border-gray-600 bg-stronghold-gunmetal rounded
-    transition ease-in-out duration-300 hover:bg-stronghold-imperial-red hover:text-stronghold-platinum hover:-translate-y-1 hover:scale-105">
+    <div className=" border-gray-600 rounded 
+     hover:text-stronghold-platinum ">
       <button
-        className="flex items-center justify-between w-full p-4"
+        className="rounded transition ease-in-out duration-300 bg-stronghold-jet hover:bg-stronghold-imperial-red hover:-translate-y-1 hover:scale-110 flex items-center justify-between w-full p-4"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
@@ -46,8 +46,8 @@ function Accordion({ title, children }) {
         </svg>
       </button>
       <div
-        className={` bg-stronghold-space-cadet overflow-hidden transition-max-height duration-300 ${
-          isOpen ? 'max-h-full' : 'max-h-0'
+        className={`max-h-full bg-stronghold-eerie-black bg-opacity-70 text-stronghold-platinum overflow-hidden transition ease-in-out duration-300 ${
+          isOpen ? 'visible' : 'hidden'
         }`}
       >
         <div className="text-left p-4">{children}</div>
