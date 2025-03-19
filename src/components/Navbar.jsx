@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 function Navbar() {
 
@@ -15,9 +14,20 @@ function Navbar() {
     <header className="bg-stronghold-imperial-red md:sticky top-0 z-10 border-b-2 border-gray-700">
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-row justify-between items-center">
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a href="#" className="jersey font-medium text-white text-4xl/8" data-testid="logo">
-          Jason <br className="sm:hidden" />Levine
+      <div>
+        <a href="#" className="group w-12 ml-auto block jersey font-medium text-white text-4xl/8" data-testid="logo">
+          <img
+            className="group-hover:hidden inset-0 rounded border-2 border-stronghold-eerie-black"
+            src="/favicons/favicon.svg"
+            alt="JL Site Logo"
+          />
+          <img
+            className="hidden group-hover:flex group-hover:scale-110 inset-0 rounded border-2 border-stronghold-imperial-red"
+            src="/favicons/favicon-dark.svg"
+            alt="JL Dark Site Logo"
+          />
         </a>
+        </div>
         <nav className="text-lg block mr-auto ml-4 py-1 pl-4 border-l-2 border-gray-700 flex flex-wrap items-center text-white justify-center">
           <a 
             onClick={() => scrollToSection("projects")}
