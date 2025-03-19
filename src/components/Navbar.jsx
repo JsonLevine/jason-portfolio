@@ -19,7 +19,7 @@ function Navbar() {
         <a href="#" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-white text-4xl/8" data-testid="logo">
           <img
             className={`group-hover:scale-110 inset-0 rounded  ${isRed ? "border-2 border-stronghold-eerie-black" : "border-0" }`}
-            src={` ${isRed ? '/favicons/favicon.svg' : '/favicons/favicon-dark.svg'}`}
+            src={` ${isRed ? '/assets/corner-logo.png' : '/assets/corner-logo-dark.png'}`}
             alt="JL Site Logo"
           />
           {/* <img
