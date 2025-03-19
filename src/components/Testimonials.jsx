@@ -13,10 +13,10 @@ function Testimonials() {
             <div className="flex flex-wrap m-4">
               {testimonials.map((testimonial) => (
                 <div key={testimonial.name}className="cursor-default p-4 lg:w-1/2 w-full group">
-                  <div className="h-full bg-stronghold-gunmetal bg-opacity-40 p-8 rounded transition ease-in-out duration-300 group-hover:ring-4 group-hover:ring-green-400/50">
-                    <p className="leading-relaxed mb-6">{testimonial.quote}</p>
+                  <div className="h-full bg-stronghold-jet bg-opacity-80 p-8 rounded transition ease-in-out duration-300 group-hover:ring-4 group-hover:ring-green-400/50">
+                    <p className="text-gray-300 leading-relaxed mb-6">{testimonial.quote}</p>
                     <div className="inline-flex items-center">
-                      <HandThumbUpIcon className="mr-4 block w-8 text-gray-500 transition ease-in-out duration-300 group-hover:text-green-600 group-hover:-translate-y-1 group-hover:-rotate-12 group-hover:scale-125" />
+                      <HandThumbUpIcon className="mr-4 block w-8 text-gray-300 transition ease-in-out duration-300 group-hover:text-green-600 group-hover:-translate-y-1 group-hover:-rotate-12 group-hover:scale-125" />
                       <img
                         alt="testimonial"
                         src={testimonial.image}
@@ -26,10 +26,10 @@ function Testimonials() {
                         <span className="title-font font-medium text-stronghold-platinum">
                           {testimonial.name}
                         </span>
-                        <span className="text-gray-500 text-sm uppercase">
+                        <span className="jersey text-blue-500 text-xl uppercase">
                           {testimonial.company}
                         </span>
-                        <span className="text-gray-600 text-xs">
+                        <span className="text-gray-400 text-xs">
                           {testimonial.title}
                         </span>
                       </span>
