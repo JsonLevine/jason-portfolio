@@ -35,7 +35,7 @@ function Contact() {
                 Let's connect!
               </p>
             </div>
-            <div className="justify-evenly rounded flex p-4 mb-4 items-center">
+            <div className="bg-stronghold-eerie-black bg-opacity-70 justify-evenly rounded flex p-4 mb-4 items-center">
               <div className="flex items-center">
                 <MapPinIcon className="text-stronghold-imperial-red w-6 h-6 flex-shrink-0 mr-4" />
                 <span className="title-font text-stronghold-platinum">

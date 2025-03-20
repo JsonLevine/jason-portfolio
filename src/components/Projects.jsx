@@ -59,7 +59,7 @@ function Projects({overrideProjects = null}) {
                   Side Projects
                 </h1>
               </div>
-              <p className="mx-auto leading-relaxed text-base pt-4 " data-testid="section-description-2">
+              <p className="bg-stronghold-eerie-black bg-opacity-70 mx-auto leading-relaxed text-base pt-4 " data-testid="section-description-2">
               When I’m not working, I love exploring new skills and experimenting with different projects. 
               I’ve built apps with React, crafted dynamic websites on WordPress, and also dabbled in graphic and logo design with Photoshop and Illustrator.
                Below is a mix of my some of my side projects, and I will be adding more very soon.
