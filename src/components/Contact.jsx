@@ -11,6 +11,7 @@ import {
  import { Tooltip } from 'react-tooltip'
 
 function Contact() {
+  
   function copyEmail() {
     navigator.clipboard.writeText("jason.levine131@gmail.com");
   }

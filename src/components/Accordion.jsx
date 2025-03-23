@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 function Accordion({ title, children }) {
+  
   const [isOpen, setIsOpen] = useState(false);
 
   return (

@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Footer() {
+  
   return (
     <>
       <div className="flex flex-row items-center justify-center text-center md:p-10 p-2">
