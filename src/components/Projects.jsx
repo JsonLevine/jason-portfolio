@@ -19,13 +19,13 @@ function Projects({overrideProjects = null}) {
             </h1>
           </div>
           <p className="bg-stronghold-eerie-black bg-opacity-70 mb-4 mx-auto leading-relaxed text-base" data-testid="section-description">
-          In the last few years, I have been making the transition to Project Management/Technical Project Management.
+          In the last few years, I have been making the transition to Product Management/Technical Product Management.
           Prior to that, I worked for over 7 years as a frontend software engineer at very well known names such as UnitedHealth Group and Chewy.
           Expand the sections below for some highlites of my career so far.
           </p>
           <div className= "flex flex-col lg:flex-row justify-between" data-testid="jobs-list">
             <div className="lg:w-1/2 p-4">
-              <Accordion title="Project Management">
+              <Accordion title="Product Management">
                 <ul>
                   <li><strong className="jersey text-2xl text-stronghold-imperial-red">Currently</strong>, I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-indigo-400" href="https://www.pmi.org">pmi.org</a>. Estimated completion 4/1/2025.</li>
                   <li className="mt-2 border-t-2 border-blue-500">at <span className=" jersey text-2xl text-blue-500">Chewy:</span></li>

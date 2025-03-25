@@ -59,7 +59,7 @@ export const skills = [
 export const softskills = [
   "Mentorship",
   "Collaboration",
-  "Project Management",
+  "Product Management",
   "Agile Methodologies",
   "Quality Assurance",
   "Web Analytics",
