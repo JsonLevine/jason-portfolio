@@ -27,7 +27,7 @@ function Projects({overrideProjects = null}) {
             <div className="lg:w-1/2 p-4">
               <Accordion title="Product Management">
                 <ul>
-                  <li><strong className="jersey text-2xl text-stronghold-imperial-red">Currently</strong>, I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-indigo-400" href="https://www.pmi.org">pmi.org</a>. Estimated completion 4/1/2025.</li>
+                  <li><strong className="jersey text-2xl text-stronghold-imperial-red">Currently</strong>, I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-indigo-400" href="https://www.pmi.org">pmi.org</a>. Estimated completion 5/1/2025.</li>
                   <li className="mt-2 border-t-2 border-blue-500">at <span className=" jersey text-2xl text-blue-500">Chewy:</span></li>
                   <li> •	I managed a cross-team backlog of tickets in JIRA and contributed heavily to analytics document creation & organization within Confluence.</li>
                   <li> •	Furthermore, I organized regular product demos, provided frequent updates to stakeholders, and coordinated/ran regular agile ceremonies for the analytics team in order to streamline feature development.</li>
