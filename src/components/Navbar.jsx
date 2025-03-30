@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Navbar() {
-  
+
   const [isRed, setIsRed] = useState(true);
 
   // function scrollToSectionBottom(section) {
@@ -22,11 +22,6 @@ function Navbar() {
               src={` ${isRed ? '/assets/corner-logo.png' : '/assets/corner-logo-dark.png'}`}
               alt="JL Site Logo"
             />
-            {/* <img
-              className={`group-hover:scale-110 inset-0 rounded ${isRed ? 'hidden' : 'visible'}`}
-              src="/favicons/favicon-dark.svg"
-              alt="JL Dark Site Logo"
-            /> */}
           </a>
         </div>
         <nav className="text-lg block mr-auto ml-4 py-1 pl-4 border-l-2 border-gray-700 flex flex-wrap items-center text-white justify-center">
