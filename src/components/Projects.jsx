@@ -19,7 +19,7 @@ function Projects({overrideProjects = null}) {
             </h1>
           </div>
           <p className="bg-stronghold-eerie-black bg-opacity-70 mb-4 mx-auto leading-relaxed text-base" data-testid="section-description">
-          In the last few years, I have been making the transition to Product Management/Technical Product Management.
+          In the last few years, I have been making the transition to Technical Product Management.
           Prior to that, I worked for over 7 years as a frontend software engineer at very well known names such as UnitedHealth Group and Chewy.
           Expand the sections below for some highlites of my career so far.
           </p>
