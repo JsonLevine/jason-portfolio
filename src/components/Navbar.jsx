@@ -19,7 +19,7 @@ function Navbar() {
           <a href="#" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-white text-4xl/8" data-testid="logo">
             <img
               className="rounded border-2 border-stronghold-eerie-black"
-              src={` ${isRed ? '/assets/corner-logo.png' : '/assets/corner-logo-dark.png'}`}
+              src={`${isRed ? '/assets/corner-logo.png' : '/assets/corner-logo-dark.png'}`}
               alt="JL Site Logo"
             />
           </a>
@@ -44,14 +44,6 @@ function Navbar() {
         >
           Resume
         </a>
-        {/* <a
-          onClick={() => scrollToSectionBottom("contact")}
-          className="cursor-pointer transition ease-in-out duration-300 hover:scale-110 md:hidden inline-flex items-center bg-white border-0 py-1 px-3 ml-4 jersey text-xl focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
-          data-testid="hire-me-button"
-        >
-          Hire Me
-          <ArrowRightIcon className="w-4 h-4 ml-1" />
-        </a> */}
       </div>
     </header>
   );
