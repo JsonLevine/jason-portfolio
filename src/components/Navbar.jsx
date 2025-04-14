@@ -39,7 +39,7 @@ function Navbar() {
         <a
           target="_blank"
           href="./assets/Jason_Levine_Resume_PM.pdf"
-          className="transition ease-in-out duration-300 hover:stroke-stronghold-imperial-red hover:scale-110 jersey text-xl inline-flex items-center bg-stronghold-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
+          className="transition ease-in-out duration-300 hover:stroke-stronghold-imperial-red hover:scale-110 jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-imperial-red sm:mt-0"
           data-testid="resume-button"
         >
           Resume

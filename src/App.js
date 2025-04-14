@@ -28,7 +28,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className='text-stronghold-platinum background body-font'>
+    <main className='text-main-text background body-font'>
       {init && <Particles options={particlesOptions}/>}
       <Navbar />
       <About />

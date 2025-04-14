@@ -22,7 +22,8 @@ module.exports = {
         'stronghold-green': '#4ADE80',
         'chewy-blue': '#3b82f6',
         'optum-orange': '#f97316',
-        'link-blue': '#818cf8'
+        'link-blue': '#818cf8',
+        'main-text': '#9CA3AF'
       },
       boxShadow: {
         'project-shadow': '10px 10px 0 0 rgba(230, 71, 71, 0.5)',
