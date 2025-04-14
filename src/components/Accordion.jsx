@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
 function Accordion({ title, children }) {
-  
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="group border-gray-600 rounded 
-     hover:text-stronghold-platinum ">
+    <div className="group border-stronghold-jet rounded ">
       <button
         className="rounded transition ease-in-out duration-300 bg-stronghold-jet group-hover:bg-stronghold-imperial-red hover:-translate-y-1 hover:scale-110 flex items-center justify-between w-full p-4"
         onClick={() => setIsOpen(!isOpen)}

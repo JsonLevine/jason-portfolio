@@ -14,23 +14,23 @@ function Testimonials() {
         <div className="flex flex-wrap m-4">
           {testimonials.map((testimonial) => (
             <div key={testimonial.name}className="cursor-default p-4 lg:w-1/2 w-full group">
-              <div className="h-full bg-stronghold-jet bg-opacity-80 p-8 rounded transition ease-in-out duration-300 group-hover:ring-4 group-hover:ring-green-400/50">
-                <p className="text-gray-300 leading-relaxed mb-6">{testimonial.quote}</p>
+              <div className="h-full bg-stronghold-jet bg-opacity-80 p-8 rounded transition ease-in-out duration-300 group-hover:ring-4 group-hover:ring-stronghold-green/50">
+                <p className="text-stronghold-platinum leading-relaxed mb-6">{testimonial.quote}</p>
                 <div className="inline-flex items-center">
-                  <HandThumbUpIcon className="mr-4 block w-8 text-gray-300 transition ease-in-out duration-300 group-hover:text-green-600 group-hover:-translate-y-1 group-hover:-rotate-12 group-hover:scale-125" />
+                  <HandThumbUpIcon className="mr-4 block w-8 text-stronghold-platinum transition ease-in-out duration-300 group-hover:text-stronghold-green group-hover:-translate-y-1 group-hover:-rotate-12 group-hover:scale-125" />
                   <img
                     alt="testimonial"
                     src={testimonial.image}
                     className="w-12 rounded-full flex-shrink-0 object-cover object-center"
                   />
                   <span className="flex-grow flex flex-col pl-4">
-                    <span className="title-font font-medium text-stronghold-platinum">
+                    <span className="title-font font-bold text-stronghold-white">
                       {testimonial.name}
                     </span>
-                    <span className="jersey text-blue-500 text-xl uppercase">
+                    <span className="jersey text-chewy-blue text-xl uppercase">
                       {testimonial.company}
                     </span>
-                    <span className="text-gray-400 text-xs">
+                    <span className="text-stronghold-platinum text-xs">
                       {testimonial.title}
                     </span>
                   </span>

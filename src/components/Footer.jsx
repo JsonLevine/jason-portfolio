@@ -7,7 +7,7 @@ function Footer() {
       <div className="flex flex-row items-center justify-center text-center md:p-10 p-2">
         <a 
           data-testid="footer-link" 
-          className="flex flex-col items-center justify-center transition duration-300 ease-in-out hover:text-green-400 hover:-translate-y-1" 
+          className="flex flex-col items-center justify-center transition duration-300 ease-in-out hover:text-stronghold-green hover:-translate-y-1" 
           href="https://github.com/JsonLevine/jason-portfolio" 
           target="_blank" 
           rel="noreferrer">
@@ -17,7 +17,7 @@ function Footer() {
               <strong>Jason Levine</strong><br/>
             </span>
           </span>
-          <span className="text-sm">with <strong className="text-gray-200">React</strong> + <strong className="text-gray-200">TailwindCSS</strong></span>
+          <span className="text-sm">with <strong className="text-stronghold-platinum">React</strong> + <strong className="text-stronghold-platinum">TailwindCSS</strong></span>
         </a>
       </div>
     </>
