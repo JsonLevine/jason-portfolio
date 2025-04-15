@@ -6,6 +6,8 @@ import Accordion from "./Accordion.jsx"
 
 function Projects({overrideProjects = null}) {
 
+  const projects = overrideProjects || actualProjects // overrides for testing
+
   return (
     <section className="text-stronghold-platinum body-font" data-testid="projects-section">
       <div className="container xl:px-40 px-10 py-10 mx-auto text-center">
