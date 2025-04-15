@@ -13,7 +13,7 @@ function Projects({overrideProjects = null}) {
       <div className="container xl:px-40 px-10 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-10">
           <div data-testid="section-title">
-            <IdentificationIcon className="mx-auto inline-block w-10 mb-4" />
+            <IdentificationIcon className="mx-auto inline-block w-10 mb-4"/>
             <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
               Professional Experience
             </h1>
@@ -54,7 +54,7 @@ function Projects({overrideProjects = null}) {
             </div>
           </div>
           <div id="projects" data-testid="section-title">
-            <CubeTransparentIcon className="hover:animate-spin-slow mx-auto inline-block w-10 mb-4 mt-20" />
+            <CubeTransparentIcon className="hover:animate-spin-slow mx-auto inline-block w-10 mb-4 mt-20"/>
             <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
               Side Projects
             </h1>

@@ -28,7 +28,7 @@ function About() {
               <a
                 onClick={() => scrollToSectionBottom("contact")}
                 className="group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex bg-stronghold-jet border-0 py-2 px-6 focus:outline-none focus:bg-stronghold-imperial-red hover:bg-stronghold-imperial-red text-stronghold-platinum rounded">
-                <UserPlusIcon className="h-8 w-4 mr-2 transition ease-in-out duration-300 text-stronghold-platinum" />
+                <UserPlusIcon className="h-8 w-4 mr-2 transition ease-in-out duration-300 text-stronghold-platinum"/>
                 Connect With Me
               </a>
             </div>

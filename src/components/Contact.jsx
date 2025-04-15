@@ -31,14 +31,14 @@ function Contact() {
         <div className="xl:w-1/3 md:w-2/3 lg:w-1/2 flex flex-col md:mr-auto w-full md:py-4 mt-4 md:mt-0 rounded">
           <div className="container px-5 mx-auto text-left">
             <div className="flex justify-center">
-              <ChatBubbleLeftRightIcon className="h-12 w-10 inline mb-4" />
+              <ChatBubbleLeftRightIcon className="h-12 w-10 inline mb-4"/>
               <p className="text-stronghold-platinum jersey-25 md:text-5xl text-4xl mb-1 font-medium title-font ml-4">
                 Let's connect!
               </p>
             </div>
             <div className="bg-stronghold-eerie-black bg-opacity-70 justify-evenly rounded flex p-4 mb-4 items-center">
               <div className="flex items-center">
-                <MapPinIcon className="text-stronghold-imperial-red w-6 h-6 flex-shrink-0 mr-4" />
+                <MapPinIcon className="text-stronghold-imperial-red w-6 h-6 flex-shrink-0 mr-4"/>
                 <span className="title-font text-stronghold-platinum">
                   <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                     LOCATION
@@ -60,7 +60,7 @@ function Contact() {
               </div>
             </div>
             <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="group bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-chewy-blue">
-              <UserCircleIcon className="text-chewy-blue w-6 h-6 flex-shrink-0 mr-4" />
+              <UserCircleIcon className="text-chewy-blue w-6 h-6 flex-shrink-0 mr-4"/>
               <span className="title-font text-stronghold-platinum">
                 <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                   LINKEDIN
@@ -69,7 +69,7 @@ function Contact() {
                   linkedin.com/in/jasonllevine 
                 </span>
               </span>
-              <ArrowTopRightOnSquareIcon className="text-stronghold-platinum ml-auto group-hover:text-link-blue w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
+              <ArrowTopRightOnSquareIcon className="text-stronghold-platinum ml-auto group-hover:text-link-blue w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300"/>
             </a>
             <span data-testid="email-container" data-tooltip-id="copiedTooltip" onClick={copyEmail} className="group cursor-pointer bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-stronghold-platinum">
               <InboxArrowDownIcon className="text-stronghold-platinum w-6 h-6 flex-shrink-0 mr-4"/>
@@ -82,7 +82,7 @@ function Contact() {
                 </span>
                 <Tooltip id="copiedTooltip" content="copied to clipboard!" openOnClick/>
               </span>
-              <ClipboardDocumentCheckIcon className="text-stronghold-platinum ml-auto group-hover:text-link-blue w-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
+              <ClipboardDocumentCheckIcon className="text-stronghold-platinum ml-auto group-hover:text-link-blue w-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300"/>
             </span>
           </div>
         </div>
