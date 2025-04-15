@@ -11,7 +11,7 @@ import {
  import { Tooltip } from 'react-tooltip'
 
 function Contact() {
-  
+
   function copyEmail() {
     navigator.clipboard.writeText("jason.levine131@gmail.com");
   }
@@ -50,7 +50,7 @@ function Contact() {
               </div>
               <div className="border-l border-stronghold-imperial-red w-px md:h-8"></div>
               <div className="flex items-center">
-                <DevicePhoneMobileIcon className="text-stronghold-imperial-red w-6 h-6 flex-shrink-0 mr-4" />
+                <DevicePhoneMobileIcon className="text-stronghold-imperial-red w-6 h-6 flex-shrink-0 mr-4"/>
                 <span className="title-font text-stronghold-platinum">
                   <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                     PHONE
@@ -59,30 +59,30 @@ function Contact() {
                 </span>
               </div>
             </div>
-            <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="group bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-blue-500">
-              <UserCircleIcon className="text-blue-500 w-6 h-6 flex-shrink-0 mr-4" />
+            <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="group bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-chewy-blue">
+              <UserCircleIcon className="text-chewy-blue w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font text-stronghold-platinum">
                 <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                   LINKEDIN
                 </h2>
-                <span className="text-indigo-400 mt-1">
+                <span className="text-link-blue mt-1">
                   linkedin.com/in/jasonllevine 
                 </span>
               </span>
-              <ArrowTopRightOnSquareIcon className="text-stronghold-platinum ml-auto group-hover:text-indigo-400 w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
+              <ArrowTopRightOnSquareIcon className="text-stronghold-platinum ml-auto group-hover:text-link-blue w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
             </a>
-            <span data-testid="email-container" data-tooltip-id="copiedTooltip" onClick={copyEmail} className="group cursor-pointer bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-gray-200">
-              <InboxArrowDownIcon className="text-gray-200 w-6 h-6 flex-shrink-0 mr-4" />
+            <span data-testid="email-container" data-tooltip-id="copiedTooltip" onClick={copyEmail} className="group cursor-pointer bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-stronghold-platinum">
+              <InboxArrowDownIcon className="text-stronghold-platinum w-6 h-6 flex-shrink-0 mr-4"/>
               <span className="title-font text-stronghold-platinum">
                <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                   EMAIL
                 </h2>
-                <span className="text-indigo-400 leading-relaxed">
+                <span className="text-link-blue leading-relaxed">
                   jason.levine131@gmail.com
                 </span>
                 <Tooltip id="copiedTooltip" content="copied to clipboard!" openOnClick/>
               </span>
-              <ClipboardDocumentCheckIcon className="text-stronghold-platinum ml-auto group-hover:text-indigo-400 w-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
+              <ClipboardDocumentCheckIcon className="text-stronghold-platinum ml-auto group-hover:text-link-blue w-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
             </span>
           </div>
         </div>
