@@ -86,7 +86,7 @@ function Projects({overrideProjects = null}) {
                   {project.code ? 
                   <a className="absolute top-0 left-0 w-12" href={project.code} target="_blank" rel="noreferrer" data-testid="github-link"><IconGitHub /></a>
                   : <></>}
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1" data-testid="project-subtitle">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-stronghold-green mb-1" data-testid="project-subtitle">
                     {project.subtitle}
                   </h2>
                   <h1 className="title-font text-lg font-medium text-stronghold-platinum mb-3" data-testid="project-title">
