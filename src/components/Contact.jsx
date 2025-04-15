@@ -31,7 +31,7 @@ function Contact() {
         <div className="xl:w-1/3 md:w-2/3 lg:w-1/2 flex flex-col md:mr-auto w-full md:py-4 mt-4 md:mt-0 rounded">
           <div className="container px-5 mx-auto text-left">
             <div className="flex justify-center">
-              <ChatBubbleLeftRightIcon className="h-12 w-10 inline mb-4"/>
+              <ChatBubbleLeftRightIcon className="text-main-text h-12 w-10 inline mb-4"/>
               <p className="text-stronghold-platinum jersey-25 md:text-5xl text-4xl mb-1 font-medium title-font ml-4">
                 Let's connect!
               </p>
