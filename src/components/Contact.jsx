@@ -50,7 +50,7 @@ function Contact() {
               </div>
               <div className="border-l border-stronghold-imperial-red w-px md:h-8"></div>
               <div className="flex items-center">
-                <DevicePhoneMobileIcon className="text-stronghold-imperial-red w-6 h-6 flex-shrink-0 mr-4" />
+                <DevicePhoneMobileIcon className="text-stronghold-imperial-red w-6 h-6 flex-shrink-0 mr-4"/>
                 <span className="title-font text-stronghold-platinum">
                   <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                     PHONE
@@ -72,7 +72,7 @@ function Contact() {
               <ArrowTopRightOnSquareIcon className="text-stronghold-platinum ml-auto group-hover:text-link-blue w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300" />
             </a>
             <span data-testid="email-container" data-tooltip-id="copiedTooltip" onClick={copyEmail} className="group cursor-pointer bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-stronghold-platinum">
-              <InboxArrowDownIcon className="text-stronghold-platinum w-6 h-6 flex-shrink-0 mr-4" />
+              <InboxArrowDownIcon className="text-stronghold-platinum w-6 h-6 flex-shrink-0 mr-4"/>
               <span className="title-font text-stronghold-platinum">
                <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                   EMAIL

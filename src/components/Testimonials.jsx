@@ -7,7 +7,7 @@ function Testimonials() {
   return (
     <section id="testimonials">
       <div className="container px-5 py-10 mx-auto text-center">
-        <UsersIcon className="w-10 inline-block mb-4" />
+        <UsersIcon className="w-10 inline-block mb-4"/>
         <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font text-stronghold-platinum mb-4">
           Testimonials
         </h1>
@@ -17,7 +17,7 @@ function Testimonials() {
               <div className="h-full bg-stronghold-jet bg-opacity-80 p-8 rounded transition ease-in-out duration-300 group-hover:ring-4 group-hover:ring-stronghold-green/50">
                 <p className="text-stronghold-platinum leading-relaxed mb-6">{testimonial.quote}</p>
                 <div className="inline-flex items-center">
-                  <HandThumbUpIcon className="mr-4 block w-8 text-stronghold-platinum transition ease-in-out duration-300 group-hover:text-stronghold-green group-hover:-translate-y-1 group-hover:-rotate-12 group-hover:scale-125" />
+                  <HandThumbUpIcon className="mr-4 block w-8 text-stronghold-platinum transition ease-in-out duration-300 group-hover:text-stronghold-green group-hover:-translate-y-1 group-hover:-rotate-12 group-hover:scale-125"/>
                   <img
                     alt="testimonial"
                     src={testimonial.image}
