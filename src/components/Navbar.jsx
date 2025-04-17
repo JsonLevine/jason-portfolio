@@ -4,10 +4,6 @@ function Navbar() {
 
   const [isRed, setIsRed] = useState(true);
 
-  // function scrollToSectionBottom(section) {
-  //   document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest"});
-  // }
-
   function scrollToSection(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "start"});
   }
