@@ -20,7 +20,7 @@ function Navbar() {
             />
           </a>
         </div>
-        <nav className="text-lg block mr-auto ml-4 py-1 pl-4 border-l-2 border-stronghold-onyx flex flex-wrap items-center text-stronghold-white justify-center">
+        <nav className="text-lg mr-auto ml-4 py-1 pl-4 border-l-2 border-stronghold-onyx flex flex-wrap items-center text-stronghold-white justify-center">
           <a 
             onClick={() => scrollToSection("projects")}
             className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 hover:scale-110 hover:text-stronghold-eerie-black" data-testid="projects-link">
