@@ -20,7 +20,7 @@ function Skills() {
           {skills.map((skill) => (
             <div key={skill} className="cursor-default p-2 sm:w-1/2 xl:w-1/4 w-full">
               <div className="bg-stronghold-jet rounded flex p-4 h-full items-center transition ease-in-out duration-300 hover:bg-stronghold-imperial-red hover:-translate-y-1 hover:scale-105">
-                <img src={skill.icon} alt="React Logo" className="w-6 h-6 flex-shrink-0 mr-4"/>
+                <img src={skill.icon} alt={`${skill.name} Logo`} className="w-6 h-6 flex-shrink-0 mr-4"/>
                 <span className="jersey-25 text-xl title-font font-medium text-stronghold-platinum">
                   {skill.name}
                 </span>
