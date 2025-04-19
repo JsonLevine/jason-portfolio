@@ -11,9 +11,21 @@ module.exports = {
           '100%':{opacity: '1'}
         }
       },
+      // colors: {
+      //   'stronghold-red': '#E64747',
+      //   'stronghold-eerie-black': '#191919',
+      //   'stronghold-onyx': '#404040',
+      //   'stronghold-platinum': '#E4E4E4',
+      //   'stronghold-jet': '#343434',
+      //   'stronghold-white': '#ffffff',
+      //   'stronghold-green': '#4ADE80',
+      //   'chewy-blue': '#3b82f6',
+      //   'optum-orange': '#f97316',
+      //   'link-blue': '#818cf8',
+      //   'main-text': '#9CA3AF'
+      // },
       colors: {
-        'stronghold-red': '#E11A19',
-        'stronghold-imperial-red': '#E64747',
+        'stronghold-red': '#E64747',
         'stronghold-eerie-black': '#191919',
         'stronghold-onyx': '#404040',
         'stronghold-platinum': '#E4E4E4',

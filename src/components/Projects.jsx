@@ -27,7 +27,7 @@ function Projects({overrideProjects = null}) {
             <div className="lg:w-1/2 p-4">
               <Accordion title="Product Management">
                 <ul>
-                  <li><strong className="jersey text-2xl text-stronghold-imperial-red">Currently</strong>, I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-link-blue" href="https://www.pmi.org">pmi.org</a>. Estimated completion 5/1/2025.</li>
+                  <li><strong className="jersey text-2xl text-stronghold-red">Currently</strong>, I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-link-blue" href="https://www.pmi.org">pmi.org</a>. Estimated completion 5/1/2025.</li>
                   <li className="mt-2 border-t-2 border-chewy-blue">at <span className=" jersey text-2xl text-chewy-blue">Chewy:</span></li>
                   <li> •	I managed a cross-team backlog of tickets in JIRA and contributed heavily to analytics document creation & organization within Confluence.</li>
                   <li> •	Furthermore, I organized regular product demos, provided frequent updates to stakeholders, and coordinated/ran regular agile ceremonies for the analytics team in order to streamline feature development.</li>
@@ -40,7 +40,7 @@ function Projects({overrideProjects = null}) {
             <div className="lg:w-1/2 p-4" >
               <Accordion title="Frontend Development">
                 <ul>
-                  <li><strong className="jersey text-2xl text-stronghold-imperial-red">Currently</strong>, I am working on developing an online React course in partnership with newline.co.  I am also continuously updating this site, and taking courses to keep my frontend skills up to date.</li>
+                  <li><strong className="jersey text-2xl text-stronghold-red">Currently</strong>, I am working on developing an online React course in partnership with newline.co.  I am also continuously updating this site, and taking courses to keep my frontend skills up to date.</li>
                   <li className="mt-2 border-t-2 border-chewy-blue">at <span className=" jersey text-2xl text-chewy-blue">Chewy:</span></li>
                   <li>  •	My responsibilities included developing and enhancing critical pages such as the <a className="text-link-blue" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-link-blue" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
                     and <a className="text-link-blue" href="https://www.chewy.com/">home</a> pages.</li>
