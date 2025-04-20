@@ -10,7 +10,7 @@ const IconInstagram = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="w-8 m-2 transition ease-in-out duration-300 hover:stroke-stronghold-imperial-red hover:-translate-y-1 hover:scale-110">
+    className="w-8 m-2 transition ease-in-out duration-300 hover:stroke-stronghold-red hover:-translate-y-1 hover:scale-110">
     <title>Instagram</title>
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>

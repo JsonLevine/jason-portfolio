@@ -12,8 +12,7 @@ module.exports = {
         }
       },
       colors: {
-        'stronghold-red': '#E11A19',
-        'stronghold-imperial-red': '#E64747',
+        'stronghold-red': '#E64747',
         'stronghold-eerie-black': '#191919',
         'stronghold-onyx': '#404040',
         'stronghold-platinum': '#E4E4E4',
