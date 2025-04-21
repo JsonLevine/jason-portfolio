@@ -9,7 +9,7 @@ function About() {
 
   return (
     <section id="about" data-testid="about-section">
-      <div className="container mx-auto flex px-10 pt-40 pb-10 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-10 pt-20 pb-10 md:flex-row flex-col items-center">
         <div className="bg-stronghold-eerie-black bg-opacity-70 lg:ml-8 md:w-1/2 xl:pl-40 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
           <h1 className="title-font jersey-25 2xl:text-8xl lg:text-7xl text-6xl mb-4 font-medium text-stronghold-platinum">
             <span className="text-stronghold-red">Jason Levine</span>

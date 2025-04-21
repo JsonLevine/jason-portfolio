@@ -9,7 +9,7 @@ function Navbar() {
   }
 
   return (
-    <header className="bg-stronghold-red fixed w-full top-0 z-10 border-b-2 border-stronghold-onyx">
+    <header className="bg-stronghold-red md:sticky top-0 z-10 border-b-2 border-stronghold-onyx">
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-row justify-between items-center">
         <div>
           <a href="#" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-stronghold-white text-4xl/8" data-testid="logo">
