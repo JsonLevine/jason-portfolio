@@ -89,7 +89,7 @@ function Projects({overrideProjects = null}) {
                   <h2 className="tracking-widest text-sm title-font font-medium text-stronghold-green mb-1" data-testid="project-subtitle">
                     {project.subtitle}
                   </h2>
-                  <h1 className="title-font text-lg font-medium text-stronghold-platinum mb-3" data-testid="project-title">
+                  <h1 className="title-font text-lg font-medium text-stronghold-red mb-3" data-testid="project-title">
                     {project.title}
                   </h1>
                   <p className="leading-relaxed" data-testid="project-description">{project.description}</p>
