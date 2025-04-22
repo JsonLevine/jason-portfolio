@@ -23,19 +23,21 @@ function Navbar() {
         <nav className="text-lg mr-auto ml-4 py-1 pl-4 border-l-2 border-stronghold-onyx flex flex-wrap items-center text-stronghold-white justify-center">
           <a 
             onClick={() => scrollToSection("projects")}
-            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 hover:scale-110 hover:text-stronghold-eerie-black" data-testid="projects-link">
+            tabindex='0'
+            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 focus:text-stronghold-eerie-black hover:scale-110 hover:text-stronghold-eerie-black" data-testid="projects-link">
             Projects
           </a>
           <a 
             onClick={() => scrollToSection("skills")}
-            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 hover:scale-110 hover:text-stronghold-eerie-black" data-testid="skills-link">
+            tabindex='0'
+            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 focus:text-stronghold-eerie-black hover:scale-110 hover:text-stronghold-eerie-black" data-testid="skills-link">
             Skills
           </a>
         </nav>
         <a
           target="_blank"
           href="./assets/Jason_Levine_Resume_PM.pdf"
-          className="transition ease-in-out duration-300 hover:stroke-stronghold-red hover:scale-110 jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-red sm:mt-0"
+          className="transition ease-in-out duration-300 focus:bg-stronghold-onyx hover:bg-stronghold-onyx hover:scale-110 jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-red sm:mt-0"
           data-testid="resume-button"
         >
           Resume
