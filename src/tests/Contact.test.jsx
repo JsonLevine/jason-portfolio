@@ -15,7 +15,7 @@ describe('Contact Component', () => {
 
   it('renders the image with the correct src and alt text', () => {
     const imageElement = screen.getByAltText('Me and my dog, Riley');
-    expect(imageElement).toHaveAttribute('src', '/assets/contact.png');
+    expect(imageElement).toHaveAttribute('src', '/assets/pickleball.png');
   });
 
   it('renders the title with the correct text', () => {
@@ -24,7 +24,7 @@ describe('Contact Component', () => {
   });
 
   it('renders the location information', () => {
-    const locationElement = screen.getByText(/Stoughton, MA/i);
+    const locationElement = screen.getByText(/Boston, MA/i);
     expect(locationElement).toBeInTheDocument();
   });
 
