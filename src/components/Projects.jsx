@@ -53,7 +53,7 @@ function Projects({overrideProjects = null}) {
               </Accordion>
             </div>
           </div>
-          <div id="projects" data-testid="section-title">
+          <div id="projects">
             <CubeTransparentIcon className="text-main-text hover:animate-spin-slow mx-auto inline-block w-10 mb-4 mt-20"/>
             <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
               Side Projects
@@ -71,7 +71,7 @@ function Projects({overrideProjects = null}) {
               target="_blank" 
               rel="noreferrer"
               href={project.link}
-              key={project.image}
+              key={project.title}
               className="sm:w-1/2 p-4"
               data-testid="project-item"
             >
