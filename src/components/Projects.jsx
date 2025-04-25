@@ -1,10 +1,12 @@
 import { React } from 'react'
 import { CubeTransparentIcon, IdentificationIcon } from "@heroicons/react/24/solid";
 import IconGitHub from './icons/github'
-import { projects } from "../data";
+import { projects as actualProjects } from "../data";
 import Accordion from "./Accordion.jsx"
 
-function Projects() {
+function Projects({overrideProjects = null}) {
+
+  const projects = overrideProjects || actualProjects // overrides for testing
 
   return (
     <section className="text-stronghold-platinum body-font" data-testid="projects-section">
