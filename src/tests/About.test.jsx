@@ -19,27 +19,22 @@ describe('About Component', () => {
     });
 
     it('renders the description with the correct text', () => {
-        const descriptionElement = screen.getByText(/Frontend Software Engineer/i);
+        const descriptionElement = screen.getByText(/Technical Product Manager/i);
         expect(descriptionElement).toBeInTheDocument();
     });
 
-    it('renders the resume link with the correct href', () => {
-        const resumeLink = screen.getByRole('link', { name: /Resume/i });
-        expect(resumeLink).toHaveAttribute('href', './assets/Jason_Levine_Resume.pdf');
-    });
-
-    it('renders the CV link with the correct href', () => {
-        const cvLink = screen.getByRole('link', { name: /CV/i });
-        expect(cvLink).toHaveAttribute('href', './assets/Jason_Levine_CV.pdf');
+    it('renders the minor description with the correct text', () => {
+        const descriptionElement = screen.getByText(/Senior Software Engineer/i);
+        expect(descriptionElement).toBeInTheDocument();
     });
 
     it('renders the "Connect With Me" button', () => {
-        const connectButton = screen.getByRole('link', { name: /Connect With Me/i });
+        const connectButton = screen.getByTestId('connect-with-me-button');
         expect(connectButton).toBeInTheDocument();
     });
 
     it('renders the hero image with the correct src and alt text', () => {
         const heroImage = screen.getByAltText(/hero/i);
-        expect(heroImage).toHaveAttribute('src', './Coding-Riley.svg');
+        expect(heroImage).toHaveAttribute('src', './assets/Website_portrait3.png');
     });
 });

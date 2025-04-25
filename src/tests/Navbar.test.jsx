@@ -1,41 +1,51 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import { render, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Navbar from '../components/Navbar';
 
+
 describe('Navbar Component', () => {
-  beforeEach(() => {
-    render(<Navbar />);
+  it('renders the logo image with correct image path', () => {
+    const { getByTestId } = render(<Navbar />);
+    const logoImg = getByTestId('logo').querySelector('img');
+    expect(logoImg).toHaveAttribute('src', '/assets/corner-logo.png');
   });
 
-  it('renders the logo with the correct text', () => {
-    const logoElement = screen.getByTestId('logo');
-    expect(logoElement).toBeInTheDocument();
-    expect(logoElement).toHaveTextContent('Jason Levine');
+  it('toggles the logo image on click', () => {
+    const { getByTestId } = render(<Navbar />);
+    const logo = getByTestId('logo');
+    const img = logo.querySelector('img');
+
+    fireEvent.click(logo);
+    expect(img).toHaveAttribute('src', '/assets/corner-logo-dark.png');
+
+    fireEvent.click(logo);
+    expect(img).toHaveAttribute('src', '/assets/corner-logo.png');
   });
 
-  it('renders the Projects link', () => {
-    const projectsLink = screen.getByTestId('projects-link');
-    expect(projectsLink).toBeInTheDocument();
-    expect(projectsLink).toHaveAttribute('href', '#projects');
+  it('renders navigation links', () => {
+    const { getByTestId } = render(<Navbar />);
+    expect(getByTestId('projects-link')).toBeInTheDocument();
+    expect(getByTestId('skills-link')).toBeInTheDocument();
   });
 
-  it('renders the Skills link', () => {
-    const skillsLink = screen.getByTestId('skills-link');
-    expect(skillsLink).toBeInTheDocument();
-    expect(skillsLink).toHaveAttribute('href', '#skills');
+  it('renders resume button with correct href', () => {
+    const { getByTestId } = render(<Navbar />);
+    const resumeBtn = getByTestId('resume-button');
+    expect(resumeBtn).toHaveAttribute('href', './assets/Jason_Levine_Resume_PM.pdf');
+    expect(resumeBtn).toHaveTextContent('Resume');
   });
 
-  it('renders the Resume button with the correct attributes', () => {
-    const resumeButton = screen.getByTestId('resume-button');
-    expect(resumeButton).toBeInTheDocument();
-    expect(resumeButton).toHaveAttribute('href', './assets/Jason_Levine_Resume.pdf');
-    expect(resumeButton).toHaveAttribute('target', '_blank');
-  });
+  it('calls scrollToSection on nav link click', () => {
+    const scrollIntoViewMock = jest.fn();
+    document.getElementById = jest.fn(() => ({
+      scrollIntoView: scrollIntoViewMock
+    }));
 
-  it('renders the Hire Me button with the correct attributes', () => {
-    const hireMeButton = screen.getByTestId('hire-me-button');
-    expect(hireMeButton).toBeInTheDocument();
-    expect(hireMeButton).toHaveAttribute('href', '#contact');
+    const { getByTestId } = render(<Navbar />);
+    fireEvent.click(getByTestId('projects-link'));
+    fireEvent.click(getByTestId('skills-link'));
+
+    expect(scrollIntoViewMock).toHaveBeenCalledTimes(2);
   });
 });

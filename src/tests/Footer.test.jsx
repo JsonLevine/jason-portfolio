@@ -9,23 +9,23 @@ describe('Footer Component', () => {
   });
 
   it('renders the footer with the correct link', () => {
-    const linkElement = screen.getByRole('link', { name: /2024 designed and built by/i });
+    const linkElement = screen.getByRole('link', { name: /2024-2025 Designed and built by/i });
     expect(linkElement).toBeInTheDocument();
   });
 
   it('renders the link with the correct href', () => {
-    const linkElement = screen.getByRole('link', { name: /2024 designed and built by/i });
+    const linkElement = screen.getByRole('link', { name: /2024-2025 Designed and built by/i });
     expect(linkElement).toHaveAttribute('href', 'https://github.com/JsonLevine/jason-portfolio');
   });
 
   it('renders the link with the correct target and rel attributes', () => {
-    const linkElement = screen.getByRole('link', { name: /2024 designed and built by/i });
+    const linkElement = screen.getByRole('link', { name: /2024-2025 Designed and built by/i });
     expect(linkElement).toHaveAttribute('target', '_blank');
     expect(linkElement).toHaveAttribute('rel', 'noreferrer');
   });
 
   it('renders the correct text content', () => {
-    const linkElement = screen.getByRole('link', { name: /2024 designed and built by/i });
-    expect(linkElement).toHaveTextContent('2024 Designed and built byJason Levinewith React + TailwindCSS');
+    const linkElement = screen.getByRole('link', { name: /2024-2025 Designed and built by/i });
+    expect(linkElement).toHaveTextContent('2024-2025 Designed and built byJason Levinewith React + TailwindCSS');
   });
 });

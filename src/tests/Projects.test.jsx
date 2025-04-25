@@ -11,13 +11,13 @@ describe('Projects Component', () => {
     it('renders the section title', () => {
         const sectionTitle = screen.getByTestId('section-title');
         expect(sectionTitle).toBeInTheDocument();
-        expect(sectionTitle).toHaveTextContent('Some of my Projects');
+        expect(sectionTitle).toHaveTextContent('Professional Experience');
     });
 
     it('renders the section description', () => {
         const sectionDescription = screen.getByTestId('section-description');
         expect(sectionDescription).toBeInTheDocument();
-        expect(sectionDescription).toHaveTextContent('With over five years of experience as a frontend developer');
+        expect(sectionDescription).toHaveTextContent('In the last few years, I have been making the transition to Technical Product Management');
     });
 
     it('renders all project titles', () => {
