@@ -32,7 +32,7 @@ export default function App() {
     <main className='text-main-text background body-font'>
       {init && <Particles options={particlesOptions}/>}
       {/* Uncomment the line below to enable the screen debugger */}
-      <ScreenDebugger /> 
+      {/* <ScreenDebugger />  */}
       <Navbar />
       <About />
       <Projects />
