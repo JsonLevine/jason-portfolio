@@ -31,7 +31,8 @@ export default function App() {
   return (
     <main className='text-main-text background body-font'>
       {init && <Particles options={particlesOptions}/>}
-      <ScreenDebugger />
+      {/* Uncomment the line below to enable the screen debugger */}
+      <ScreenDebugger /> 
       <Navbar />
       <About />
       <Projects />

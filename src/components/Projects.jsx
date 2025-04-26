@@ -18,7 +18,7 @@ function Projects({overrideProjects = null}) {
               Professional Experience
             </h1>
           </div>
-          <p className="bg-stronghold-eerie-black bg-opacity-70 mb-4 mx-auto leading-relaxed text-base" data-testid="section-description">
+          <p className="bg-stronghold-eerie-black bg-opacity-70 mb-4 p-4 mx-auto leading-relaxed text-base" data-testid="section-description">
           In the last few years, I have been making the transition to Technical Product Management.
           Prior to that, I worked for over 7 years as a frontend software engineer at very well known names such as UnitedHealth Group and Chewy.
           Expand the sections below for some highlites of my career so far.
@@ -76,13 +76,13 @@ function Projects({overrideProjects = null}) {
               Side Projects
             </h1>
           </div>
-          <p className="bg-stronghold-eerie-black bg-opacity-70 mx-auto leading-relaxed text-base pt-4 " data-testid="section-description-2">
+          <p className="bg-stronghold-eerie-black bg-opacity-70 mx-auto leading-relaxed text-base p-4 " data-testid="section-description-2">
           When I’m not working, I love exploring new skills and experimenting with different projects. 
           I’ve built apps with React, crafted dynamic websites on WordPress, and also dabbled in graphic and logo design with Photoshop and Illustrator.
             Below is a mix of my some of my side projects, and I will be adding more very soon.
           </p>
         </div>
-        <div className= "flex flex-wrap -m-4" data-testid="projects-list">
+        <div className= "flex flex-wrap" data-testid="projects-list">
           {projects.map((project) => (
             <a
               target="_blank" 
