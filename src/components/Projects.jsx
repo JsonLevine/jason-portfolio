@@ -11,14 +11,14 @@ function Projects({overrideProjects = null}) {
   return (
     <section className="text-stronghold-platinum body-font" data-testid="projects-section">
       <div className="container xl:px-40 px-10 py-10 mx-auto text-center">
-        <div className="flex flex-col w-full mb-10">
+        <div className="flex flex-col w-full mb-4">
           <div data-testid="section-title">
             <IdentificationIcon className="text-main-text mx-auto inline-block w-10 mb-4"/>
             <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
               Professional Experience
             </h1>
           </div>
-          <p className="bg-stronghold-eerie-black bg-opacity-70 mb-4 p-4 mx-auto leading-relaxed text-base" data-testid="section-description">
+          <p className="bg-stronghold-eerie-black bg-opacity-70 mb-4 px-4 mx-auto leading-relaxed text-base" data-testid="section-description">
           In the last few years, I have been making the transition to Technical Product Management.
           Prior to that, I worked for over 7 years as a frontend software engineer at very well known names such as UnitedHealth Group and Chewy.
           Expand the sections below for some highlites of my career so far.
@@ -76,7 +76,7 @@ function Projects({overrideProjects = null}) {
               Side Projects
             </h1>
           </div>
-          <p className="bg-stronghold-eerie-black bg-opacity-70 mx-auto leading-relaxed text-base p-4 " data-testid="section-description-2">
+          <p className="bg-stronghold-eerie-black bg-opacity-70 mx-auto leading-relaxed text-base px-4 " data-testid="section-description-2">
           When I’m not working, I love exploring new skills and experimenting with different projects. 
           I’ve built apps with React, crafted dynamic websites on WordPress, and also dabbled in graphic and logo design with Photoshop and Illustrator.
             Below is a mix of my some of my side projects, and I will be adding more very soon.
