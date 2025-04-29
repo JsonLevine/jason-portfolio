@@ -7,14 +7,11 @@ function Skills() {
   return (
     <section id="skills">
       <div className="container px-10 py-10 mx-auto">
-        <div className="text-center mb-10">
+        <div className="text-center">
         <WrenchScrewdriverIcon className="w-10 inline-block mb-4 text-main-text"/>
           <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font text-stronghold-platinum mb-4">
             Skills &amp; Technologies
           </h1>
-          <p className="leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-base">
-            {/* Description for skills? */}
-          </p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           {skills.map((skill) => (
