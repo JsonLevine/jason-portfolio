@@ -1,3 +1,5 @@
+// import { blue, mainColor } from './globalvars'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,6 +14,7 @@ module.exports = {
         }
       },
       colors: {
+        // 'stronghold-red': mainColor,
         'stronghold-red': '#E64747',
         'stronghold-eerie-black': '#191919',
         'stronghold-onyx': '#404040',
@@ -26,6 +29,7 @@ module.exports = {
       },
       boxShadow: {
         'project-shadow': '10px 10px 0 0 rgba(230, 71, 71, 0.5)',
+        // 'project-shadow': `10px 10px 0 0 ${mainColor}80`,
       },
       animation: {
         fadeIn: 'fadeIn 1.5s ease-in',
