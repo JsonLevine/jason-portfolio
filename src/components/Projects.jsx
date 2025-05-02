@@ -46,7 +46,7 @@ function Projects({overrideProjects = null}) {
                 </ul>
               </Accordion>
             </div>
-            <div className="lg:w-1/2 p-4" >
+            <div className="lg:w-1/2 p-4">
               <Accordion title="Frontend Development">
                 <ul>
                   <div className="bg-stronghold-red/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-stronghold-red ">
