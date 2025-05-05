@@ -5,7 +5,7 @@ function Accordion({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="group border-stronghold-jet rounded ">
+    <div className="group border-stronghold-jet rounded">
       <button
         className={`hover:rounded ${ isOpen ? 'rounded-t' : 'rounded'} transition ease-in-out duration-300 bg-stronghold-jet group-hover:bg-stronghold-red hover:-translate-y-1 hover:scale-110 flex items-center justify-between w-full p-4`}
         onClick={() => setIsOpen(!isOpen)}
