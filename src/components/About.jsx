@@ -4,7 +4,7 @@ import { UserPlusIcon } from "@heroicons/react/24/solid";
 function About() {
 
   function scrollToSectionBottom(section) {
-    document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    document.getElementById(section).scrollIntoView( { behavior: "smooth", block: "end", inline: "nearest" } );
   }
 
   return (
