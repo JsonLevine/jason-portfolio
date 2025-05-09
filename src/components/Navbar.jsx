@@ -4,6 +4,9 @@ function Navbar() {
 
   const [isRed, setIsRed] = useState(true);
 
+  //  Scrolls the page to the specified section
+  //  @param {string} section - The ID of the section to scroll to
+  //  @returns {void}
   function scrollToSection(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "start"});
   }
