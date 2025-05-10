@@ -3,6 +3,9 @@ import { UserPlusIcon } from "@heroicons/react/24/solid";
 
 function About() {
 
+  //  Scrolls the page to the bottom of the specified section
+  //  @param {string} section - The ID of the section to scroll to
+  //  @returns {void}
   function scrollToSectionBottom(section) {
     document.getElementById(section).scrollIntoView( { behavior: "smooth", block: "end", inline: "nearest" } );
   }
