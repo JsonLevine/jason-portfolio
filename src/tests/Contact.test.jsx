@@ -42,7 +42,7 @@ describe('Contact Component', () => {
     const emailElement = screen.getByText(/jason.levine131@gmail.com/i);
     expect(emailElement).toBeInTheDocument();
 
-    // Mock the clipboard API
+    // Mock the clipboard API in order to test the copy functionality
     Object.assign(navigator, {
       clipboard: {
         writeText: jest.fn().mockImplementation(() => Promise.resolve())
