@@ -9,13 +9,14 @@ import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer"
 import Sidebar from "./components/Sidebar";
-import ScreenDebugger from "./components/ScreenDebugger";
+// import ScreenDebugger from "./components/ScreenDebugger";
 import particlesOptions from "./particles.json";
 import "./App.css"
 
 export default function App() {
   const [init, setInit] = useState(false);
 
+  // Initialize the particles engine (the background animation)
   useEffect(() => {
       if (init) {
           return;
@@ -31,7 +32,7 @@ export default function App() {
   return (
     <main className='text-main-text background body-font'>
       {init && <Particles options={particlesOptions}/>}
-      {/* Uncomment the line below to enable the screen debugger */}
+      {/* Uncomment the line below (and the import on line 12) to enable the screen debugger */}
       {/* <ScreenDebugger />  */}
       <Navbar />
       <About />
