@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from "react";
-import Particles, {initParticlesEngine} from "@tsparticles/react";
-import {loadFull} from "tsparticles";
+import React, { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadFull } from "tsparticles";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
