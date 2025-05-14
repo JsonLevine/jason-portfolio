@@ -19,13 +19,13 @@ export default function App() {
   // Initialize the particles engine (the background animation)
   useEffect(() => {
       if (init) {
-          return;
+        return;
       }
 
       initParticlesEngine(async (engine) => {
-          await loadFull(engine);
+        await loadFull(engine);
       }).then(() => {
-          setInit(true);
+        setInit(true);
       });
   }, []);
 
