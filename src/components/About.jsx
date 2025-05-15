@@ -7,7 +7,7 @@ function About() {
   //  @param {string} section - The ID of the section to scroll to
   //  @returns {void}
   function scrollToSectionBottom(section) {
-    document.getElementById(section).scrollIntoView( { behavior: "smooth", block: "end", inline: "nearest" } );
+    document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
   }
 
   return (
