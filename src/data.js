@@ -13,7 +13,7 @@ export const projects = [
     subtitle: "Wordpress",
     description:
       "Sometimes we don't want all of the overhead of creating and maintaining a library of code. This website for my own home gym was built using exclusively Wordpress.",
-    image: "./assets/projects/stronghold2.png",
+    image: "./assets/projects/stronghold.png",
     link: "https://stoughtonstronghold.com/",
   },
 ];
