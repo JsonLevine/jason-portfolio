@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "JLingo",
-    subtitle: "React & Typescript",
+    subtitle: "React + Typescript",
     description:
       "A recreation of the 'Wordle' game, originally made famous by the game show 'Lingo', and recently brought back by the New York Times - played by millions.",
     image: "./assets/projects/jlingo.png",
