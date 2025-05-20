@@ -61,6 +61,6 @@ export const softskills = [
   "Collaboration",
   "Product Management",
   "Agile Methodologies",
-  "Quality Assurance",
+  "A/B Testing",
   "Web Analytics",
 ];
