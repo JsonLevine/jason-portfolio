@@ -1,8 +1,8 @@
 {
   "fullScreen": {
-            "enable": true,
-            "zIndex": -1
-          },
+    "enable": true,
+    "zIndex": -1
+  },
   "background": {
     "color": "#191919"
   },
