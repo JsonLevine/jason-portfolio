@@ -60,6 +60,8 @@ export const softskills = [
   "Mentorship",
   "Collaboration",
   "Product Management",
+  "Stakeholder Management",
+  "Project Estimation",
   "Agile Methodologies",
   "A/B Testing",
   "Data Analytics",
