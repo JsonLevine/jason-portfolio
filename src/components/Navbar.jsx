@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <header className="bg-stronghold-red md:sticky top-0 z-10 border-b-2 xl:px-8 border-stronghold-onyx">
-      <div className="container mx-auto flex sm:flex-wrap p-5 flex-row justify-between items-center">
+      <div className="container mx-auto flex sm:flex-wrap p-5 px-8 flex-row justify-between items-center">
         <div>
           <a href="#" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-stronghold-white text-4xl/8" data-testid="logo">
             <img
@@ -39,7 +39,7 @@ function Navbar() {
         </nav>
         <a
           target="_blank"
-          href="./assets/Jason_Levine_Resume_PM.pdf"
+          href="./assets/resume/Jason_Levine_Resume.pdf"
           className="transition ease-in-out duration-300 focus:bg-stronghold-onyx hover:bg-stronghold-onyx hover:scale-110 jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-red sm:mt-0"
           data-testid="resume-button"
         >
