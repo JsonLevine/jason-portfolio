@@ -8,7 +8,9 @@ function Navbar() {
   //  @param {string} section - The ID of the section to scroll to
   //  @returns {void}
   function scrollToSection(section) {
-    document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "start"});
+    document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "start"})
+      // After scrolling, set focus to the section for accessibility  
+    document.getElementById(section).focus({ preventScroll: true });
   }
 
   return (
@@ -24,18 +26,20 @@ function Navbar() {
           </a>
         </div>
         <nav className="text-lg mr-auto ml-4 py-1 pl-4 border-l-2 border-stronghold-onyx flex flex-wrap items-center text-stronghold-white justify-center">
-          <a 
+          <button 
             onClick={() => scrollToSection("projects")}
             tabIndex='0'
-            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 focus:text-stronghold-eerie-black hover:scale-110 hover:text-stronghold-eerie-black" data-testid="projects-link">
+            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 focus:text-stronghold-eerie-black hover:scale-110 hover:text-stronghold-eerie-black" data-testid="projects-link"
+            aria-label='Scroll to Projects Section'>
             Projects
-          </a>
-          <a 
+          </button>
+          <button
             onClick={() => scrollToSection("skills")}
             tabIndex='0'
-            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 focus:text-stronghold-eerie-black hover:scale-110 hover:text-stronghold-eerie-black" data-testid="skills-link">
+            className="jersey text-2xl cursor-pointer mr-5 ease-in duration-200 focus:text-stronghold-eerie-black hover:scale-110 hover:text-stronghold-eerie-black" data-testid="skills-link"
+            aria-label='Scroll to Skills Section'>
             Skills
-          </a>
+          </button>
         </nav>
         <a
           target="_blank"

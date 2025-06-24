@@ -5,7 +5,7 @@ import { skills, softskills } from "../data";
 function Skills() {
 
   return (
-    <section id="skills">
+    <section id="skills" tabIndex={0} aria-label='Skills Section' className="mt-10">
       <div className="container px-10 py-10 mx-auto">
         <div className="text-center">
         <WrenchScrewdriverIcon className="w-10 inline-block mb-4 text-main-text"/>
