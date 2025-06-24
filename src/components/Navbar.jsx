@@ -9,7 +9,7 @@ function Navbar() {
   //  @returns {void}
   function scrollToSection(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "start"})
-      // After scrolling, set focus to the section for accessibility  
+    // After scrolling, set focus to the section for accessibility  
     document.getElementById(section).focus({ preventScroll: true });
   }
 
@@ -46,6 +46,7 @@ function Navbar() {
           href="./assets/resume/Jason_Levine_Resume.pdf"
           className="transition ease-in-out duration-300 focus:bg-stronghold-onyx hover:bg-stronghold-onyx hover:scale-110 jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-red sm:mt-0"
           data-testid="resume-button"
+          aria-label='Open Resume in new tab'
         >
           Resume
         </a>

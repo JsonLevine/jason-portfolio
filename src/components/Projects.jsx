@@ -9,7 +9,7 @@ function Projects({overrideProjects = null}) {
   const projects = overrideProjects || actualProjects // Overrides for testing
 
   return (
-    <section className="text-stronghold-platinum body-font mt-10" data-testid="projects-section">
+    <section tabIndex={0} aria-label='Professional Experience Section' className="text-stronghold-platinum body-font mt-10" data-testid="projects-section">
       <div className="container xl:px-40 px-10 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-4">
           <div data-testid="section-title">
@@ -71,8 +71,8 @@ function Projects({overrideProjects = null}) {
             </div>
           </div>
 
-          <div id="projects" tabIndex={0} aria-label='Projects Section' className="mt-10">
-            <CubeTransparentIcon className="text-main-text hover:animate-spin-slow mx-auto inline-block w-10 mb-4 mt-20"/>
+          <div id="projects" tabIndex={0} aria-label='Projects Section' className="mt-10 pt-10">
+            <CubeTransparentIcon className="text-main-text hover:animate-spin-slow mx-auto inline-block w-10 mb-4"/>
             <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
               Side Projects
             </h1>
@@ -92,6 +92,7 @@ function Projects({overrideProjects = null}) {
               key={project.title}
               className="sm:w-1/2 p-4"
               data-testid="project-item"
+              aria-label={`Open ${project.title} in new tab`}
             >
               <div className="flex rounded border-2 border-stronghold-onyx relative transition ease-in-out duration-300 hover:shadow-project-shadow">
                 <img
@@ -102,7 +103,14 @@ function Projects({overrideProjects = null}) {
                 />
                 <div className="px-8 py-10 relative z- w-full bg-stronghold-eerie-black ease-in-out duration-300 opacity-0 hover:opacity-100">
                   {project.code ? 
-                  <a className="absolute top-0 left-0 w-12" href={project.code} target="_blank" rel="noreferrer" data-testid="github-link"><IconGitHub /></a>
+                  <a className="absolute top-0 left-0 w-12"
+                    href={project.code} 
+                    aria-label={`Open ${project.title} GitHub repository in new tab`}
+                    target="_blank" 
+                    rel="noreferrer" 
+                    data-testid="github-link">
+                    <IconGitHub />
+                  </a>
                   : <></>}
                   <h2 className="tracking-widest text-sm title-font font-medium text-stronghold-green mb-1" data-testid="project-subtitle">
                     {project.subtitle}

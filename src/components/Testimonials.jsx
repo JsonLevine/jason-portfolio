@@ -6,7 +6,7 @@ function Testimonials() {
 
   return (
     <section id="testimonials">
-      <div className="container px-10 py-10 mx-auto text-center">
+      <div className="container px-10 py-10 mt-10 mx-auto text-center">
         <UsersIcon className="text-main-text w-10 inline-block mb-4"/>
         <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font text-stronghold-platinum mb-4">
           Testimonials
