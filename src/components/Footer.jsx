@@ -10,6 +10,7 @@ function Footer() {
           className="flex flex-col items-center justify-center transition duration-300 ease-in-out hover:text-stronghold-green hover:-translate-y-1" 
           href="https://github.com/JsonLevine/jason-portfolio" 
           target="_blank" 
+          aria-label='Open Portfolio GitHub repository in new tab'
           rel="noreferrer">
           <span>
             <strong className="text-stronghold-red">2024-2025</strong> Designed and built by  

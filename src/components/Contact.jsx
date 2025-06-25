@@ -17,8 +17,8 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="relative" data-testid="contact-section">
-      <div className="container px-5 pb-10 mx-auto flex sm:flex-nowrap flex-wrap">
+    <section id="contact" tabIndex={0} aria-label='Contact Section' className="relative" data-testid="contact-section">
+      <div className="container px-5 pb-10 mt-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="m-auto sm:mr-0 xl:w-1/3 md:w-1/3 w-3/4 rounded-lg overflow-hidden p-4 flex items-start justify-start relative">
           <img
             width="100%"
@@ -71,7 +71,12 @@ function Contact() {
               </span>
               <ArrowTopRightOnSquareIcon className="text-stronghold-platinum ml-auto group-hover:text-link-blue w-6 h-6 inline-block group-hover:-translate-y-1 group-hover:scale-125 transition ease-in-out duration-300"/>
             </a>
-            <span data-testid="email-container" data-tooltip-id="copiedTooltip" onClick={copyEmail} className="group cursor-pointer bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-stronghold-platinum">
+            <span 
+              data-testid="email-container" 
+              data-tooltip-id="copiedTooltip" 
+              onClick={copyEmail} 
+              aria-label="Click to copy email to clipboard"
+              className="group cursor-pointer bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-stronghold-platinum">
               <InboxArrowDownIcon className="text-stronghold-platinum w-6 h-6 flex-shrink-0 mr-4"/>
               <span className="title-font text-stronghold-platinum">
                <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">

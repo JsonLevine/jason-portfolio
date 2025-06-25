@@ -8,10 +8,12 @@ function About() {
   //  @returns {void}
   function scrollToSectionBottom(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    // After scrolling, set focus to the section for accessibility  
+    document.getElementById(section).focus({ preventScroll: true });
   }
 
   return (
-    <section id="about" data-testid="about-section">
+    <section id="about" tabIndex={0} aria-label='About Me Section' data-testid="about-section">
       <div className="container mx-auto flex px-10 pt-20 pb-10 md:flex-row flex-col items-center">
         <div className="bg-stronghold-eerie-black bg-opacity-70 lg:ml-8 md:w-1/2 xl:pl-40 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
           <h1 className="title-font jersey-25 2xl:text-8xl lg:text-7xl text-6xl mb-4 font-medium text-stronghold-platinum">
@@ -28,14 +30,15 @@ function About() {
           </span>
           <div className="flex flex-col xl:flex-row justify-center mb-4">
             <div className="flex justify-center">
-              <a
+              <button
                 data-testid="connect-with-me-button"
                 onClick={() => scrollToSectionBottom("contact")}
                 tabIndex='0'
-                className="group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex bg-stronghold-jet border-0 py-2 px-6 focus:outline-none focus:bg-stronghold-red hover:bg-stronghold-red text-stronghold-platinum rounded">
+                className="group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex bg-stronghold-jet border-0 py-2 px-6 focus:outline-none focus:bg-stronghold-red hover:bg-stronghold-red text-stronghold-platinum rounded"
+                aria-label='Scroll to Contact Section'>
                 <UserPlusIcon className="h-8 w-4 mr-2 transition ease-in-out duration-300 text-stronghold-platinum"/>
                 Connect With Me
-              </a>
+              </button>
             </div>
           </div>
         </div>
