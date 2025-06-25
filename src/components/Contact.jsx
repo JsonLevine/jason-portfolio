@@ -25,7 +25,7 @@ function Contact() {
             height="100%"
             className="inset-0 rounded shadow-project-shadow"
             src="/assets/pickleball.png"
-            alt="Me and my dog, Riley"
+            alt="Me playing pickleball at my own wedding"
           />
         </div>
         <div className="xl:w-1/3 md:w-2/3 lg:w-1/2 flex flex-col md:mr-auto w-full md:py-4 mt-4 md:mt-0 rounded">
