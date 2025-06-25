@@ -96,7 +96,7 @@ function Projects({overrideProjects = null}) {
             >
               <div className="flex rounded border-2 border-stronghold-onyx relative transition ease-in-out duration-300 hover:shadow-project-shadow">
                 <img
-                  alt="gallery"
+                  alt={`Preview image of ${project.title} project`}
                   className="absolute rounded inset-0 w-full h-full object-cover object-top"
                   src={project.image}
                   data-testid="project-image"
