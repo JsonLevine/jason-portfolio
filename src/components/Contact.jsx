@@ -75,7 +75,6 @@ function Contact() {
               data-testid="email-container" 
               data-tooltip-id="copiedTooltip" 
               onClick={copyEmail} 
-              aria-label="Click to copy email to clipboard"
               className="group cursor-pointer bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-stronghold-platinum">
               <InboxArrowDownIcon className="text-stronghold-platinum w-6 h-6 flex-shrink-0 mr-4"/>
               <span className="title-font text-stronghold-platinum">
