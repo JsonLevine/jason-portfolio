@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         // 'stronghold-red': mainColor,
         'stronghold-red': '#E64747',
+        'stronghold-red-accessible': '#f84d4d',
         'stronghold-eerie-black': '#191919',
         'stronghold-onyx': '#404040',
         'stronghold-platinum': '#E4E4E4',
@@ -23,7 +24,9 @@ module.exports = {
         'stronghold-white': '#ffffff',
         'stronghold-green': '#4ADE80',
         'chewy-blue': '#3b82f6',
+        'chewy-blue-accessible': '#99C0FF',
         'optum-orange': '#f97316',
+        'optum-orange-accessible': '#F99550',
         'link-blue': '#818cf8',
         'main-text': '#9CA3AF'
       },

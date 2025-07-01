@@ -29,7 +29,7 @@ function Skills() {
           {softskills.map((skill) => (
             <div key={skill} className="cursor-default p-2 sm:w-1/2 w-full">
               <div className="bg-stronghold-jet group rounded flex p-4 h-full items-center transition ease-in-out duration-300 hover:bg-stronghold-red hover:-translate-y-1 hover:scale-105">
-                <ClipboardDocumentCheckIcon className="text-stronghold-red w-6 h-6 flex-shrink-0 mr-4 transition ease-in-out duration-300 group-hover:text-stronghold-platinum"/>
+                <ClipboardDocumentCheckIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4 transition ease-in-out duration-300 group-hover:text-stronghold-platinum"/>
                 <span className="jersey-25 text-xl title-font font-medium text-stronghold-platinum">
                   {skill}
                 </span>

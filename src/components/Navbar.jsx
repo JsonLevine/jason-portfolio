@@ -44,7 +44,7 @@ function Navbar() {
         <a
           target="_blank"
           href="./assets/resume/Jason_Levine_Resume.pdf"
-          className="transition ease-in-out duration-300 focus:bg-stronghold-onyx hover:bg-stronghold-onyx hover:scale-110 jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-red sm:mt-0"
+          className="transition ease-in-out duration-300 hover:scale-110 focus:ring-4 ring-stronghold-eerie-black jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-eerie-black sm:mt-0"
           data-testid="resume-button"
           aria-label='Open Resume in new tab'
         >
