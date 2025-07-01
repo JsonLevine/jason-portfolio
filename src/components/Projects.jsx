@@ -38,10 +38,10 @@ function Projects({overrideProjects = null}) {
                     <li><span className="text-chewy-blue">•</span>	I	led a critical recovery operation after a JIRA failure, rebuilding 300+ tickets with complete metadata in under 24 hours to prevent sprint disruption</li>
                   </div>
                   <div className="bg-optum-orange/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-optum-orange">
-                    <li>at <span className="jersey text-2xl text-optum-orange">Optum (UnitedHealth):</span></li>
-                    <li><span className="text-optum-orange">•</span>	I volunteered as a manager for new hires in our technology development program. </li>
-                    <li><span className="text-optum-orange">•</span>	In order to continuously improve our tools, I ran live user-testing feedback sessions with relevant stakeholders.</li>
-                    <li><span className="text-optum-orange">•</span>	I was an active member of the Optum branch of Toastmasters International (an educational organization that teaches public speaking and leadership skills). </li>
+                    <li>at <span className="jersey text-2xl optum-orange-accessible">Optum (UnitedHealth):</span></li>
+                    <li><span className="optum-orange-accessible">•</span>	I volunteered as a manager for new hires in our technology development program. </li>
+                    <li><span className="optum-orange-accessible">•</span>	In order to continuously improve our tools, I ran live user-testing feedback sessions with relevant stakeholders.</li>
+                    <li><span className="optum-orange-accessible">•</span>	I was an active member of the Optum branch of Toastmasters International (an educational organization that teaches public speaking and leadership skills). </li>
                   </div>
                 </ul>
               </Accordion>
@@ -61,10 +61,10 @@ function Projects({overrideProjects = null}) {
                     <li><span className="text-chewy-blue">•</span>	I directed the technical implementation of user interaction tracking and analytics architecture, creating metrics frameworks that shaped product decisions and user experience improvements across the platform.</li>
                   </div>
                   <div className="bg-optum-orange/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-optum-orange">
-                    <li>at <span className=" jersey text-2xl text-optum-orange">Optum (UnitedHealth):</span></li> 
-                    <li><span className="text-optum-orange">•</span>	I designed and built a modernized version of a very outdated internal placement tool.</li>
-                    <li><span className="text-optum-orange">•</span>	I led the continuous planning and implementation of new features for the above tool.</li>
-                    <li><span className="text-optum-orange">•</span>	I functioned as the lead engineer on building a tool designed to securely store information on internal projects and resources.</li>
+                    <li>at <span className=" jersey text-2xl optum-orange-accessible">Optum (UnitedHealth):</span></li> 
+                    <li><span className="optum-orange-accessible">•</span>	I designed and built a modernized version of a very outdated internal placement tool.</li>
+                    <li><span className="optum-orange-accessible">•</span>	I led the continuous planning and implementation of new features for the above tool.</li>
+                    <li><span className="optum-orange-accessible">•</span>	I functioned as the lead engineer on building a tool designed to securely store information on internal projects and resources.</li>
                   </div>
                 </ul>
               </Accordion>

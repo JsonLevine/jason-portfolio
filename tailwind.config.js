@@ -25,6 +25,7 @@ module.exports = {
         'stronghold-green': '#4ADE80',
         'chewy-blue': '#99C0FF',
         'optum-orange': '#f97316',
+        'optum-orange-accessible': '#F99550',
         'link-blue': '#818cf8',
         'main-text': '#9CA3AF'
       },
