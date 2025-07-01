@@ -28,8 +28,8 @@ function Projects({overrideProjects = null}) {
               <Accordion title="Product Management">
                 <ul>
                   <div className="bg-stronghold-red/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-stronghold-red ">
-                    <li><strong className="jersey text-2xl text-stronghold-red">Currently:</strong></li>
-                    <li><span className="text-stronghold-red">•</span> I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-link-blue" href="https://www.pmi.org">pmi.org</a>. This is to formalize extensive hands-on experience with structured methodologies that are essential for project/product management</li>
+                    <li><strong className="jersey text-2xl text-stronghold-red-accessible">Currently:</strong></li>
+                    <li><span className="text-stronghold-red-accessible">•</span> I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-link-blue" href="https://www.pmi.org">pmi.org</a>. This is to formalize extensive hands-on experience with structured methodologies that are essential for project/product management</li>
                   </div>
                   <div className="bg-chewy-blue/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-chewy-blue">
                     <li>at <span className=" jersey text-2xl text-chewy-blue">Chewy:</span></li>
@@ -50,8 +50,8 @@ function Projects({overrideProjects = null}) {
               <Accordion title="Frontend Development">
                 <ul>
                   <div className="bg-stronghold-red/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-stronghold-red">
-                    <li><strong className="jersey text-2xl text-stronghold-red">Currently:</strong></li>
-                    <li><span className="text-stronghold-red">•</span> I am working on developing an online React course in partnership with newline.co.  In addition, I am continuously using this site to learn and experiment with new tools, as well as taking courses to keep my frontend skills up to date.</li>
+                    <li><strong className="jersey text-2xl text-stronghold-red-accessible">Currently:</strong></li>
+                    <li><span className="text-stronghold-red-accessible">•</span> I am working on developing an online React course in partnership with newline.co.  In addition, I am continuously using this site to learn and experiment with new tools, as well as taking courses to keep my frontend skills up to date.</li>
                   </div>
                   <div className="bg-chewy-blue/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-chewy-blue">
                     <li>at <span className=" jersey text-2xl text-chewy-blue">Chewy:</span></li>
@@ -115,7 +115,7 @@ function Projects({overrideProjects = null}) {
                   <h2 className="tracking-widest text-sm title-font font-medium text-stronghold-green mb-1" data-testid="project-subtitle">
                     {project.subtitle}
                   </h2>
-                  <h1 className="title-font text-lg font-medium text-stronghold-red mb-3" data-testid="project-title">
+                  <h1 className="title-font text-lg font-medium text-stronghold-red-accessible mb-3" data-testid="project-title">
                     {project.title}
                   </h1>
                   <p className="leading-relaxed" data-testid="project-description">{project.description}</p>

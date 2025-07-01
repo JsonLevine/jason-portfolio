@@ -38,7 +38,7 @@ function Contact() {
             </div>
             <div className="bg-stronghold-eerie-black bg-opacity-70 justify-evenly rounded flex p-4 mb-4 items-center">
               <div className="flex items-center">
-                <MapPinIcon className="text-stronghold-red w-6 h-6 flex-shrink-0 mr-4"/>
+                <MapPinIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4"/>
                 <span className="title-font text-stronghold-platinum">
                   <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                     LOCATION
@@ -50,7 +50,7 @@ function Contact() {
               </div>
               <div className="border-l border-stronghold-red w-px md:h-8"></div>
               <div className="flex items-center">
-                <DevicePhoneMobileIcon className="text-stronghold-red w-6 h-6 flex-shrink-0 mr-4"/>
+                <DevicePhoneMobileIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4"/>
                 <span className="title-font text-stronghold-platinum">
                   <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                     PHONE

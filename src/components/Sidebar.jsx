@@ -18,7 +18,7 @@ function Sidebar() {
           <span className="w-[.1rem] block h-60 bg-stronghold-red"></span>
           <a href="mailto:jason.levine131@gmail.com" 
             aria-label='Open a new email to Jason Levine'
-            className="transition ease-in-out duration-300 hover:text-stronghold-red hover:translate-y-1 mt-[6rem] rotate-90">
+            className="transition ease-in-out duration-300 hover:text-stronghold-red-accessible hover:translate-y-1 mt-[6rem] rotate-90">
               jason.levine131@gmail.com
           </a>
       </div>

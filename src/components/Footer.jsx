@@ -13,8 +13,8 @@ function Footer() {
           aria-label='Open Portfolio GitHub repository in new tab'
           rel="noreferrer">
           <span>
-            <strong className="text-stronghold-red">2024-2025</strong> Designed and built by  
-            <span className="jersey text-xl text-stronghold-red pl-1">
+            <strong className="text-stronghold-red-accessible">2024-2025</strong> Designed and built by  
+            <span className="jersey text-xl text-stronghold-red-accessible pl-1">
               <strong>Jason Levine</strong><br/>
             </span>
           </span>
