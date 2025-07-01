@@ -60,7 +60,7 @@ function Contact() {
               </div>
             </div>
             <a href="https://www.linkedin.com/in/jasonllevine/" target="_blank" rel="noreferrer" className="group bg-stronghold-jet rounded flex p-4 mb-4 items-center transition ease-in-out duration-300 hover:ring-4 hover:ring-chewy-blue">
-              <UserCircleIcon className="chewy-blue-accessible w-6 h-6 flex-shrink-0 mr-4"/>
+              <UserCircleIcon className="text-chewy-blue-accessible w-6 h-6 flex-shrink-0 mr-4"/>
               <span className="title-font text-stronghold-platinum">
                 <h2 className="title-font font-semibold text-stronghold-platinum tracking-widest text-xs">
                   LINKEDIN

@@ -32,16 +32,16 @@ function Projects({overrideProjects = null}) {
                     <li><span className="text-stronghold-red-accessible">•</span> I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-link-blue" href="https://www.pmi.org">pmi.org</a>. This is to formalize extensive hands-on experience with structured methodologies that are essential for project/product management</li>
                   </div>
                   <div className="bg-chewy-blue/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-chewy-blue">
-                    <li>at <span className=" jersey text-2xl chewy-blue-accessible">Chewy:</span></li>
-                    <li><span className="text-chewy-blue">•</span>	I managed a cross-team backlog of tickets in JIRA and contributed heavily to analytics document creation & organization within Confluence.</li>
-                    <li><span className="text-chewy-blue">•</span>	I organized regular product demos - providing frequent updates to stakeholders. I also coordinated & ran regular agile ceremonies for the analytics team in order to streamline feature development.</li>
-                    <li><span className="text-chewy-blue">•</span>	I	led a critical recovery operation after a JIRA failure, rebuilding 300+ tickets with complete metadata in under 24 hours to prevent sprint disruption</li>
+                    <li>at <span className=" jersey text-2xl text-chewy-blue-accessible">Chewy:</span></li>
+                    <li><span className="text-chewy-blue-accessible">•</span>	I managed a cross-team backlog of tickets in JIRA and contributed heavily to analytics document creation & organization within Confluence.</li>
+                    <li><span className="text-chewy-blue-accessible">•</span>	I organized regular product demos - providing frequent updates to stakeholders. I also coordinated & ran regular agile ceremonies for the analytics team in order to streamline feature development.</li>
+                    <li><span className="text-chewy-blue-accessible">•</span>	I	led a critical recovery operation after a JIRA failure, rebuilding 300+ tickets with complete metadata in under 24 hours to prevent sprint disruption</li>
                   </div>
                   <div className="bg-optum-orange/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-optum-orange">
-                    <li>at <span className="jersey text-2xl optum-orange-accessible">Optum (UnitedHealth):</span></li>
-                    <li><span className="optum-orange-accessible">•</span>	I volunteered as a manager for new hires in our technology development program. </li>
-                    <li><span className="optum-orange-accessible">•</span>	In order to continuously improve our tools, I ran live user-testing feedback sessions with relevant stakeholders.</li>
-                    <li><span className="optum-orange-accessible">•</span>	I was an active member of the Optum branch of Toastmasters International (an educational organization that teaches public speaking and leadership skills). </li>
+                    <li>at <span className="jersey text-2xl text-optum-orange-accessible">Optum (UnitedHealth):</span></li>
+                    <li><span className="text-optum-orange-accessible">•</span>	I volunteered as a manager for new hires in our technology development program. </li>
+                    <li><span className="text-optum-orange-accessible">•</span>	In order to continuously improve our tools, I ran live user-testing feedback sessions with relevant stakeholders.</li>
+                    <li><span className="text-optum-orange-accessible">•</span>	I was an active member of the Optum branch of Toastmasters International (an educational organization that teaches public speaking and leadership skills). </li>
                   </div>
                 </ul>
               </Accordion>
@@ -54,17 +54,17 @@ function Projects({overrideProjects = null}) {
                     <li><span className="text-stronghold-red-accessible">•</span> I am working on developing an online React course in partnership with newline.co.  In addition, I am continuously using this site to learn and experiment with new tools, as well as taking courses to keep my frontend skills up to date.</li>
                   </div>
                   <div className="bg-chewy-blue/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-chewy-blue">
-                    <li>at <span className=" jersey text-2xl text-chewy-blue">Chewy:</span></li>
-                    <li><span className="text-chewy-blue">•</span>	My responsibilities included developing and enhancing critical pages such as the <a className="text-link-blue" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-link-blue" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
+                    <li>at <span className=" jersey text-2xl text-chewy-blue-accessible">Chewy:</span></li>
+                    <li><span className="text-chewy-blue-accessible">•</span>	My responsibilities included developing and enhancing critical pages such as the <a className="text-link-blue" href="https://www.chewy.com/b/food-332">Search/Browse</a>, <a className="text-link-blue" href="https://www.chewy.com/american-journey-protein-grains/dp/136721">Product Detail Page (PDP)</a>,
                       and <a className="text-link-blue" href="https://www.chewy.com/">Home</a> pages.</li>
-                    <li><span className="text-chewy-blue">•</span>	I functioned as the Subject Matter Expert for A/B testing & experimentation across the 20+ teams that owned pages within Chewy.com.  This involved an extensive amount of cross-team collaboration.</li>
-                    <li><span className="text-chewy-blue">•</span>	I directed the technical implementation of user interaction tracking and analytics architecture, creating metrics frameworks that shaped product decisions and user experience improvements across the platform.</li>
+                    <li><span className="text-chewy-blue-accessible">•</span>	I functioned as the Subject Matter Expert for A/B testing & experimentation across the 20+ teams that owned pages within Chewy.com.  This involved an extensive amount of cross-team collaboration.</li>
+                    <li><span className="text-chewy-blue-accessible">•</span>	I directed the technical implementation of user interaction tracking and analytics architecture, creating metrics frameworks that shaped product decisions and user experience improvements across the platform.</li>
                   </div>
                   <div className="bg-optum-orange/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-optum-orange">
-                    <li>at <span className=" jersey text-2xl optum-orange-accessible">Optum (UnitedHealth):</span></li> 
-                    <li><span className="optum-orange-accessible">•</span>	I designed and built a modernized version of a very outdated internal placement tool.</li>
-                    <li><span className="optum-orange-accessible">•</span>	I led the continuous planning and implementation of new features for the above tool.</li>
-                    <li><span className="optum-orange-accessible">•</span>	I functioned as the lead engineer on building a tool designed to securely store information on internal projects and resources.</li>
+                    <li>at <span className=" jersey text-2xl text-optum-orange-accessible">Optum (UnitedHealth):</span></li> 
+                    <li><span className="text-optum-orange-accessible">•</span>	I designed and built a modernized version of a very outdated internal placement tool.</li>
+                    <li><span className="text-optum-orange-accessible">•</span>	I led the continuous planning and implementation of new features for the above tool.</li>
+                    <li><span className="text-optum-orange-accessible">•</span>	I functioned as the lead engineer on building a tool designed to securely store information on internal projects and resources.</li>
                   </div>
                 </ul>
               </Accordion>

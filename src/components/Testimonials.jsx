@@ -27,7 +27,7 @@ function Testimonials() {
                     <span className="title-font font-bold text-stronghold-white">
                       {testimonial.name}
                     </span>
-                    <span className="jersey chewy-blue-accessible text-xl uppercase">
+                    <span className="jersey text-chewy-blue-accessible text-xl uppercase">
                       {testimonial.company}
                     </span>
                     <span className="text-stronghold-platinum text-xs">
