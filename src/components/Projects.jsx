@@ -32,7 +32,7 @@ function Projects({overrideProjects = null}) {
                     <li><span className="text-stronghold-red-accessible">•</span> I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-link-blue" href="https://www.pmi.org">pmi.org</a>. This is to formalize extensive hands-on experience with structured methodologies that are essential for project/product management</li>
                   </div>
                   <div className="bg-chewy-blue/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-chewy-blue">
-                    <li>at <span className=" jersey text-2xl text-chewy-blue">Chewy:</span></li>
+                    <li>at <span className=" jersey text-2xl chewy-blue-accessible">Chewy:</span></li>
                     <li><span className="text-chewy-blue">•</span>	I managed a cross-team backlog of tickets in JIRA and contributed heavily to analytics document creation & organization within Confluence.</li>
                     <li><span className="text-chewy-blue">•</span>	I organized regular product demos - providing frequent updates to stakeholders. I also coordinated & ran regular agile ceremonies for the analytics team in order to streamline feature development.</li>
                     <li><span className="text-chewy-blue">•</span>	I	led a critical recovery operation after a JIRA failure, rebuilding 300+ tickets with complete metadata in under 24 hours to prevent sprint disruption</li>
