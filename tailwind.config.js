@@ -27,7 +27,7 @@ module.exports = {
         'chewy-blue-accessible': '#99C0FF',
         'optum-orange': '#f97316',
         'optum-orange-accessible': '#F99550',
-        'link-blue': '#818cf8',
+        'link-blue': '#8F99FF',
         'main-text': '#9CA3AF'
       },
       boxShadow: {
