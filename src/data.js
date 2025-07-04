@@ -3,7 +3,7 @@ export const projects = [
     title: "JLingo",
     subtitle: "React + Typescript",
     description:
-      "A recreation of the 'Wordle' game, originally made famous by the game show 'Lingo', and recently brought back by the New York Times - played by millions.",
+      "A recreation of the original 'Wordle' game, originally made famous by the game show 'Lingo', and recently brought back by the New York Times - played by millions.",
     image: "./assets/projects/jlingo.png",
     link: "https://jlingo2.onrender.com",
     code: "https://github.com/JsonLevine/JLingo2" 
@@ -15,6 +15,20 @@ export const projects = [
       "Sometimes we don't want all of the overhead of creating and maintaining a library of code. This website for my own home gym was built using exclusively Wordpress.",
     image: "./assets/projects/stronghold.png",
     link: "https://stoughtonstronghold.com/",
+  },
+  {
+    title: "More Coming Soon!",
+    subtitle: "???",
+    description:
+      "I have a few more projects in the works that I can't wait to share with you! Stay tuned for updates.",
+    image: "./assets/projects/comingSoonTape.png",
+  },
+  {
+    title: "More Coming Soon!",
+    subtitle: "???",
+    description:
+      "I have a few more projects in the works that I can't wait to share with you! Stay tuned for updates.",
+    image: "./assets/projects/comingSoonTape.png",
   },
 ];
 
