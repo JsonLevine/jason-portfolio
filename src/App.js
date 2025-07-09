@@ -36,9 +36,9 @@ export default function App() {
       {init && !reducedMotion && <Particles options={particlesOptions}/>}
       {/* Uncomment the line below (and the import on line 12) to enable the screen debugger */}
       {/* <ScreenDebugger />  */}
-      <Navbar />
+      <Navbar useReducedMotion/>
       {reducedMotion ? <p>You're using reduced motion!</p> : null}
-      <About />
+      <About useReducedMotion/>
       <Projects />
       <Skills />
       <Testimonials />

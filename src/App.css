@@ -4,19 +4,14 @@ html {
 
 /* Tone down the animation to avoid vestibular motion triggers. */
 @media (prefers-reduced-motion: reduce) {
-  .App {
-    animation: none;
-    transform: none;
+  body, a, button, svg, div, span, p {
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+    transition: none !important;
+    transform: none !important;
+    scale: none !important;
+    animation: none !important;
   }
-a:hover, button:hover, svg:hover, div:hover, span:hover, p:hover {
-  transition-duration: 0s !important;
-  transition-delay: 0s !important;
-  transition: none !important;
-  transform: none !important;
-  scale: none !important;
-  animation: none !important;
-}
-
 }
 
 .jersey {

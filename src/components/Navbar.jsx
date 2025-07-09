@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Navbar() {
+function Navbar(useReducedMotion) {
 
   const [isRed, setIsRed] = useState(true);
 
@@ -8,7 +8,7 @@ function Navbar() {
   //  @param {string} section - The ID of the section to scroll to
   //  @returns {void}
   function scrollToSection(section) {
-    document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "start"})
+    document.getElementById(section).scrollIntoView({ behavior: useReducedMotion ? "instant" : "smooth", block: "start"})
     // After scrolling, set focus to the section for accessibility  
     document.getElementById(section).focus({ preventScroll: true });
   }
