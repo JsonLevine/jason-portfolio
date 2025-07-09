@@ -10,6 +10,7 @@ import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer"
 import Sidebar from "./components/Sidebar";
+import ReducedMotionBanner from "./components/ReducedMotionBanner";
 // import ScreenDebugger from "./components/ScreenDebugger";
 import particlesOptions from "./particles.json";
 import "./App.css"
@@ -29,22 +30,22 @@ export default function App() {
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  });
 
   return (
     <main className='text-main-text background body-font'>
       {init && !reducedMotion && <Particles options={particlesOptions}/>}
       {/* Uncomment the line below (and the import on line 12) to enable the screen debugger */}
       {/* <ScreenDebugger />  */}
-      <Navbar useReducedMotion/>
-      {reducedMotion ? <p>You're using reduced motion!</p> : null}
-      <About useReducedMotion/>
+      <Navbar useReducedMotion={reducedMotion}/>
+      {reducedMotion ? <ReducedMotionBanner /> : null}
+      <About useReducedMotion={reducedMotion}/>
       <Projects />
       <Skills />
       <Testimonials />
       <Contact />
       <Footer />
-      <Sidebar useReducedMotion/>
+      <Sidebar useReducedMotion={reducedMotion}/>
     </main>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Navbar(useReducedMotion) {
+function Navbar({useReducedMotion}) {
 
   const [isRed, setIsRed] = useState(true);
 

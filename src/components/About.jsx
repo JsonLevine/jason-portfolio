@@ -1,7 +1,7 @@
 import { React } from 'react'
 import { UserPlusIcon } from "@heroicons/react/24/solid";
 
-function About(useReducedMotion) {
+function About({useReducedMotion}) {
 
   //  Scrolls the page to the bottom of the specified section
   //  @param {string} section - The ID of the section to scroll to
