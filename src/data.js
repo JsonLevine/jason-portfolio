@@ -24,7 +24,7 @@ export const projects = [
     image: "./assets/projects/comingSoonTape.png",
   },
   {
-    title: "More Coming Soon!",
+    title: "(Even) More Coming Soon!",
     subtitle: "???",
     description:
       "I have a few more projects in the works that I can't wait to share with you! Stay tuned for updates.",
