@@ -38,7 +38,7 @@ export default function App() {
       {/* Uncomment the line below (and the import on line 12) to enable the screen debugger */}
       {/* <ScreenDebugger />  */}
       <Navbar useReducedMotion={reducedMotion}/>
-      {reducedMotion ? <ReducedMotionBanner /> : null}
+      {reducedMotion && <ReducedMotionBanner />}
       <About useReducedMotion={reducedMotion}/>
       <Projects />
       <Skills />
