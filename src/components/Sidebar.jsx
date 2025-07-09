@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React from 'react'
 import IconGitHub from './icons/github'
 import IconInstagram from './icons/instagram'
 import IconLinkedin from './icons/linkedin'
