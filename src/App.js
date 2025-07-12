@@ -9,9 +9,9 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer"
+// import ScreenDebugger from "./components/ScreenDebugger";
 import Sidebar from "./components/Sidebar";
 import ReducedMotionBanner from "./components/ReducedMotionBanner";
-// import ScreenDebugger from "./components/ScreenDebugger";
 import particlesOptions from "./particles.json";
 import "./App.css"
 

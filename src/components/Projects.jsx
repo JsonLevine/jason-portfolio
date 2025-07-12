@@ -3,6 +3,7 @@ import { CubeTransparentIcon, IdentificationIcon } from "@heroicons/react/24/sol
 import IconGitHub from './icons/github'
 import { projects as actualProjects } from "../data";
 import Accordion from "./Accordion.jsx"
+import Disclaimer from './Disclaimer.jsx';
 
 function Projects({overrideProjects = null}) {
 
@@ -70,6 +71,8 @@ function Projects({overrideProjects = null}) {
               </Accordion>
             </div>
           </div>
+
+          {/* <Disclaimer /> */}
 
           <div id="projects" tabIndex={0} aria-label='Projects Section' className="mt-10 pt-10">
             <CubeTransparentIcon className="text-main-text hover:animate-spin-slow mx-auto inline-block w-10 mb-4"/>
