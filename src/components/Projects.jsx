@@ -72,7 +72,7 @@ function Projects({overrideProjects = null}) {
             </div>
           </div>
 
-          {/* <Disclaimer /> */}
+          <Disclaimer />
 
           <div id="projects" tabIndex={0} aria-label='Projects Section' className="mt-10 pt-10">
             <CubeTransparentIcon className="text-main-text hover:animate-spin-slow mx-auto inline-block w-10 mb-4"/>
