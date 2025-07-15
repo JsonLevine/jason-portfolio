@@ -28,7 +28,10 @@ module.exports = {
         'optum-orange': '#F97316',
         'optum-orange-accessible': '#F99550',
         'link-blue': '#8F99FF',
-        'main-text': '#9CA3AF'
+        'main-text': '#9CA3AF',
+        'ymca-purple': '#BD9DFA',
+        'taskrabbit-green': '#6BD878',
+        'vuori-blue': '#4EEFD9',
       },
       boxShadow: {
         'project-shadow': '10px 10px 0 0 rgba(230, 71, 71, 0.5)',
