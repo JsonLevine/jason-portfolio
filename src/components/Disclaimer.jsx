@@ -2,7 +2,7 @@ import React from 'react'
 
 function Disclaimer() {
   return (
-    <div className='disclaimer md:text-justify m-10 p-10 text-left bg-stronghold-red/50 ring-4 ring-stronghold-red text-stronghold-platinum rounded-lg shadow-lg'>
+    <div className='disclaimer md:text-justify m-10 p-10 text-left bg-stronghold-red/60 ring-4 ring-stronghold-red text-stronghold-platinum rounded-lg shadow-lg'>
         <button 
         className="jersey text-xl float-right text-stronghold-platinum bg-stronghold-red/70 hover:bg-stronghold-red/90 transition ease-in-out hover:scale-110 rounded-md p-2 shadow-md"
         onClick={() => document.querySelector('.disclaimer').style.display = 'none'}
