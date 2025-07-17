@@ -9,7 +9,7 @@ function Disclaimer() {
         >
             Dismiss
         </button>
-        <div className='jersey md:text-3xl text-xl md:text-left'>July 11, 2025:</div>
+        <div className='jersey md:text-3xl text-xl md:text-left'>July 11, 2025</div>
         <div className='jersey-25 md:text-5xl text-3xl font-bold mb-4 md:text-left'>A personal note</div>
 
         <span>Since late 2023, I have taken a deliberate step to explore career paths beyond tech.  I have spent time exploring new professional interests, including fitness and operations management.  Some of the opportunities I have pursued include:</span>
