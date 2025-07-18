@@ -2,14 +2,14 @@ import React from 'react'
 
 function Disclaimer() {
   return (
-    <div className='disclaimer md:text-justify m-10 p-10 text-left bg-stronghold-red/60 ring-4 ring-stronghold-red text-stronghold-platinum rounded-lg shadow-lg'>
+    <div className='disclaimer md:text-justify m-10 p-10 text-left bg-stronghold-eerie-black/80 ring-4 ring-stronghold-red-accessible text-stronghold-platinum rounded-lg'>
         <button 
-        className="jersey text-xl float-right text-stronghold-platinum bg-stronghold-red/70 hover:bg-stronghold-red/90 transition ease-in-out hover:scale-110 rounded-md p-2 shadow-md"
+        className="jersey text-xl float-right text-stronghold-platinum bg-stronghold-red-accessible/70 hover:bg-stronghold-red-accessible transition ease-in-out hover:scale-110 rounded-md p-2 shadow-md"
         onClick={() => document.querySelector('.disclaimer').style.display = 'none'}
         >
             Dismiss
         </button>
-        <div className='jersey md:text-3xl text-xl md:text-left'>July 11, 2025</div>
+        <div className='jersey md:text-3xl text-xl md:text-left text-stronghold-red-accessible'>July 11, 2025</div>
         <div className='jersey-25 md:text-5xl text-3xl font-bold mb-4 md:text-left'>A personal note</div>
 
         <span>Since late 2023, I have taken a deliberate step to explore career paths beyond tech.  I have spent time exploring new professional interests, including fitness and operations management.  Some of the opportunities I have pursued include:</span>
