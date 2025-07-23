@@ -17,17 +17,18 @@ export const projects = [
     link: "https://stoughtonstronghold.com/",
   },
   {
+    title: "Find me on Fiverr!",
+    subtitle: "Accessibility Audits",
+    description:
+      "I have an open freelance gig posted on Fiverr where I run accessibility audits for smaller websites. I work to provide them feedback and actional improvement steps.",
+    image: "./assets/projects/fiverrGig.png",
+    link: "https://www.fiverr.com/json_levine/run-an-accessibility-audit-and-provide-clear-actionable-feedback"
+  },
+  {
     title: "More Coming Soon!",
     subtitle: "???",
     description:
-      "I have a few more projects in the works that I can't wait to share with you! Stay tuned for updates.",
-    image: "./assets/projects/comingSoonTape.png",
-  },
-  {
-    title: "(Even) More Coming Soon!",
-    subtitle: "???",
-    description:
-      "I have a few more projects in the works that I can't wait to share with you! Stay tuned for updates.",
+      "I have a few more projects in the works that I can't wait to share with you! Stay tuned for updates.  In the meantime, you can check out my other projects above.",
     image: "./assets/projects/comingSoonTape.png",
   },
 ];
