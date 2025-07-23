@@ -25,6 +25,7 @@ module.exports = {
         'optum-orange': '#F97316',
         'optum-orange-accessible': '#F99550',
         'link-blue': '#8F99FF',
+        'link-dark-blue': '#5D6AFD',
         'main-text': '#9CA3AF',
         'ymca-purple': '#BD9DFA',
         'taskrabbit-green': '#6BD878',
