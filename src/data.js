@@ -72,7 +72,7 @@ export const skills = [
 
 export const softskills = [
   "Mentorship",
-  "Collaboration",
+  "Accessibility Testing",
   "Product Management",
   "Stakeholder Management",
   "Project Estimation",
