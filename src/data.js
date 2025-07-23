@@ -12,7 +12,7 @@ export const projects = [
     title: "Stoughton Stronghold",
     subtitle: "Wordpress",
     description:
-      "Sometimes we don't want all of the overhead of creating and maintaining a library of code. This website for my own home gym was built using exclusively Wordpress.",
+      "Sometimes we don't want all of the overhead of creating and owning a library of code. This website for my own home gym was built using exclusively Wordpress.",
     image: "./assets/projects/stronghold.png",
     link: "https://stoughtonstronghold.com/",
   },
@@ -28,7 +28,7 @@ export const projects = [
     title: "More Coming Soon!",
     subtitle: "???",
     description:
-      "I have a few more projects in the works that I can't wait to share with you! Stay tuned for updates.  In the meantime, you can check out my other projects above.",
+      "I currently have a few more projects in the works that I can't wait to share with you! Stay tuned for updates.  In the meantime, you can check out my other projects above.",
     image: "./assets/projects/comingSoonTape.png",
   },
 ];

@@ -93,7 +93,7 @@ function Projects({overrideProjects = null}) {
               rel="noreferrer"
               href={project.link}
               key={project.title}
-              className="sm:w-1/2 p-4"
+              className="md:w-1/2 p-4"
               data-testid="project-item"
               aria-label={`Open ${project.title} in new tab`}
             >
