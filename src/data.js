@@ -17,7 +17,7 @@ export const projects = [
     link: "https://stoughtonstronghold.com/",
   },
   {
-    title: "Find me on Fiverr!",
+    title: "Find me on Fiverr",
     subtitle: "Accessibility Audits",
     description:
       "I have an open freelance gig posted on Fiverr where I run accessibility audits for smaller websites. I work to provide them feedback and actional improvement steps.",
