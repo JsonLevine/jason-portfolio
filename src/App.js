@@ -19,7 +19,7 @@ export default function App() {
   const [init, setInit] = useState(false);
   const reducedMotion = useReducedMotion()
 
-  // Initialize the particles engine (the background animation)
+  // Initialize the particles engine if it hasnt been initialized yet (the background animation)
   useEffect(() => {
     if (init) {
       return;
