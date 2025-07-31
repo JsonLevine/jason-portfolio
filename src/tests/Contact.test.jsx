@@ -14,7 +14,7 @@ describe('Contact Component', () => {
   });
 
   it('renders the image with the correct src and alt text', () => {
-    const imageElement = screen.getByAltText('Me and my dog, Riley');
+    const imageElement = screen.getByAltText('Me playing pickleball at my own wedding');
     expect(imageElement).toHaveAttribute('src', '/assets/pickleball.png');
   });
 

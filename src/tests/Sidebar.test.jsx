@@ -14,28 +14,28 @@ describe('Sidebar Component', () => {
   });
 
   it('renders GitHub links with correct URLs', () => {
-    const githubLinks = screen.getAllByRole('link', { name: /GitHub Icon/i });
+    const githubLinks = screen.getAllByRole('link', { name: /GitHub/i });
     githubLinks.forEach(link => {
       expect(link).toHaveAttribute('href', 'https://github.com/JsonLevine');
     });
   });
 
   it('renders LinkedIn links with correct URLs', () => {
-    const linkedinLinks = screen.getAllByRole('link', { name: /LinkedIn Icon/i });
+    const linkedinLinks = screen.getAllByRole('link', { name: /LinkedIn/i });
     linkedinLinks.forEach(link => {
       expect(link).toHaveAttribute('href', 'https://www.linkedin.com/in/jasonllevine/');
     });
   });
 
   it('renders Instagram links with correct URLs', () => {
-    const instagramLinks = screen.getAllByRole('link', { name: /Instagram Icon/i });
+    const instagramLinks = screen.getAllByRole('link', { name: /Instagram/i });
     instagramLinks.forEach(link => {
       expect(link).toHaveAttribute('href', 'https://www.instagram.com/adjacent_levine/');
     });
   });
 
   it('renders email link with correct URL', () => {
-    const emailLink = screen.getByRole('link', { name: /jason.levine131@gmail.com/i });
+    const emailLink = screen.getByRole('link', { name: /Open a new email to Jason Levine/i });
     expect(emailLink).toBeInTheDocument();
     expect(emailLink).toHaveAttribute('href', 'mailto:jason.levine131@gmail.com');
   });
