@@ -24,7 +24,7 @@ describe('About Component', () => {
     });
 
     it('renders the minor description with the correct text', () => {
-        const descriptionElement = screen.getByText(/Senior Software Engineer/i);
+        const descriptionElement = screen.getByText(/Frontend Software Engineer/i);
         expect(descriptionElement).toBeInTheDocument();
     });
 
@@ -34,7 +34,7 @@ describe('About Component', () => {
     });
 
     it('renders the hero image with the correct src and alt text', () => {
-        const heroImage = screen.getByAltText(/hero/i);
-        expect(heroImage).toHaveAttribute('src', './assets/Website_portrait3.png');
+        const heroImage = screen.getByAltText(/Pixel graphic of me and my dog, Riley/i);
+        expect(heroImage).toHaveAttribute('src', './assets/Website_portrait.png');
     });
 });

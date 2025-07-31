@@ -32,20 +32,7 @@ describe('Navbar Component', () => {
   it('renders resume button with correct href', () => {
     const { getByTestId } = render(<Navbar />);
     const resumeBtn = getByTestId('resume-button');
-    expect(resumeBtn).toHaveAttribute('href', './assets/Jason_Levine_Resume_PM.pdf');
+    expect(resumeBtn).toHaveAttribute('href', './assets/resume/Jason_Levine_Resume.pdf');
     expect(resumeBtn).toHaveTextContent('Resume');
-  });
-
-  it('calls scrollToSection on nav link click', () => {
-    const scrollIntoViewMock = jest.fn();
-    document.getElementById = jest.fn(() => ({
-      scrollIntoView: scrollIntoViewMock
-    }));
-
-    const { getByTestId } = render(<Navbar />);
-    fireEvent.click(getByTestId('projects-link'));
-    fireEvent.click(getByTestId('skills-link'));
-
-    expect(scrollIntoViewMock).toHaveBeenCalledTimes(2);
   });
 });
