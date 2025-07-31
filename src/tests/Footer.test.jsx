@@ -10,12 +10,12 @@ describe('Footer Component', () => {
 
   it('renders the footer with the correct link', () => {
     const linkElement = screen.getByTestId('footer-link');
-        expect(linkElement).toBeInTheDocument();
+      expect(linkElement).toBeInTheDocument();
   });
 
   it('renders the link with the correct href', () => {
     const linkElement = screen.getByTestId('footer-link');
-        expect(linkElement).toHaveAttribute('href', 'https://github.com/JsonLevine/jason-portfolio');
+      expect(linkElement).toHaveAttribute('href', 'https://github.com/JsonLevine/jason-portfolio');
   });
 
   it('renders the link with the correct target and rel attributes', () => {

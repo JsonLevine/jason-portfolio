@@ -24,7 +24,7 @@ describe('About Component', () => {
     });
 
     it('renders the minor description with the correct text', () => {
-        const descriptionElement = screen.getByText(/Senior Software Engineer/i);
+        const descriptionElement = screen.getByText(/Frontend Software Engineer/i);
         expect(descriptionElement).toBeInTheDocument();
     });
 
