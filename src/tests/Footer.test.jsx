@@ -9,23 +9,23 @@ describe('Footer Component', () => {
   });
 
   it('renders the footer with the correct link', () => {
-    const linkElement = screen.getByRole('link', { name: /2024-2025 Designed and built by/i });
-    expect(linkElement).toBeInTheDocument();
+    const linkElement = screen.getByTestId('footer-link');
+        expect(linkElement).toBeInTheDocument();
   });
 
   it('renders the link with the correct href', () => {
-    const linkElement = screen.getByRole('link', { name: /2024-2025 Designed and built by/i });
-    expect(linkElement).toHaveAttribute('href', 'https://github.com/JsonLevine/jason-portfolio');
+    const linkElement = screen.getByTestId('footer-link');
+        expect(linkElement).toHaveAttribute('href', 'https://github.com/JsonLevine/jason-portfolio');
   });
 
   it('renders the link with the correct target and rel attributes', () => {
-    const linkElement = screen.getByRole('link', { name: /2024-2025 Designed and built by/i });
+    const linkElement = screen.getByTestId('footer-link');
     expect(linkElement).toHaveAttribute('target', '_blank');
     expect(linkElement).toHaveAttribute('rel', 'noreferrer');
   });
 
   it('renders the correct text content', () => {
-    const linkElement = screen.getByRole('link', { name: /2024-2025 Designed and built by/i });
+    const linkElement = screen.getByTestId('footer-link');
     expect(linkElement).toHaveTextContent('2024-2025 Designed and built byJason Levinewith React + TailwindCSS');
   });
 });
