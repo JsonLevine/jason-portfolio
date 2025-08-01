@@ -12,6 +12,11 @@ import {
 
 function Contact() {
 
+  /**
+   * Copies the email address to the clipboard
+   *
+   * @returns {void}
+   */
   function copyEmail() {
     navigator.clipboard.writeText("jason.levine131@gmail.com");
   }

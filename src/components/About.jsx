@@ -3,9 +3,12 @@ import { UserPlusIcon } from "@heroicons/react/24/solid";
 
 function About({useReducedMotion}) {
 
-  //  Scrolls the page to the bottom of the specified section
-  //  @param {string} section - The ID of the section to scroll to
-  //  @returns {void}
+  /**
+   * Scrolls the page to the bottom of the specified section
+   * 
+   * @param {string} section - The ID of the section to scroll to
+   * @returns {void}
+   */   
   function scrollToSectionBottom(section) {
     document.getElementById(section).scrollIntoView({ behavior: useReducedMotion ? "instant" : "smooth", block: "end", inline: "nearest" });
     // After scrolling, set focus to the section for accessibility  
