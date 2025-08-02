@@ -87,13 +87,13 @@ function Projects({overrideProjects = null}) {
         <div className="flex flex-wrap" data-testid="projects-list">
           {projects.map((project) => (
             <a
-              target="_blank" 
+              target={project.newTab && "_blank"}
               rel="noreferrer"
               href={project.link}
               key={project.title}
               className="md:w-1/2 p-4"
               data-testid="project-item"
-              aria-label={`Open ${project.title} in new tab`}
+              aria-label={`Open ${project.title}`}
             >
               <div className="flex rounded border-2 border-stronghold-onyx relative transition ease-in-out duration-300 hover:shadow-project-shadow">
                 <img

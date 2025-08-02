@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { Route, Routes } from "react-router-dom";
 import { useReducedMotion } from '@react-spring/web'
 import { loadFull } from "tsparticles";
-import About from "./components/About";
-import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
+import Homepage from "./components/Homepage";
 import Footer from "./components/Footer"
 // import ScreenDebugger from "./components/ScreenDebugger";
 import Sidebar from "./components/Sidebar";
@@ -39,11 +36,10 @@ export default function App() {
       {/* <ScreenDebugger />  */}
       <Navbar useReducedMotion={reducedMotion}/>
       {reducedMotion && <ReducedMotionBanner />}
-      <About useReducedMotion={reducedMotion}/>
-      <Projects />
-      <Skills />
-      <Testimonials />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Homepage useReducedMotion={reducedMotion}/>} />
+        <Route path="/jlingo" element={<h1>Jlingo goes here</h1>} />
+      </Routes>
       <Footer />
       <Sidebar useReducedMotion={reducedMotion}/>
     </main>

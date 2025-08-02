@@ -6,7 +6,8 @@ export const projects = [
       "A recreation of the original 'Wordle' game, originally made famous by the game show 'Lingo', and recently brought back by the New York Times - played by millions.",
     image: "./assets/projects/jlingo.png",
     link: "https://jlingo2.onrender.com",
-    code: "https://github.com/JsonLevine/JLingo2" 
+    code: "https://github.com/JsonLevine/JLingo2",
+    newTab: true
   },
   {
     title: "Stoughton Stronghold",
@@ -15,6 +16,7 @@ export const projects = [
       "Sometimes we don't want all of the overhead of creating and owning a library of code. This website for my own home gym was built using exclusively Wordpress.",
     image: "./assets/projects/stronghold.png",
     link: "https://stoughtonstronghold.com/",
+    newTab: true
   },
   {
     title: "Find me on Fiverr",
@@ -22,7 +24,8 @@ export const projects = [
     description:
       "I have an open freelance gig posted on Fiverr where I run accessibility audits for smaller websites. I work to provide them feedback and actional improvement steps.",
     image: "./assets/projects/fiverrGig.png",
-    link: "https://www.fiverr.com/json_levine/run-an-accessibility-audit-and-provide-clear-actionable-feedback"
+    link: "https://www.fiverr.com/json_levine/run-an-accessibility-audit-and-provide-clear-actionable-feedback",
+    newTab: true
   },
   {
     title: "More Coming Soon!",
