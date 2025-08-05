@@ -32,7 +32,7 @@ module.exports = {
         'vuori-blue': '#4EEFD9',
       },
       boxShadow: {
-        'project-shadow': '10px 10px 0 0 rgba(230, 71, 71, 0.6)',
+        'project-shadow': '10px 10px 0 0 rgba(230, 71, 71, 0.5)',
       },
       animation: {
         fadeIn: 'fadeIn 1.5s ease-in',
