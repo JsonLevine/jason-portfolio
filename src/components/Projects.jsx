@@ -87,7 +87,7 @@ function Projects({overrideProjects = null}) {
         <div className="flex flex-wrap" data-testid="projects-list">
           {projects.map((project) => (
             <a
-              target={project.newTab && "_blank"}
+              target={project.newTab ? "_blank" : undefined}
               rel="noreferrer"
               href={project.link}
               key={project.title}

@@ -29,10 +29,8 @@ function Navbar({useReducedMotion}) {
     }
 
     // If not on the homepage, navigate to the homepage
-    navigate('/').then(() => {
-      // Scroll to the top of the page
-        scrollToTop();
-      });
+    navigate('/')
+    scrollToTop();
 
     // Toggle the logo color between red and dark
     setIsRed(!isRed);

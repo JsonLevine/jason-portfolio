@@ -7,7 +7,7 @@ function PageNotFound() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-			<img src="/assets/Shocked_Ron.gif" alt="Shocked Ron Weasley GIF" className="w-1/2 lg:w-1/3 h-1/2 object-cover" />
+			<img src="/assets/Shocked_Ron.gif" alt="" className="w-1/2 lg:w-1/3 h-1/2 object-cover" />
 			<h1 className="text-stronghold-red text-center my-10 text-3xl">404 - Page Not Found</h1>
 
 			<button
