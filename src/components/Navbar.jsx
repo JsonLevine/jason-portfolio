@@ -17,7 +17,7 @@ function Navbar({useReducedMotion}) {
     <header className="bg-stronghold-red md:sticky top-0 z-10 border-b-2 xl:px-8 border-stronghold-onyx">
       <div className="container mx-auto flex sm:flex-wrap p-5 px-8 flex-row justify-between items-center">
         <div>
-          <a href="/" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-stronghold-white text-4xl/8" data-testid="logo">
+          <a href="#" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-stronghold-white text-4xl/8" data-testid="logo">
             <img
               className="rounded border-2 border-stronghold-eerie-black"
               src={`${isRed ? '/assets/corner-logo.png' : '/assets/corner-logo-dark.png'}`}
