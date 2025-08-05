@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router';
 
 function Navbar({useReducedMotion}) {
 
   const [isRed, setIsRed] = useState(true);
+  const location = useLocation()
+  const navigate = useNavigate()
 
   /**  
    *  Scrolls the page to the specified section
@@ -16,19 +19,44 @@ function Navbar({useReducedMotion}) {
     document.getElementById(section).focus({ preventScroll: true });
   }
 
+  function scrollToTop() { 
+    window.scrollTo({ top: 0, behavior: useReducedMotion ? "instant" : "smooth" });
+  }
+
+  function handleLogoClick() {
+    // If on the homepage, scroll to the top
+    if (location.pathname === '/') {
+      setIsRed(!isRed);
+      scrollToTop();
+      return;
+    }
+
+    // If not on the homepage, navigate to the homepage
+    navigate('/');
+    scrollToTop();
+
+    // Toggle the logo color between red and dark
+    setIsRed(!isRed);
+  }
+
   return (
     <header className="bg-stronghold-red w-full md:fixed top-0 z-10 border-b-2 xl:px-8 border-stronghold-onyx">
       <div className="container mx-auto flex sm:flex-wrap p-5 px-8 flex-row justify-between items-center">
         <div>
-          <a href="#" onClick={() => setIsRed(!isRed)} className="group w-12 ml-auto block jersey font-medium text-stronghold-white text-4xl/8" data-testid="logo">
+          <button 
+            onClick={() => handleLogoClick()} 
+            className="group w-12 ml-auto block jersey font-medium text-stronghold-white text-4xl/8" 
+            data-testid="logo">
             <img
               className="rounded border-2 border-stronghold-eerie-black"
               src={`${isRed ? '/assets/corner-logo.png' : '/assets/corner-logo-dark.png'}`}
               alt="JL Site Logo"
             />
-          </a>
+          </button>
         </div>
-        <nav className="text-lg mr-auto ml-4 py-1 pl-4 border-l-2 border-stronghold-onyx flex flex-wrap items-center text-stronghold-white justify-center">
+        { // Only show the navigation links if on the homepage
+          location.pathname === '/' &&
+         <nav className="text-lg mr-auto ml-4 py-1 pl-4 border-l-2 border-stronghold-onyx flex flex-wrap items-center text-stronghold-white justify-center">
           <button 
             onClick={() => scrollToSection("projects")}
             tabIndex='0'
@@ -43,7 +71,7 @@ function Navbar({useReducedMotion}) {
             aria-label='Scroll to Skills Section'>
             Skills
           </button>
-        </nav>
+        </nav> }
         <a
           target="_blank"
           href="./assets/resume/Jason_Levine_Resume.pdf"
