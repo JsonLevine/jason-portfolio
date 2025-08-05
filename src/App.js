@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router";
 import { useReducedMotion } from '@react-spring/web'
 import { loadFull } from "tsparticles";
 import Navbar from "./components/Navbar";

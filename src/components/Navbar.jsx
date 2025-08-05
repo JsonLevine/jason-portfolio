@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router';
 
 function Navbar({useReducedMotion}) {
 
@@ -29,8 +29,10 @@ function Navbar({useReducedMotion}) {
     }
 
     // If not on the homepage, navigate to the homepage
-    navigate('/');
-    scrollToTop();
+    navigate('/').then(() => {
+      // Scroll to the top of the page
+        scrollToTop();
+      });
 
     // Toggle the logo color between red and dark
     setIsRed(!isRed);
