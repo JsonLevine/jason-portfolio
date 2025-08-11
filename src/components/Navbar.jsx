@@ -23,6 +23,14 @@ function Navbar({useReducedMotion}) {
     window.scrollTo({ top: 0, behavior: useReducedMotion ? "instant" : "smooth" });
   }
 
+  /**  
+   *  Handles the click event on the logo
+   *  If on the homepage, scrolls to the top and toggles the logo color.
+   *  If not on the homepage, navigates to the homepage and toggles the logo color.
+   * 
+   *  @param {void}
+   *  @returns {void}
+   */  
   function handleLogoClick() {
     // If on the homepage, scroll to the top
     if (location.pathname === '/') {
