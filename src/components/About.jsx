@@ -11,6 +11,7 @@ function About({useReducedMotion}) {
    */   
   function scrollToSectionBottom(section) {
     document.getElementById(section).scrollIntoView({ behavior: useReducedMotion ? "instant" : "smooth", block: "end", inline: "nearest" });
+    
     // After scrolling, set focus to the section for accessibility  
     document.getElementById(section).focus({ preventScroll: true });
   }
