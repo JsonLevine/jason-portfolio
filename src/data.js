@@ -56,7 +56,7 @@ export const testimonials = [
 ];
 
 export const skills = [
-  {name: "JavaScript", icon: "./assets/icons/Javascript-logo.svg"},
+  {name: "JavaScript", icon: "../assets/icons/JavaScript-logo.svg"},
   {name: "TypeScript",icon: "./assets/icons/Typescript-logo.svg"},
   {name: "React", icon: "./assets/icons/React-logo.svg"},
   {name: "NodeJS", icon: "./assets/icons/NodeJS-logo.svg"},
