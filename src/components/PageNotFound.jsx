@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import shockedRon from '../assets/Shocked_Ron.gif'
+import shockedRon from '../assets/Ron.gif'
 
 function PageNotFound() {
 
