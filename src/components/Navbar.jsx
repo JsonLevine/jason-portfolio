@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import cornerLogo from '../assets/corner-logo.png';
+import cornerLogoDark from '../assets/corner-logo-dark.png';
+import resume from '../assets/resume/Jason_Levine_Resume.pdf';
 
 function Navbar({useReducedMotion}) {
 
@@ -57,7 +60,7 @@ function Navbar({useReducedMotion}) {
             data-testid="logo">
             <img
               className="rounded border-2 border-stronghold-eerie-black"
-              src={`${isRed ? '/assets/corner-logo.png' : '/assets/corner-logo-dark.png'}`}
+              src={isRed ? cornerLogo : cornerLogoDark}
               alt="JL Site Logo"
             />
           </button>
@@ -82,7 +85,7 @@ function Navbar({useReducedMotion}) {
         </nav> }
         <a
           target="_blank"
-          href="./assets/resume/Jason_Levine_Resume.pdf"
+          href={resume}
           className="transition ease-in-out duration-300 hover:scale-110 focus:ring-4 ring-stronghold-eerie-black jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-eerie-black sm:mt-0"
           data-testid="resume-button"
           aria-label='Open Resume in new tab'
