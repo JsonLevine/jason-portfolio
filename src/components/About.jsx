@@ -1,5 +1,6 @@
 import { React } from 'react'
 import { UserPlusIcon } from "@heroicons/react/24/solid";
+import websitePortrait from '../assets/Website_portrait.png';
 
 function About({useReducedMotion}) {
 
@@ -15,6 +16,7 @@ function About({useReducedMotion}) {
     // After scrolling, set focus to the section for accessibility  
     document.getElementById(section).focus({ preventScroll: true });
   }
+
 
   return (
     <section id="about" tabIndex={0} aria-label='About Me Section' data-testid="about-section">
@@ -50,7 +52,7 @@ function About({useReducedMotion}) {
           <img
             className="object-cover object-center rounded"
             alt="Pixel graphic of me and my dog, Riley"
-            src="./assets/Website_portrait.png"
+            src={websitePortrait}
           />
         </div>
       </div>

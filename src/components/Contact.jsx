@@ -9,6 +9,7 @@ import {
   ArrowTopRightOnSquareIcon
  } from "@heroicons/react/24/solid";
  import { Tooltip } from 'react-tooltip'
+ import contactImg from '../assets/pickleball.png';
 
 function Contact() {
 
@@ -29,7 +30,7 @@ function Contact() {
             width="100%"
             height="100%"
             className="inset-0 rounded shadow-project-shadow"
-            src="/assets/pickleball.png"
+            src={contactImg}
             alt="Me playing pickleball at my own wedding"
           />
         </div>
