@@ -12,6 +12,7 @@ import ReducedMotionBanner from "./components/ReducedMotionBanner";
 import particlesOptions from "./particles.json";
 import "./App.css"
 import PageNotFound from "./components/PageNotFound";
+import Jlingo from "./apps/jlingo/Jlingo"
 
 export default function App() {
   const [init, setInit] = useState(false);
@@ -40,6 +41,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Homepage useReducedMotion={reducedMotion}/>} />
         <Route path="*" element={<PageNotFound />} />
+        <Route path="/jlingo" element={<Jlingo useReducedMotion={reducedMotion}/>} />
       </Routes>
       <Footer />
       <Sidebar useReducedMotion={reducedMotion}/>

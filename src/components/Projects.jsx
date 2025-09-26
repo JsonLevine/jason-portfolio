@@ -91,11 +91,11 @@ function Projects({overrideProjects = null}) {
               rel="noreferrer"
               href={project.link}
               key={project.title}
-              className="md:w-1/2 p-4"
+              className="md:w-1/2 p-4 aspect-square"
               data-testid="project-item"
               aria-label={`Open ${project.title}`}
             >
-              <div className="flex rounded border-2 border-stronghold-onyx relative transition ease-in-out duration-300 hover:shadow-project-shadow">
+              <div className="flex h-full rounded border-2 border-stronghold-onyx relative transition ease-in-out duration-300 hover:shadow-project-shadow">
                 <img
                   alt={`Preview of ${project.title} project`}
                   className="absolute rounded inset-0 w-full h-full object-cover object-top"
