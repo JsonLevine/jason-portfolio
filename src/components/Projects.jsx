@@ -1,4 +1,5 @@
 import { React } from 'react'
+import { Link } from 'react-router-dom';
 import { CubeTransparentIcon, IdentificationIcon } from "@heroicons/react/24/solid";
 import IconGitHub from './icons/github'
 import { projects as actualProjects } from "../data";
@@ -86,10 +87,9 @@ function Projects({overrideProjects = null}) {
         </div>
         <div className="flex flex-wrap" data-testid="projects-list">
           {projects.map((project) => (
-            <a
+            <Link to={project.link}
               target={project.newTab ? "_blank" : undefined}
               rel="noreferrer"
-              href={project.link}
               key={project.title}
               className="md:w-1/2 p-4 aspect-square"
               data-testid="project-item"
@@ -122,7 +122,7 @@ function Projects({overrideProjects = null}) {
                   <p className="leading-relaxed" data-testid="project-description">{project.description}</p>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

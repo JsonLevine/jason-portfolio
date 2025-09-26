@@ -40,8 +40,8 @@ export default function App() {
       {reducedMotion && <ReducedMotionBanner />}
       <Routes>
         <Route path="/" element={<Homepage useReducedMotion={reducedMotion}/>} />
-        <Route path="*" element={<PageNotFound />} />
         <Route path="/jlingo" element={<Jlingo useReducedMotion={reducedMotion}/>} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
       <Sidebar useReducedMotion={reducedMotion}/>
