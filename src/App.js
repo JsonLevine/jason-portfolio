@@ -12,7 +12,7 @@ import ReducedMotionBanner from "./components/ReducedMotionBanner";
 import particlesOptions from "./particles.json";
 import "./App.css"
 import PageNotFound from "./components/PageNotFound";
-import Jlingo from "./apps/jlingo/Jlingo"
+import Jlingo from "./components/Jlingo"
 
 export default function App() {
   const [init, setInit] = useState(false);

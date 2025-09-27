@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import JLingoApp from './JLingoApp'
+import JLingoApp from '../apps/jlingo/JLingoApp'
 
 function Jlingo() {
   
