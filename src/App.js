@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useReducedMotion } from '@react-spring/web'
 import { loadFull } from "tsparticles";
 import Navbar from "./components/Navbar";
@@ -32,19 +32,21 @@ export default function App() {
   });
 
   return (
-    <main className='text-main-text background body-font'>
-      {init && !reducedMotion && <Particles options={particlesOptions}/>}
-      {/* Uncomment the line below (and the import on line 12) to enable the screen debugger */}
-      {/* <ScreenDebugger />  */}
-      <Navbar useReducedMotion={reducedMotion}/>
-      {reducedMotion && <ReducedMotionBanner />}
-      <Routes>
-        <Route path="/" element={<Homepage useReducedMotion={reducedMotion}/>} />
-        <Route path="/jlingo" element={<Jlingo useReducedMotion={reducedMotion}/>} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-      <Footer />
-      <Sidebar useReducedMotion={reducedMotion}/>
-    </main>
+    <BrowserRouter>
+      <main className='text-main-text background body-font'>
+        {init && !reducedMotion && <Particles options={particlesOptions}/>}
+        {/* Uncomment the line below (and the import on line 12) to enable the screen debugger */}
+        {/* <ScreenDebugger />  */}
+        <Navbar useReducedMotion={reducedMotion}/>
+        {reducedMotion && <ReducedMotionBanner />}
+        <Routes>
+          <Route path="/" element={<Homepage useReducedMotion={reducedMotion}/>} />
+          <Route path="/jlingo" element={<Jlingo useReducedMotion={reducedMotion}/>} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+        <Footer />
+        <Sidebar useReducedMotion={reducedMotion}/>
+      </main>
+    </BrowserRouter>
   );
 }
