@@ -28,9 +28,9 @@ export const projects = [
     description:
       "A recreation of the original 'Wordle' game, originally made famous by the game show 'Lingo', and recently brought back by the New York Times - played by millions.",
     image: jlingoImg,
-    link: "https://jlingo2.onrender.com/",
+    link: "/jlingo",
     code: "https://github.com/JsonLevine/JLingo2",
-    newTab: true
+    newTab: false
   },
   {
     title: "Stoughton Stronghold",
