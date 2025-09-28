@@ -13,6 +13,7 @@ import particlesOptions from "./particles.json";
 import "./App.css"
 import PageNotFound from "./components/PageNotFound";
 import Jlingo from "./components/Jlingo"
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   const [init, setInit] = useState(false);
@@ -39,6 +40,7 @@ export default function App() {
         {/* <ScreenDebugger />  */}
         <Navbar useReducedMotion={reducedMotion}/>
         {reducedMotion && <ReducedMotionBanner />}
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage useReducedMotion={reducedMotion}/>} />
           <Route path="/jlingo" element={<Jlingo useReducedMotion={reducedMotion}/>} />
