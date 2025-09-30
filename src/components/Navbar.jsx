@@ -83,7 +83,8 @@ function Navbar({useReducedMotion}) {
             Skills
           </button>
         </nav> }
-        <a
+        {/* Hiding Resume temporarily */}
+        {/* <a
           target="_blank"
           href={resume}
           className="transition ease-in-out duration-300 hover:scale-110 focus:ring-4 ring-stronghold-eerie-black jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-eerie-black sm:mt-0"
@@ -91,7 +92,7 @@ function Navbar({useReducedMotion}) {
           aria-label='Open Resume in new tab'
         >
           Resume
-        </a>
+        </a> */}
       </div>
     </header>
   );
