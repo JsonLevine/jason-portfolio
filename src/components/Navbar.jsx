@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import cornerLogo from '../assets/corner-logo.png';
 import cornerLogoDark from '../assets/corner-logo-dark.png';
-import resume from '../assets/resume/Jason_Levine_Resume.pdf';
+// import resume from '../assets/resume/Jason_Levine_Resume.pdf';
 
 function Navbar({useReducedMotion}) {
 
