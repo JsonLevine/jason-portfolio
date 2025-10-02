@@ -45,7 +45,7 @@ export const projects = [
     title: "Find me on Fiverr",
     subtitle: "Accessibility Audits",
     description:
-      "I have an open freelance gig posted on Fiverr where I run accessibility audits for smaller websites. I work to provide them feedback and actional improvement steps.",
+      "I have an open freelance gig posted on Fiverr where I run accessibility audits for smaller websites. I work to provide them feedback and actional improvement steps to address accessibility concerns",
     image: fiverrGigImg,
     link: "https://www.fiverr.com/json_levine/run-an-accessibility-audit-and-provide-clear-actionable-feedback",
     newTab: true
