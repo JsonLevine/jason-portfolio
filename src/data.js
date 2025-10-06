@@ -36,7 +36,7 @@ export const projects = [
     title: "Stoughton Stronghold",
     subtitle: "Wordpress",
     description:
-      "Sometimes we don't want all of the overhead of creating and owning a library of code. This website for my own home gym was built using exclusively Wordpress.",
+      "Sometimes we don't want all of the overhead of creating and owning a library of code. This website that I made for my own home gym was built using exclusively Wordpress.",
     image: strongholdImg,
     link: "https://stoughtonstronghold.com/",
     newTab: true
