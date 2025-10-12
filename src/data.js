@@ -38,8 +38,6 @@ export const projects = [
     description:
       "Sometimes we don't want all of the overhead of creating and owning a library of code. This website that I made for my own home gym was built using exclusively Wordpress.",
     image: strongholdImg,
-    link: "https://stoughtonstronghold.com/",
-    newTab: true
   },
   {
     title: "Find me on Fiverr",
