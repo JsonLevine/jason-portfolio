@@ -15,7 +15,7 @@ function Disclaimer() {
         <ul>
           <li className='ring-2 ring-stronghold-jet p-2 my-2 rounded w-fit bg-stronghold-onyx/80'>Building Management at the <strong className='jersey text-xl text-stronghold-red-accessible'>YMCA</strong></li>
           <li className='ring-2 ring-stronghold-jet p-2 my-2 rounded w-fit bg-stronghold-onyx/80'>Earning a ceritification through NASM to become a Certified Personal Trainer at the <strong className='jersey text-xl text-stronghold-red-accessible'>YMCA</strong> as well</li>
-          <li className='ring-2 ring-stronghold-jet p-2 my-2 rounded w-fit bg-stronghold-onyx/80'>Freelance access audits through <strong className='jersey text-xl text-stronghold-red-accessible'>Fiverr</strong></li>
+          <li className='ring-2 ring-stronghold-jet p-2 my-2 rounded w-fit bg-stronghold-onyx/80'>Freelance accessibility audits through <strong className='jersey text-xl text-stronghold-red-accessible'>Fiverr</strong></li>
           <li>And most recently, </li>
           <li className='ring-2 ring-stronghold-jet p-2 my-2 rounded w-fit bg-stronghold-onyx/80'>Working back of house retail operations at <strong className='jersey text-xl text-stronghold-red-accessible'>Vuori</strong></li>
         </ul>
