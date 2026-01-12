@@ -82,7 +82,7 @@ function Projects({overrideProjects = null}) {
           <p className="bg-stronghold-eerie-black bg-opacity-70 mx-auto leading-relaxed text-base px-4" data-testid="section-description-2">
           When I’m not working, I love exploring new skills and experimenting with different projects. 
           I’ve built apps with React, crafted dynamic websites on WordPress, and also dabbled in graphic and logo design with Photoshop and Illustrator.
-            Below is a mix of my some of my side projects, and I will be adding more very soon.
+            Below is a mix of some of my side projects, and I will be adding more very soon.
           </p>
         </div>
         <div className="flex flex-wrap" data-testid="projects-list">
