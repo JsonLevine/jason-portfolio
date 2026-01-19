@@ -1,6 +1,6 @@
 import { React } from 'react'
 import { Link } from 'react-router-dom';
-import { CubeTransparentIcon, IdentificationIcon } from "@heroicons/react/24/solid";
+import { CubeTransparentIcon, IdentificationIcon, MicrophoneIcon } from "@heroicons/react/24/solid";
 import IconGitHub from './icons/github'
 import { projects as actualProjects } from "../data";
 import Accordion from "./Accordion.jsx"
@@ -74,12 +74,13 @@ function Projects({overrideProjects = null}) {
             </div>
           </div>
           {/* <Disclaimer /> */}
-          {/* <div id="video-section" tabIndex={0} aria-label='Introduction Video Section' className="mt-10 pt-10">
+          <div id="video-section" tabIndex={0} aria-label='Introduction Video Section' className="mt-10 pt-10">
+            <MicrophoneIcon className="text-main-text hover:animate-pulse mx-auto inline-block w-10 mb-4"/>
             <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
               Podcast Appearances
             </h1>
             <VideoPlayer />
-          </div> */}
+          </div>
           <div id="projects" tabIndex={0} aria-label='Projects Section' className="mt-10 pt-10">
             <CubeTransparentIcon className="text-main-text hover:animate-spin-slow mx-auto inline-block w-10 mb-4"/>
             <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
