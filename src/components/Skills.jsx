@@ -13,10 +13,10 @@ function Skills() {
             Skills &amp; Technologies
           </h1>
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div className="flex flex-wrap w-4/5 mx-auto sm:mb-2">
           {skills.map((skill) => (
-            <div key={skill.name} className="cursor-default p-2 sm:w-1/2 xl:w-1/4 w-full">
-              <div className="bg-stronghold-jet rounded flex p-4 h-full items-center transition ease-in-out duration-300 hover:bg-stronghold-red hover:-translate-y-1 hover:scale-105">
+            <div key={skill.name} className="p-2 sm:w-1/2 xl:w-1/4 w-full">
+              <div className="bg-stronghold-eerie-black bg-opacity-70 rounded flex h-full items-center">
                 <img src={skill.icon} alt={`${skill.name} Logo`} className="w-6 h-6 flex-shrink-0 mr-4"/>
                 <span className="jersey-25 text-xl title-font font-medium text-stronghold-platinum">
                   {skill.name}
@@ -25,11 +25,11 @@ function Skills() {
             </div>
           ))}
         </div>
-        <div className="border-t border-stronghold-red flex flex-wrap sm:pt-2 lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div className="border-t border-stronghold-red flex flex-wrap sm:pt-2 w-4/5 mx-auto">
           {softskills.map((skill) => (
-            <div key={skill} className="cursor-default p-2 sm:w-1/2 w-full">
-              <div className="bg-stronghold-jet group rounded flex p-4 h-full items-center transition ease-in-out duration-300 hover:bg-stronghold-red hover:-translate-y-1 hover:scale-105">
-                <ClipboardDocumentCheckIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4 transition ease-in-out duration-300 group-hover:text-stronghold-platinum"/>
+            <div key={skill} className="p-2 sm:w-1/2 xl:w-1/4 w-full">
+              <div className="bg-stronghold-eerie-black bg-opacity-70 rounded flex h-full items-center">
+                <ClipboardDocumentCheckIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4"/>
                 <span className="jersey-25 text-xl title-font font-medium text-stronghold-platinum">
                   {skill}
                 </span>

@@ -29,10 +29,16 @@ function About({useReducedMotion}) {
           <span className="jersey md:border-l md:pl-4 border-stronghold-red text-stronghold-platinum sm:text-3xl text-2xl">Technical Product Manager</span>
           <span className="h-4 w-full bg-gradient-to-r from-stronghold-red to-transparent"></span>
           <span className="jersey md:border-l md:pl-4 border-stronghold-red text-stronghold-platinum sm:text-3xl text-2xl"> Frontend Software Engineer</span>              
-          <span className="bg-stronghold-eerie-black bg-opacity-70 text-stronghold-platinum my-4">I believe the most effective product managers are the ones who can seamlessly <span className="font-bold text-stronghold-red-accessible">bridge the gap between product and development</span>, and that's the intersection I specialize in.
+         {/* Old Bio */}
+         {/* <span className="bg-stronghold-eerie-black bg-opacity-70 text-stronghold-platinum my-4">I believe the most effective product managers are the ones who can seamlessly <span className="font-bold text-stronghold-red-accessible">bridge the gap between product and development</span>, and that's the intersection I specialize in.
             My extensive background in <span className="font-bold text-stronghold-red-accessible">software engineering</span>, <span className="font-bold text-stronghold-red-accessible">web analytics</span>, and <span className="font-bold text-stronghold-red-accessible">A/B testing</span> has given me a unique 
             mindset when driving products through development.  I can always see things from the customer's viewpoint, which lets me have a keen eye
             for <span className="font-bold text-stronghold-red-accessible">anticipating risk</span>, and making <span className="font-bold text-stronghold-red-accessible">data-driven decisions</span> when moving through difficult challenges.
+          </span> */}
+          <span className="bg-stronghold-eerie-black bg-opacity-70 text-stronghold-platinum my-4">
+          I’m a <span className="font-bold text-stronghold-red-accessible">Technical Product Manager</span> with a background in <span className="font-bold text-stronghold-red-accessible">frontend engineering</span>, <span className="font-bold text-stronghold-red-accessible">web analytics</span>, and <span className="font-bold text-stronghold-red-accessible">experimentation</span>.
+           I specialize in bridging product and development teams, translating customer needs into clear technical plans, 
+           and shipping <span className="font-bold text-stronghold-red-accessible">data-driven features</span>. My engineering experience helps me anticipate risks early, communicate effectively with developers, and keep projects moving from idea to launch.
           </span>
           <div className="flex flex-col xl:flex-row justify-center mb-4">
             <div className="flex justify-center">
