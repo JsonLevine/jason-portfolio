@@ -7,17 +7,17 @@ function VideoPlayer() {
       <div className="p-4 mb-4">Recently, I appeared on Brian Piotrowski's podcast "Candidate Spotlight".
         In the episode, we discussed my previous experiences as both a software engineer and a product manager. 
       </div>
+      <div class="rounded shadow-lg ring-4 ring-stronghold-red relative pb-[56.25%] w-full  overflow-hidden max-w-full">
       <iframe
-        width="560"
-        height="315"
         src={VIDEO_URL}
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
-        className="rounded shadow-lg ring-4 ring-stronghold-red"
+        className="absolute top-0 left-0 w-full h-full"
       ></iframe>
+      </div>
     </div>
   );
 }
