@@ -20,6 +20,16 @@ import fiverrGigImg from "./assets/projects/fiverrGig.png";
 import comingSoonTapeImg from "./assets/projects/comingSoonTape.png";
 import chrisHeadshot from "./assets/Chris_headshot.jpg";
 import adityaHeadshot from "./assets/Aditya_headshot.jpg";
+import {
+  ClipboardDocumentCheckIcon,
+  KeyIcon,
+  PresentationChartBarIcon,
+  RectangleGroupIcon,
+  ScaleIcon,
+  UsersIcon,
+  SwatchIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/solid";
 
 export const projects = [
   {
@@ -30,7 +40,7 @@ export const projects = [
     image: jlingoImg,
     link: "/jlingo",
     code: "https://github.com/JsonLevine/JLingo2",
-    newTab: false
+    newTab: false,
   },
   {
     title: "Stoughton Stronghold",
@@ -39,7 +49,7 @@ export const projects = [
       "Sometimes we don't want all of the overhead of creating and owning a library of code. This website that I made for my own home gym was built using exclusively Wordpress.",
     image: strongholdImg,
     link: "https://stoughtonstronghold.com/",
-    newTab: true
+    newTab: true,
   },
   {
     title: "Find me on Fiverr",
@@ -48,7 +58,7 @@ export const projects = [
       "I have an open freelance gig posted on Fiverr where I run accessibility audits for smaller websites. I work to provide them feedback and actional improvement steps to address accessibility concerns",
     image: fiverrGigImg,
     link: "https://www.fiverr.com/json_levine/run-an-accessibility-audit-and-provide-clear-actionable-feedback",
-    newTab: true
+    newTab: true,
   },
   {
     title: "More Coming Soon!",
@@ -62,19 +72,19 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "\"Working with Jason was always a pleasure. He consistently demonstrated professionalism, reliability, and a positive attitude. His problem-solving skills and creativity were truly impressive, making him a valuable asset to the team. I feel fortunate to have worked alongside such a talented individual.\"",
+      '"Working with Jason was always a pleasure. He consistently demonstrated professionalism, reliability, and a positive attitude. His problem-solving skills and creativity were truly impressive, making him a valuable asset to the team. I feel fortunate to have worked alongside such a talented individual."',
     image: chrisHeadshot,
     name: "Christopher Cook",
     company: "Chewy",
-    title: "Senior Software Engineer"
+    title: "Senior Software Engineer",
   },
   {
     quote:
-      "\"It was a genuine pleasure to work with Jason, whom I had the privilege of directly managing. As a seasoned UI developer, Jason took on the role of experimentation lead for our analytics team, showcasing his adeptness in steering medium to large-sized projects with remarkable independence. His expertise shone brightly as he efficiently addressed and resolved any experimentation-related queries, earning him the reputation of a subject matter expert. Jason’s proficiency in React is outstanding, and his ability to dive deep into complex problems sets him apart. Above all, his quick learning ability and collaborative spirit make him an invaluable asset to any team.\"",
+      '"It was a genuine pleasure to work with Jason, whom I had the privilege of directly managing. As a seasoned UI developer, Jason took on the role of experimentation lead for our analytics team, showcasing his adeptness in steering medium to large-sized projects with remarkable independence. His expertise shone brightly as he efficiently addressed and resolved any experimentation-related queries, earning him the reputation of a subject matter expert. Jason’s proficiency in React is outstanding, and his ability to dive deep into complex problems sets him apart. Above all, his quick learning ability and collaborative spirit make him an invaluable asset to any team."',
     image: adityaHeadshot,
     name: "Aditya Jain",
     company: "Chewy",
-    title: "Associate Director"
+    title: "Associate Director",
   },
 ];
 
@@ -98,12 +108,52 @@ export const skills = [
 ];
 
 export const softskills = [
-  "Mentorship",
-  "Accessibility Testing",
-  "Product Management",
-  "Stakeholder Management",
-  "Project Estimation",
-  "Agile Methodologies",
-  "A/B Testing",
-  "Data Analytics",
+  {
+    name: "Mentorship",
+    icon: (
+      <UsersIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4" />
+    ),
+  },
+  {
+    name: "Accessibility Testing",
+    icon: (
+      <SwatchIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4" />
+    ),
+  },
+  {
+    name: "Product Management",
+    icon: (
+      <RectangleGroupIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4" />
+    ),
+  },
+  {
+    name: "Stakeholder Management",
+    icon: (
+      <UserGroupIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4" />
+    ),
+  },
+  {
+    name: "Project Estimation",
+    icon: (
+      <PresentationChartBarIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4" />
+    ),
+  },
+  {
+    name: "Agile Methodologies",
+    icon: (
+      <ClipboardDocumentCheckIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4" />
+    ),
+  },
+  {
+    name: "A/B Testing",
+    icon: (
+      <ScaleIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4" />
+    ),
+  },
+  {
+    name: "Data Analytics",
+    icon: (
+      <KeyIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4" />
+    ),
+  },
 ];

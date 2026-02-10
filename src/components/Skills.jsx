@@ -1,5 +1,5 @@
 import { React } from 'react'
-import { WrenchScrewdriverIcon, ClipboardDocumentCheckIcon } from "@heroicons/react/24/solid";
+import { WrenchScrewdriverIcon } from "@heroicons/react/24/solid";
 import { skills, softskills } from "../data";
 
 function Skills() {
@@ -29,9 +29,9 @@ function Skills() {
           {softskills.map((skill) => (
             <div key={skill} className="p-2 sm:w-1/2 xl:w-1/4 w-full">
               <div className="bg-stronghold-eerie-black bg-opacity-70 rounded flex h-full items-center">
-                <ClipboardDocumentCheckIcon className="text-stronghold-red-accessible w-6 h-6 flex-shrink-0 mr-4"/>
+                {skill.icon}
                 <span className="jersey-25 text-xl title-font font-medium text-stronghold-platinum">
-                  {skill}
+                  {skill.name}
                 </span>
               </div>
             </div>
