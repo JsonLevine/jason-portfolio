@@ -5,7 +5,8 @@ import IconGitHub from './icons/github'
 import { projects as actualProjects } from "../data";
 import Accordion from "./Accordion.jsx"
 import Disclaimer from './Disclaimer.jsx';
-import VideoPlayer from './VideoPlayer.jsx';
+import Podcasts from './Podcasts.jsx';
+import Skills from './Skills'
 
 function Projects({overrideProjects = null}) {
 
@@ -73,15 +74,9 @@ function Projects({overrideProjects = null}) {
               </Accordion>
             </div>
           </div>
+          <Skills />
           {/* <Disclaimer /> */}
-          <div id="video-section" tabIndex={0} aria-label='Introduction Video Section' className="mt-10 pt-10">
-            <MicrophoneIcon className="text-main-text hover:animate-pulse mx-auto inline-block w-10 mb-4"/>
-            <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
-              Podcast Appearances
-            </h1>
-            <VideoPlayer />
-          </div>
-          <div id="projects" tabIndex={0} aria-label='Projects Section' className="mt-10 pt-10">
+          <div id="projects" tabIndex={0} aria-label='Projects Section' className="mt-10">
             <CubeTransparentIcon className="text-main-text hover:animate-spin-slow mx-auto inline-block w-10 mb-4"/>
             <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font mb-4 text-stronghold-platinum">
               Side Projects
@@ -133,6 +128,8 @@ function Projects({overrideProjects = null}) {
             </Link>
           ))}
         </div>
+        <Podcasts />
+
       </div>
     </section>
   );

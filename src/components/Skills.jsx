@@ -6,7 +6,7 @@ function Skills() {
 
   return (
     <section id="skills" tabIndex={0} aria-label='Skills Section' className="mt-10">
-      <div className="container px-10 py-10 mx-auto">
+      <div className="container py-10 text-left mx-auto">
         <div className="text-center">
         <WrenchScrewdriverIcon className="w-10 inline-block mb-4 text-main-text"/>
           <h1 className="jersey-25 sm:text-5xl text-4xl font-medium title-font text-stronghold-platinum mb-4">
