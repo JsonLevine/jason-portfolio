@@ -17,7 +17,6 @@ function About({useReducedMotion}) {
     document.getElementById(section).focus({ preventScroll: true });
   }
 
-
   return (
     <section id="about" tabIndex={0} aria-label='About Me Section' data-testid="about-section">
       <div className="container mx-auto md:mt-24 flex px-10 pt-20 pb-10 md:flex-row flex-col items-center">
