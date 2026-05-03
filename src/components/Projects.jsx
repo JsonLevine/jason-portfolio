@@ -23,17 +23,16 @@ function Projects({overrideProjects = null}) {
             </h1>
           </div>
           <p className="bg-stronghold-eerie-black bg-opacity-70 mb-4 px-4 mx-auto leading-relaxed text-base" data-testid="section-description">
-          In the last few years, I have been making the transition to Technical Product Management.
-          Prior to that, I worked for over 7 years as a frontend software engineer at very well known names such as UnitedHealth Group and Chewy.
-          Expand the sections below for some highlites of my career so far.
+          I'm currently a Digital Experience Manager at Road Scholar, with a background in frontend engineering at companies like UnitedHealth Group and Chewy. 
+          That hands-on technical experience is what drives how I think about digital products today. Expand the sections below for highlights of my career so far.
           </p>
           <div className= "flex flex-col lg:flex-row justify-between" data-testid="jobs-list">
             <div className="lg:w-1/2 p-4">
               <Accordion title="Product Management">
                 <ul>
                   <div className="bg-stronghold-red/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-stronghold-red ">
-                    <li><strong className="jersey text-2xl text-stronghold-red-accessible">Currently:</strong></li>
-                    <li><span className="text-stronghold-red-accessible">•</span> I am working toward a Certified Associate in Project Management (CAPM) certification with <a className="text-link-blue" href="https://www.pmi.org">pmi.org</a>. This is to formalize extensive hands-on experience with structured methodologies that are essential for project/product management</li>
+                    <li>at <strong className="jersey text-2xl text-stronghold-red-accessible">Road Scholar (Currently):</strong></li>
+                    <li><span className="text-stronghold-red-accessible">•</span> I am working as a Digital Experience Manager, leading the efforts to deploy, improve, and scale a brand new mobile app.</li>
                   </div>
                   <div className="bg-chewy-blue/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-chewy-blue">
                     <li>at <span className=" jersey text-2xl text-chewy-blue-accessible">Chewy:</span></li>
@@ -55,7 +54,7 @@ function Projects({overrideProjects = null}) {
                 <ul>
                   <div className="bg-stronghold-red/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-stronghold-red">
                     <li><strong className="jersey text-2xl text-stronghold-red-accessible">Currently:</strong></li>
-                    <li><span className="text-stronghold-red-accessible">•</span> I am working on developing an online React course in partnership with newline.co.  In addition, I am continuously using this site to learn and experiment with new tools, as well as taking courses to keep my frontend skills up to date.</li>
+                    <li><span className="text-stronghold-red-accessible">•</span> In my spare time, I am continuously using this site to learn and experiment with new tools, as well as taking courses to keep my frontend skills up to date.</li>
                   </div>
                   <div className="bg-chewy-blue/20 mt-2 pb-2 border-t-2 pl-2 pr-2 border-chewy-blue">
                     <li>at <span className=" jersey text-2xl text-chewy-blue-accessible">Chewy:</span></li>

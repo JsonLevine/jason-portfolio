@@ -27,7 +27,7 @@ function Skills() {
         </div>
         <div className="border-t border-stronghold-red flex flex-wrap sm:pt-2 w-4/5 mx-auto">
           {softskills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/2 xl:w-1/4 w-full">
+            <div key={skill} className="p-2 sm:w-1/2 2xl:w-1/4 w-full">
               <div className="bg-stronghold-eerie-black bg-opacity-70 rounded flex h-full items-center">
                 {skill.icon}
                 <span className="jersey-25 text-xl title-font font-medium text-stronghold-platinum">
