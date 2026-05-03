@@ -83,7 +83,7 @@ function Navbar({useReducedMotion}) {
             Skills
           </button>
         </nav> }
-        <a
+        {/* <a
           target="_blank"
           href="https://www.taskrabbit.com/profile/jason-l--155?ref=TRYDH9E6&utm_medium=tryprofile&invitation_source=url&utm_source=trycode"
           className="transition ease-in-out duration-300 hover:scale-110 text-center focus:ring-4 ring-stronghold-eerie-black jersey text-xl inline-flex items-center bg-stronghold-white border-0 py-1 px-3 focus:outline-none rounded text-stronghold-eerie-black sm:mt-0"
@@ -91,7 +91,7 @@ function Navbar({useReducedMotion}) {
           aria-label='Open TaskRabbit in new tab'
         >
           Hire me on TaskRabbit
-        </a>
+        </a> */}
         {/* Hiding Resume temporarily */}
         {/* <a
           target="_blank"
