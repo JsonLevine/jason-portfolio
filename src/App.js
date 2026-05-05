@@ -14,6 +14,7 @@ import "./App.css"
 import PageNotFound from "./components/PageNotFound";
 import Jlingo from "./components/Jlingo"
 import ScrollToTop from "./components/ScrollToTop";
+import Scattergories from "./components/Scattergories";
 
 export default function App() {
   const [init, setInit] = useState(false);
@@ -44,6 +45,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Homepage useReducedMotion={reducedMotion}/>} />
           <Route path="/jlingo" element={<Jlingo useReducedMotion={reducedMotion}/>} />
+          <Route path="/scattergories" element={<Scattergories/>} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
