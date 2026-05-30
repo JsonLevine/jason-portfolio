@@ -10,14 +10,14 @@ function Scattergories() {
   const navigate = useNavigate()
 
   function getRandomLetter() {
-    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    const alphabet = 'ABCDEFGHILMNOPRST'
     const randomIndex = Math.floor(Math.random() * alphabet.length)
     return alphabet[randomIndex]
   }
 
   return (
     <div className="flex flex-col items-center justify-between min-h-screen">
-      <div className="flex flex-col items-center justify-start">
+      <div className="flex flex-col mx-16 items-center justify-start">
         <h1 className="text-stronghold-red jersey-25 text-center md:mt-36 mt-10 2xl:text-8xl lg:text-7xl text-6xl">Scattergories</h1>
         <span className="border-b border-stronghold-red jersey text-xl w-full text-center text-stronghold-platinum">Presented by Jason</span>
         
@@ -49,26 +49,34 @@ function Scattergories() {
         </div>)}
 
         {gameStarted && (
-          <div id="game" className="flex flex-col items-center justify-center mt-10">
-            <h3 className="text-stronghold-red-accessible jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl">List {list}</h3>
+          
+          <div id="game" className="flex flex-col items-center justify-center xl:mt-10">
+            <h3 className="text-stronghold-red-accessible jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl underline">List {list}</h3>
 
             <h1 className="text-stronghold-white jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl">Current Letter:</h1>
             <h1 className="border-2 px-8 py-4 rounded-lg text-stronghold-red jersey-25 text-center  mt-2 2xl:text-8xl lg:text-7xl text-6xl">{letter}</h1>
 
             <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-10">
               {lists[list - 1].map((category, index) => (
-                <div key={index} className="p-4 rounded bg-stronghold-jet text-stronghold-platinum jersey text-xl">
-                  {index+1}: {category}
+                <div key={index} className="p-4 rounded bg-stronghold-jet text-stronghold-platinum  text-xl">
+                  <strong className="text-stronghold-red">{index+1})</strong> {category}
                 </div>
               ))}
             </div>
 
             <button
+              onClick={() => 
+                setGameStarted(false)}
+              className="mt-10 group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex bg-stronghold-jet border-0 py-2 px-6 focus:outline-none hover:bg-stronghold-red text-stronghold-platinum rounded"
+              aria-label='Generate a new letter'>
+              Finish Round
+            </button>
+            {/* <button
               onClick={() => setLetter(getRandomLetter())}
               className="mt-10 group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex bg-stronghold-jet border-0 py-2 px-6 focus:outline-none hover:bg-stronghold-red text-stronghold-platinum rounded"
               aria-label='Generate a new letter'>
               Generate a new letter
-            </button>
+            </button> */}
           </div>)
         }
 
