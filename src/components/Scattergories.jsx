@@ -18,11 +18,11 @@ function Scattergories() {
   return (
     <div className="flex flex-col items-center justify-between min-h-screen">
       <div className="flex flex-col mx-16 items-center justify-start">
-        <h1 className="text-stronghold-red jersey-25 text-center md:mt-36 mt-10 2xl:text-8xl lg:text-7xl text-6xl">Scattergories</h1>
-        <span className="border-b border-stronghold-red jersey text-xl w-full text-center text-stronghold-platinum">Presented by Jason</span>
         
         {!gameStarted && (
         <div id="newgame" className="mt-10 flex flex-col items-center">
+          <h1 className="text-stronghold-red jersey-25 text-center md:mt-36 mt-10 2xl:text-8xl lg:text-7xl text-6xl">Scattergories</h1>
+          <span className="border-b border-stronghold-red jersey text-xl w-full text-center text-stronghold-platinum">Presented by Jason</span>
           <label htmlFor="list-select" className="text-stronghold-platinum jersey text-xl">Choose a list:</label>
           <div className="grid grid-cols-4 gap-4 mt-4">
             {Array.from({ length: 12 }, (_, i) => (
@@ -50,7 +50,7 @@ function Scattergories() {
 
         {gameStarted && (
           
-          <div id="game" className="flex flex-col items-center justify-center xl:mt-10">
+          <div id="game" className="flex flex-col items-center justify-center md:mt-36 mt-10 ">
             <h3 className="text-stronghold-red-accessible jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl underline">List {list}</h3>
 
             <h1 className="text-stronghold-white jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl">Current Letter:</h1>
