@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const TOTAL = 5;
+const TOTAL = 120;
 
 function fmt(s) {
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
