@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const TOTAL = 120;
+const TOTAL = 5;
 
 function fmt(s) {
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
@@ -45,7 +45,7 @@ export default function Timer({ onRunningChange }) {
             style={{ width: `${pct * 100}%` }}
           />
         </div>
-        <span className={`text-6xl font-medium tracking-widest tabular-nums ${done ? "text-green-700" : "text-stronghold-platinum"}`}>
+        <span className={`text-6xl font-medium tracking-widest tabular-nums ${done ? "text-stronghold-red" : "text-stronghold-platinum"}`}>
           {fmt(remaining)}
         </span>
 
