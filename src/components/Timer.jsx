@@ -28,26 +28,34 @@ export default function Timer({ onRunningChange }) {
     return () => clearInterval(intervalRef.current);
   }, [running]);
 
-  const startPause = () => { if (remaining > 0) updateRunning((r) => !r); };
+  const startPause = () => { if (remaining > 0) updateRunning(!running); };
   const reset = () => { clearInterval(intervalRef.current); updateRunning(false); setRemaining(TOTAL); };
 
   const pct = remaining / TOTAL;
-  const barColor = pct > 0.5 ? "#000" : pct > 0.25 ? "#BA7517" : "#A32D2D";
   const done = remaining === 0;
 
+  const barColor = pct > 0.5 ? "bg-black" : pct > 0.25 ? "bg-amber-600" : "bg-red-700";
+
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem", padding: "3rem 0" }}>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, width: 260 }}>
-        <span style={{ fontSize: 52, fontWeight: 500, letterSpacing: 2, fontVariantNumeric: "tabular-nums", color: done ? "green" : "inherit" }}>
+    <div className="flex flex-col items-center gap-6 sticky top-0"> 
+      <div className="flex flex-col items-center gap-2.5 w-64">
+        <span className={`text-6xl font-medium tracking-widest tabular-nums ${done ? "text-green-700" : "text-primary"}`}>
           {fmt(remaining)}
         </span>
-        <div style={{ width: "100%", height: 3, background: "#e5e7eb", borderRadius: 2, overflow: "hidden" }}>
-          <div style={{ height: "100%", width: `${pct * 100}%`, background: barColor, borderRadius: 2, transition: "width 0.4s linear, background 0.3s" }} />
+        <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+          <div
+            className={`h-full rounded-full transition-all duration-400 ease-linear ${barColor}`}
+            style={{ width: `${pct * 100}%` }}
+          />
         </div>
       </div>
-      <div style={{ display: "flex", gap: 10 }}>
-        <button onClick={startPause} disabled={done}>{running ? "Pause" : remaining < TOTAL ? "Resume" : "Start"}</button>
-        <button onClick={reset}>Reset</button>
+      <div className="flex gap-2.5 mt-2">
+        <button onClick={startPause} disabled={done} className="mb-6 cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex bg-stronghold-jet border-0 py-2 px-6 focus:outline-none hover:bg-stronghold-red text-stronghold-platinum rounded"        >
+          {running ? "Pause" : remaining < TOTAL ? "Resume" : "Start"}
+        </button>
+        <button onClick={reset} className="mb-6 cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex bg-stronghold-jet border-0 py-2 px-6 focus:outline-none hover:bg-stronghold-red text-stronghold-platinum rounded">
+          Reset
+        </button>
       </div>
     </div>
   );
