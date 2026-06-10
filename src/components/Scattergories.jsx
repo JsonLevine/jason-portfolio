@@ -8,12 +8,14 @@ function Scattergories() {
   const [list, setList] = React.useState(1)
   const [gameStarted, setGameStarted] = React.useState(false)
   const [timerRunning, setTimerRunning] = React.useState(false)
+  const [blurred, setBlurred] = React.useState(true)
 
   const navigate = useNavigate()
 
   function getRandomLetter() {
     const alphabet = 'ABCDEFGHILMNOPRST'
     const randomIndex = Math.floor(Math.random() * alphabet.length)
+    setBlurred(true)
     return alphabet[randomIndex]
   }
 
@@ -52,29 +54,49 @@ function Scattergories() {
 
         {gameStarted && (
           <div id="game" className="flex flex-col items-center justify-center md:mt-36 mt-10 ">
-            <Timer onRunningChange={setTimerRunning}/>
-            <div className="flex flex-row items-center gap-4">
-              <div className="flex flex-col items-end">
-                <span className="text-stronghold-red-accessible jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl underline">List {list}</span>
+            <div className="flex flex-row justify-evenly gap-8">
+              <div className="border-r-2 border-stronghold-red pr-8 flex flex-col items-center justify-end ">
+                {/* <span className="text-stronghold-red-accessible jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl underline">List {list}</span> */}
                 <span className="text-stronghold-white jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl">Current Letter:</span>
+                <span className="border-2 px-8 py-4 rounded-lg text-stronghold-red jersey-25 text-center  mt-2 2xl:text-8xl lg:text-7xl text-6xl">{letter}</span>
               </div>
-              <span className="border-2 px-8 py-4 rounded-lg text-stronghold-red jersey-25 text-center  mt-2 2xl:text-8xl lg:text-7xl text-6xl">{letter}</span>
+              <Timer onRunningChange={setTimerRunning}/>
+
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10">
+            <div className="pb-10 border-b border-stronghold-red grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 m-10">
               {lists[list - 1].map((category, index) => (
                 <div key={index} className="p-4 rounded bg-stronghold-jet text-stronghold-platinum text-xl">
-                  <strong className="text-stronghold-red">{index+1})</strong>  <span style={{ filter: timerRunning ? "none" : "", userSelect: timerRunning ? "auto" : "none", transition: "filter 0.4s ease" }}>{category}</span>
+                  <strong className="text-stronghold-red">{index+1})</strong>  <span style={{ filter: (timerRunning || !blurred) ? "none" : "blur(6px)", userSelect: (timerRunning || !blurred) ? "auto" : "none", transition: "filter 0.4s ease" }}>{category}</span>
                 </div>
               ))}
             </div>
-
-            <button
+            
+            <div className="flex flex-row gap-4">
+              {blurred ? 
+              <button
+                onClick={() => 
+                  setBlurred(false)}
+                  className="group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl  bg-stronghold-jet border-0 py-2 px-6 focus:outline-none hover:bg-stronghold-red text-stronghold-platinum rounded"
+                  aria-label='Generate a new letter'>
+                Show Categories
+              </button>
+              :
+              <button
               onClick={() => 
-                setGameStarted(false)}
-              className="mt-10 group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl inline-flex bg-stronghold-jet border-0 py-2 px-6 focus:outline-none hover:bg-stronghold-red text-stronghold-platinum rounded"
-              aria-label='Generate a new letter'>
-              Finish Round
+                setBlurred(true)}
+                className="group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl  bg-stronghold-jet border-0 py-2 px-6 focus:outline-none hover:bg-stronghold-red text-stronghold-platinum rounded"
+                aria-label='Generate a new letter'>
+              Hide Categories
             </button>
+              }
+              <button
+                onClick={() => 
+                  setGameStarted(false)}
+                className="group cursor-pointer transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 jersey text-2xl  bg-stronghold-jet border-0 py-2 px-6 focus:outline-none hover:bg-stronghold-red text-stronghold-platinum rounded"
+                aria-label='Generate a new letter'>
+                Finish Round
+              </button>
+            </div>
           </div>)
         }
 
