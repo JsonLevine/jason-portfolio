@@ -1,11 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import lists from '../lists'
+import Timer from './Timer'
 
 function Scattergories() {
   const [letter, setLetter] = React.useState()
   const [list, setList] = React.useState(1)
   const [gameStarted, setGameStarted] = React.useState(false)
+  const [timerRunning, setTimerRunning] = React.useState(false)
 
   const navigate = useNavigate()
 
@@ -51,6 +53,7 @@ function Scattergories() {
         {gameStarted && (
           
           <div id="game" className="flex flex-col items-center justify-center md:mt-36 mt-10 ">
+            <Timer onRunningChange={setTimerRunning}/>
             <h3 className="text-stronghold-red-accessible jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl underline">List {list}</h3>
 
             <h1 className="text-stronghold-white jersey-25 text-center 2xl:text-5xl lg:text-4xl text-3xl">Current Letter:</h1>
@@ -58,8 +61,8 @@ function Scattergories() {
 
             <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-10">
               {lists[list - 1].map((category, index) => (
-                <div key={index} className="p-4 rounded bg-stronghold-jet text-stronghold-platinum  text-xl">
-                  <strong className="text-stronghold-red">{index+1})</strong> {category}
+                <div key={index} className="p-4 rounded bg-stronghold-jet text-stronghold-platinum text-xl">
+                  <strong className="text-stronghold-red">{index+1})</strong>  <span style={{ filter: timerRunning ? "none" : "blur(6px)", userSelect: timerRunning ? "auto" : "none", transition: "filter 0.4s ease" }}>{category}</span>
                 </div>
               ))}
             </div>
