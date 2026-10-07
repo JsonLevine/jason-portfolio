@@ -22,7 +22,6 @@ function Scattergories() {
   return (
     <div className="flex flex-col items-center justify-between min-h-screen">
       <div className="flex flex-col mx-16 items-center justify-start">
-        
         {!gameStarted && (
         <div id="newgame" className="mt-10 flex flex-col items-center">
           <h1 className="text-stronghold-red jersey-25 text-center md:mt-36 mt-10 2xl:text-8xl lg:text-7xl text-6xl">Scattergories</h1>
